@@ -1,0 +1,792 @@
+[2024-04-06 19:02:58,081] INFO Kafka Connect stopping (org.apache.kafka.connect.runtime.Connect:67)
+[2024-04-06 19:02:58,085] INFO Stopping REST server (org.apache.kafka.connect.runtime.rest.RestServer:348)
+[2024-04-06 19:02:58,086] INFO Stopped http_8083@9a37591{HTTP/1.1, (http/1.1)}{0.0.0.0:8083} (org.eclipse.jetty.server.AbstractConnector:383)
+[2024-04-06 19:02:58,089] INFO node0 Stopped scavenging (org.eclipse.jetty.server.session:149)
+[2024-04-06 19:02:58,106] INFO Stopped o.e.j.s.ServletContextHandler@1b53e6fc{/,null,STOPPED} (org.eclipse.jetty.server.handler.ContextHandler:1159)
+[2024-04-06 19:02:58,107] INFO REST server stopped (org.apache.kafka.connect.runtime.rest.RestServer:377)
+[2024-04-06 19:02:58,108] INFO Herder stopping (org.apache.kafka.connect.runtime.standalone.StandaloneHerder:115)
+[2024-04-06 19:02:58,109] INFO [mysql-connector|task-0] Stopping task mysql-connector-0 (org.apache.kafka.connect.runtime.Worker:1009)
+[2024-04-06 19:02:58,122] INFO [mysql-connector|worker] Stopping connector mysql-connector (org.apache.kafka.connect.runtime.Worker:420)
+[2024-04-06 19:02:58,125] INFO [mysql-connector|worker] Scheduled shutdown for WorkerConnector{id=mysql-connector} (org.apache.kafka.connect.runtime.WorkerConnector:267)
+[2024-04-06 19:02:58,128] INFO [mysql-connector|worker] Completed shutdown for WorkerConnector{id=mysql-connector} (org.apache.kafka.connect.runtime.WorkerConnector:287)
+[2024-04-06 19:02:58,130] INFO Worker stopping (org.apache.kafka.connect.runtime.Worker:248)
+[2024-04-06 19:02:58,133] INFO Stopped FileOffsetBackingStore (org.apache.kafka.connect.storage.FileOffsetBackingStore:71)
+[2024-04-06 19:02:58,135] INFO Metrics scheduler closed (org.apache.kafka.common.metrics.Metrics:694)
+[2024-04-06 19:02:58,136] INFO Closing reporter org.apache.kafka.common.metrics.JmxReporter (org.apache.kafka.common.metrics.Metrics:698)
+[2024-04-06 19:02:58,137] INFO Metrics reporters closed (org.apache.kafka.common.metrics.Metrics:704)
+[2024-04-06 19:02:58,140] INFO App info kafka.connect for 192.168.1.191:8083 unregistered (org.apache.kafka.common.utils.AppInfoParser:88)
+[2024-04-06 19:02:58,142] INFO Worker stopped (org.apache.kafka.connect.runtime.Worker:269)
+[2024-04-06 19:02:58,143] INFO Herder stopped (org.apache.kafka.connect.runtime.standalone.StandaloneHerder:126)
+[2024-04-06 19:02:58,144] INFO Kafka Connect stopped (org.apache.kafka.connect.runtime.Connect:72)
+[2024-04-06 19:03:07,778] INFO Kafka Connect worker initializing ... (org.apache.kafka.connect.cli.AbstractConnectCli:114)
+[2024-04-06 19:03:07,785] INFO WorkerInfo values: 
+	jvm.args = -Xms256M, -Xmx2G, -XX:+UseG1GC, -XX:MaxGCPauseMillis=20, -XX:InitiatingHeapOccupancyPercent=35, -XX:+ExplicitGCInvokesConcurrent, -XX:MaxInlineLevel=15, -Djava.awt.headless=true, -Dcom.sun.management.jmxremote, -Dcom.sun.management.jmxremote.authenticate=false, -Dcom.sun.management.jmxremote.ssl=false, -Dkafka.logs.dir=C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/logs, -Dlog4j.configuration=file:bin/../config/connect-log4j.properties
+	jvm.spec = Oracle Corporation, Java HotSpot(TM) 64-Bit Server VM, 21.0.2, 21.0.2+13-LTS-58
+	jvm.classpath = C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/activation-1.1.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/aopalliance-repackaged-2.6.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/argparse4j-0.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/audience-annotations-0.12.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/caffeine-2.9.3.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/checker-qual-3.19.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/commons-beanutils-1.9.4.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/commons-cli-1.4.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/commons-collections-3.2.2.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/commons-digester-2.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/commons-io-2.11.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/commons-lang3-3.8.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/commons-logging-1.2.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/commons-validator-1.7.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/connect-api-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/connect-basic-auth-extension-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/connect-json-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/connect-mirror-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/connect-mirror-client-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/connect-runtime-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/connect-transforms-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/error_prone_annotations-2.10.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/hk2-api-2.6.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/hk2-locator-2.6.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/hk2-utils-2.6.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jackson-annotations-2.16.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jackson-core-2.16.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jackson-databind-2.16.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jackson-dataformat-csv-2.16.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jackson-datatype-jdk8-2.16.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jackson-jaxrs-base-2.16.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jackson-jaxrs-json-provider-2.16.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jackson-module-jaxb-annotations-2.16.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jackson-module-scala_2.13-2.16.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jakarta.activation-api-1.2.2.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jakarta.annotation-api-1.3.5.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jakarta.inject-2.6.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jakarta.validation-api-2.0.2.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jakarta.ws.rs-api-2.1.6.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jakarta.xml.bind-api-2.3.3.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/javassist-3.29.2-GA.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/javax.activation-api-1.2.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/javax.annotation-api-1.3.2.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/javax.servlet-api-3.1.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/javax.ws.rs-api-2.1.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jaxb-api-2.3.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jersey-client-2.39.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jersey-common-2.39.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jersey-container-servlet-2.39.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jersey-container-servlet-core-2.39.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jersey-hk2-2.39.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jersey-server-2.39.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jetty-client-9.4.53.v20231009.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jetty-continuation-9.4.53.v20231009.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jetty-http-9.4.53.v20231009.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jetty-io-9.4.53.v20231009.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jetty-security-9.4.53.v20231009.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jetty-server-9.4.53.v20231009.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jetty-servlet-9.4.53.v20231009.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jetty-servlets-9.4.53.v20231009.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jetty-util-9.4.53.v20231009.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jetty-util-ajax-9.4.53.v20231009.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jline-3.22.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jopt-simple-5.0.4.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jose4j-0.9.4.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jsr305-3.0.2.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/kafka_2.13-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/kafka-clients-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/kafka-group-coordinator-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/kafka-log4j-appender-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/kafka-metadata-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/kafka-raft-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/kafka-server-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/kafka-server-common-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/kafka-shell-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/kafka-storage-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/kafka-storage-api-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/kafka-streams-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/kafka-streams-examples-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/kafka-streams-scala_2.13-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/kafka-streams-test-utils-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/kafka-tools-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/kafka-tools-api-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/lz4-java-1.8.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/maven-artifact-3.8.8.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/metrics-core-2.2.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/metrics-core-4.1.12.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/netty-buffer-4.1.100.Final.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/netty-codec-4.1.100.Final.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/netty-common-4.1.100.Final.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/netty-handler-4.1.100.Final.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/netty-resolver-4.1.100.Final.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/netty-transport-4.1.100.Final.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/netty-transport-classes-epoll-4.1.100.Final.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/netty-transport-native-epoll-4.1.100.Final.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/netty-transport-native-unix-common-4.1.100.Final.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/opentelemetry-proto-1.0.0-alpha.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/osgi-resource-locator-1.0.3.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/paranamer-2.8.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/pcollections-4.0.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/plexus-utils-3.3.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/protobuf-java-3.23.4.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/reflections-0.10.2.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/reload4j-1.2.25.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/rocksdbjni-7.9.2.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/scala-collection-compat_2.13-2.10.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/scala-java8-compat_2.13-1.0.2.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/scala-library-2.13.12.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/scala-logging_2.13-3.9.4.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/scala-reflect-2.13.12.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/slf4j-api-1.7.36.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/slf4j-reload4j-1.7.36.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/snappy-java-1.1.10.5.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/swagger-annotations-2.2.8.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/trogdor-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/zookeeper-3.8.3.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/zookeeper-jute-3.8.3.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/zstd-jni-1.5.5-6.jar
+	os.spec = Windows 11, amd64, 10.0
+	os.vcpus = 4
+ (org.apache.kafka.connect.runtime.WorkerInfo:71)
+[2024-04-06 19:03:07,792] INFO Scanning for plugin classes. This might take a moment ... (org.apache.kafka.connect.cli.AbstractConnectCli:120)
+[2024-04-06 19:03:07,837] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka_2.13-3.7.0\plugins\debezium-connector-mysql (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-06 19:03:07,935] INFO Using up-to-date JsonConverter implementation (io.debezium.converters.CloudEventsConverter:121)
+[2024-04-06 19:03:08,237] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/plugins/debezium-connector-mysql/} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-06 19:03:08,247] INFO Loading plugin from: classpath (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-06 19:03:08,268] INFO Registered loader: jdk.internal.loader.ClassLoaders$AppClassLoader@2c7b84de (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-06 19:03:08,270] INFO Scanning plugins with ServiceLoaderScanner took 434 ms (org.apache.kafka.connect.runtime.isolation.PluginScanner:70)
+[2024-04-06 19:03:08,272] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka_2.13-3.7.0\plugins\debezium-connector-mysql (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-06 19:03:09,443] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/plugins/debezium-connector-mysql/} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-06 19:03:09,446] INFO Loading plugin from: classpath (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-06 19:03:10,902] INFO Registered loader: jdk.internal.loader.ClassLoaders$AppClassLoader@2c7b84de (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-06 19:03:10,903] INFO Scanning plugins with ReflectionScanner took 2631 ms (org.apache.kafka.connect.runtime.isolation.PluginScanner:70)
+[2024-04-06 19:03:10,907] WARN All plugins have ServiceLoader manifests, consider reconfiguring plugin.discovery=service_load (org.apache.kafka.connect.runtime.isolation.Plugins:105)
+[2024-04-06 19:03:10,909] INFO Added plugin 'org.apache.kafka.connect.transforms.ReplaceField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,911] INFO Added plugin 'org.apache.kafka.connect.transforms.Filter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,911] INFO Added plugin 'org.apache.kafka.connect.mirror.MirrorSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,912] INFO Added plugin 'org.apache.kafka.connect.transforms.InsertField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,912] INFO Added plugin 'org.apache.kafka.connect.converters.DoubleConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,913] INFO Added plugin 'org.apache.kafka.connect.connector.policy.AllConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,917] INFO Added plugin 'org.apache.kafka.connect.connector.policy.PrincipalConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,920] INFO Added plugin 'org.apache.kafka.connect.transforms.DropHeaders' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,920] INFO Added plugin 'org.apache.kafka.connect.transforms.Cast$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,920] INFO Added plugin 'org.apache.kafka.connect.storage.SimpleHeaderConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,920] INFO Added plugin 'org.apache.kafka.connect.transforms.InsertHeader' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,921] INFO Added plugin 'io.debezium.converters.BinaryDataConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,922] INFO Added plugin 'org.apache.kafka.common.config.provider.DirectoryConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,922] INFO Added plugin 'org.apache.kafka.connect.transforms.Flatten$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,923] INFO Added plugin 'org.apache.kafka.connect.mirror.MirrorCheckpointConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,923] INFO Added plugin 'org.apache.kafka.connect.transforms.HeaderFrom$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,924] INFO Added plugin 'org.apache.kafka.connect.transforms.SetSchemaMetadata$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,925] INFO Added plugin 'io.debezium.transforms.ExtractNewRecordState' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,925] INFO Added plugin 'io.debezium.converters.ByteArrayConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,925] INFO Added plugin 'io.debezium.transforms.partitions.PartitionRouting' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,926] INFO Added plugin 'org.apache.kafka.connect.transforms.predicates.TopicNameMatches' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,926] INFO Added plugin 'org.apache.kafka.connect.transforms.ReplaceField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,928] INFO Added plugin 'io.debezium.transforms.outbox.EventRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,929] INFO Added plugin 'org.apache.kafka.connect.transforms.SetSchemaMetadata$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,929] INFO Added plugin 'org.apache.kafka.connect.converters.IntegerConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,930] INFO Added plugin 'org.apache.kafka.connect.transforms.predicates.RecordIsTombstone' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,934] INFO Added plugin 'org.apache.kafka.connect.connector.policy.NoneConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,935] INFO Added plugin 'io.debezium.connector.mysql.MySqlConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,936] INFO Added plugin 'org.apache.kafka.connect.converters.ByteArrayConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,936] INFO Added plugin 'org.apache.kafka.connect.transforms.Cast$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,936] INFO Added plugin 'org.apache.kafka.connect.transforms.Flatten$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,937] INFO Added plugin 'org.apache.kafka.connect.rest.basic.auth.extension.BasicAuthSecurityRestExtension' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,937] INFO Added plugin 'org.apache.kafka.connect.transforms.ExtractField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,937] INFO Added plugin 'org.apache.kafka.connect.transforms.TimestampConverter$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,939] INFO Added plugin 'org.apache.kafka.connect.converters.FloatConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,939] INFO Added plugin 'org.apache.kafka.connect.transforms.TimestampConverter$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,940] INFO Added plugin 'io.debezium.transforms.HeaderToValue' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,940] INFO Added plugin 'io.debezium.transforms.SchemaChangeEventFilter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,941] INFO Added plugin 'org.apache.kafka.connect.transforms.TimestampRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,941] INFO Added plugin 'io.debezium.transforms.ExtractSchemaToNewRecord' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,941] INFO Added plugin 'io.debezium.transforms.ByLogicalTableRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,942] INFO Added plugin 'org.apache.kafka.connect.transforms.RegexRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,942] INFO Added plugin 'org.apache.kafka.connect.transforms.HoistField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,943] INFO Added plugin 'org.apache.kafka.connect.transforms.ValueToKey' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,943] INFO Added plugin 'org.apache.kafka.connect.converters.LongConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,943] INFO Added plugin 'org.apache.kafka.common.config.provider.FileConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,945] INFO Added plugin 'org.apache.kafka.connect.json.JsonConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,945] INFO Added plugin 'io.debezium.transforms.TimezoneConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,949] INFO Added plugin 'org.apache.kafka.connect.transforms.HeaderFrom$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,953] INFO Added plugin 'org.apache.kafka.connect.transforms.predicates.HasHeaderKey' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,954] INFO Added plugin 'org.apache.kafka.connect.transforms.MaskField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,955] INFO Added plugin 'org.apache.kafka.common.config.provider.EnvVarConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,955] INFO Added plugin 'io.debezium.transforms.ExtractChangedRecordState' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,955] INFO Added plugin 'org.apache.kafka.connect.storage.StringConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,955] INFO Added plugin 'io.debezium.transforms.tracing.ActivateTracingSpan' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,956] INFO Added plugin 'org.apache.kafka.connect.transforms.MaskField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,956] INFO Added plugin 'io.debezium.connector.mysql.rest.DebeziumMySqlConnectRestExtension' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,957] INFO Added plugin 'org.apache.kafka.connect.transforms.ExtractField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,957] INFO Added plugin 'io.debezium.connector.mysql.transforms.ReadToInsertEvent' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,958] INFO Added plugin 'org.apache.kafka.connect.transforms.InsertField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,958] INFO Added plugin 'org.apache.kafka.connect.converters.BooleanConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,958] INFO Added plugin 'org.apache.kafka.connect.mirror.MirrorHeartbeatConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,958] INFO Added plugin 'io.debezium.converters.CloudEventsConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,959] INFO Added plugin 'org.apache.kafka.connect.transforms.HoistField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,959] INFO Added plugin 'org.apache.kafka.connect.converters.ShortConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:03:10,961] INFO Added alias 'RecordIsTombstone' to plugin 'org.apache.kafka.connect.transforms.predicates.RecordIsTombstone' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:10,963] INFO Added alias 'CloudEventsConverter' to plugin 'io.debezium.converters.CloudEventsConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:10,967] INFO Added alias 'String' to plugin 'org.apache.kafka.connect.storage.StringConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:10,968] INFO Added alias 'MySql' to plugin 'io.debezium.connector.mysql.MySqlConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:10,970] INFO Added alias 'EnvVar' to plugin 'org.apache.kafka.common.config.provider.EnvVarConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:10,971] INFO Added alias 'EnvVarConfigProvider' to plugin 'org.apache.kafka.common.config.provider.EnvVarConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:10,971] INFO Added alias 'MirrorCheckpointConnector' to plugin 'org.apache.kafka.connect.mirror.MirrorCheckpointConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:10,972] INFO Added alias 'Boolean' to plugin 'org.apache.kafka.connect.converters.BooleanConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:10,972] INFO Added alias 'MySqlConnector' to plugin 'io.debezium.connector.mysql.MySqlConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:10,973] INFO Added alias 'HeaderToValue' to plugin 'io.debezium.transforms.HeaderToValue' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:10,974] INFO Added alias 'PartitionRouting' to plugin 'io.debezium.transforms.partitions.PartitionRouting' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:10,974] INFO Added alias 'Json' to plugin 'org.apache.kafka.connect.json.JsonConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:10,975] INFO Added alias 'StringConverter' to plugin 'org.apache.kafka.connect.storage.StringConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:10,975] INFO Added alias 'IntegerConverter' to plugin 'org.apache.kafka.connect.converters.IntegerConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:10,976] INFO Added alias 'Float' to plugin 'org.apache.kafka.connect.converters.FloatConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:10,976] INFO Added alias 'LongConverter' to plugin 'org.apache.kafka.connect.converters.LongConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:10,976] INFO Added alias 'DropHeaders' to plugin 'org.apache.kafka.connect.transforms.DropHeaders' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:10,977] INFO Added alias 'SimpleHeaderConverter' to plugin 'org.apache.kafka.connect.storage.SimpleHeaderConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:10,977] INFO Added alias 'ExtractSchemaToNewRecord' to plugin 'io.debezium.transforms.ExtractSchemaToNewRecord' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:10,977] INFO Added alias 'BinaryData' to plugin 'io.debezium.converters.BinaryDataConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:10,978] INFO Added alias 'DirectoryConfigProvider' to plugin 'org.apache.kafka.common.config.provider.DirectoryConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:10,978] INFO Added alias 'ReadToInsertEvent' to plugin 'io.debezium.connector.mysql.transforms.ReadToInsertEvent' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:10,979] INFO Added alias 'ShortConverter' to plugin 'org.apache.kafka.connect.converters.ShortConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:10,979] INFO Added alias 'CloudEvents' to plugin 'io.debezium.converters.CloudEventsConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:10,984] INFO Added alias 'TimezoneConverter' to plugin 'io.debezium.transforms.TimezoneConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:10,985] INFO Added alias 'BasicAuthSecurityRestExtension' to plugin 'org.apache.kafka.connect.rest.basic.auth.extension.BasicAuthSecurityRestExtension' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:10,986] INFO Added alias 'Simple' to plugin 'org.apache.kafka.connect.storage.SimpleHeaderConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:10,987] INFO Added alias 'AllConnectorClientConfigOverridePolicy' to plugin 'org.apache.kafka.connect.connector.policy.AllConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:10,987] INFO Added alias 'ExtractNewRecordState' to plugin 'io.debezium.transforms.ExtractNewRecordState' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:10,988] INFO Added alias 'MirrorSource' to plugin 'org.apache.kafka.connect.mirror.MirrorSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:10,989] INFO Added alias 'Directory' to plugin 'org.apache.kafka.common.config.provider.DirectoryConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:10,989] INFO Added alias 'MirrorHeartbeat' to plugin 'org.apache.kafka.connect.mirror.MirrorHeartbeatConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:10,990] INFO Added alias 'BooleanConverter' to plugin 'org.apache.kafka.connect.converters.BooleanConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:10,990] INFO Added alias 'HasHeaderKey' to plugin 'org.apache.kafka.connect.transforms.predicates.HasHeaderKey' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:10,991] INFO Added alias 'MirrorCheckpoint' to plugin 'org.apache.kafka.connect.mirror.MirrorCheckpointConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:10,991] INFO Added alias 'ExtractChangedRecordState' to plugin 'io.debezium.transforms.ExtractChangedRecordState' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:10,991] INFO Added alias 'None' to plugin 'org.apache.kafka.connect.connector.policy.NoneConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:10,992] INFO Added alias 'TimestampRouter' to plugin 'org.apache.kafka.connect.transforms.TimestampRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:10,992] INFO Added alias 'Principal' to plugin 'org.apache.kafka.connect.connector.policy.PrincipalConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:10,992] INFO Added alias 'All' to plugin 'org.apache.kafka.connect.connector.policy.AllConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:10,993] INFO Added alias 'JsonConverter' to plugin 'org.apache.kafka.connect.json.JsonConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:10,994] INFO Added alias 'DebeziumMySql' to plugin 'io.debezium.connector.mysql.rest.DebeziumMySqlConnectRestExtension' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:10,995] INFO Added alias 'DebeziumMySqlConnectRestExtension' to plugin 'io.debezium.connector.mysql.rest.DebeziumMySqlConnectRestExtension' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:10,995] INFO Added alias 'RegexRouter' to plugin 'org.apache.kafka.connect.transforms.RegexRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:10,995] INFO Added alias 'NoneConnectorClientConfigOverridePolicy' to plugin 'org.apache.kafka.connect.connector.policy.NoneConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:10,995] INFO Added alias 'Short' to plugin 'org.apache.kafka.connect.converters.ShortConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:10,996] INFO Added alias 'ByLogicalTableRouter' to plugin 'io.debezium.transforms.ByLogicalTableRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:10,999] INFO Added alias 'Double' to plugin 'org.apache.kafka.connect.converters.DoubleConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:11,002] INFO Added alias 'FileConfigProvider' to plugin 'org.apache.kafka.common.config.provider.FileConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:11,003] INFO Added alias 'EventRouter' to plugin 'io.debezium.transforms.outbox.EventRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:11,003] INFO Added alias 'SchemaChangeEventFilter' to plugin 'io.debezium.transforms.SchemaChangeEventFilter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:11,003] INFO Added alias 'Long' to plugin 'org.apache.kafka.connect.converters.LongConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:11,004] INFO Added alias 'File' to plugin 'org.apache.kafka.common.config.provider.FileConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:11,005] INFO Added alias 'FloatConverter' to plugin 'org.apache.kafka.connect.converters.FloatConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:11,005] INFO Added alias 'ActivateTracingSpan' to plugin 'io.debezium.transforms.tracing.ActivateTracingSpan' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:11,005] INFO Added alias 'DoubleConverter' to plugin 'org.apache.kafka.connect.converters.DoubleConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:11,005] INFO Added alias 'BinaryDataConverter' to plugin 'io.debezium.converters.BinaryDataConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:11,006] INFO Added alias 'TopicNameMatches' to plugin 'org.apache.kafka.connect.transforms.predicates.TopicNameMatches' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:11,006] INFO Added alias 'MirrorHeartbeatConnector' to plugin 'org.apache.kafka.connect.mirror.MirrorHeartbeatConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:11,007] INFO Added alias 'InsertHeader' to plugin 'org.apache.kafka.connect.transforms.InsertHeader' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:11,007] INFO Added alias 'MirrorSourceConnector' to plugin 'org.apache.kafka.connect.mirror.MirrorSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:11,008] INFO Added alias 'PrincipalConnectorClientConfigOverridePolicy' to plugin 'org.apache.kafka.connect.connector.policy.PrincipalConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:11,008] INFO Added alias 'ValueToKey' to plugin 'org.apache.kafka.connect.transforms.ValueToKey' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:11,008] INFO Added alias 'Integer' to plugin 'org.apache.kafka.connect.converters.IntegerConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:11,010] INFO Added alias 'Filter' to plugin 'org.apache.kafka.connect.transforms.Filter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:03:11,029] INFO StandaloneConfig values: 
+	access.control.allow.methods = 
+	access.control.allow.origin = 
+	admin.listeners = null
+	auto.include.jmx.reporter = true
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	config.providers = []
+	connector.client.config.override.policy = All
+	header.converter = class org.apache.kafka.connect.storage.SimpleHeaderConverter
+	key.converter = class org.apache.kafka.connect.json.JsonConverter
+	listeners = [http://:8083]
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	offset.flush.interval.ms = 10000
+	offset.flush.timeout.ms = 5000
+	offset.storage.file.filename = /tmp/connect.offsets
+	plugin.discovery = hybrid_warn
+	plugin.path = [C:\Users\mohamed\Documents\Formation\Kafka\1-kafka_2.13-3.7.0\plugins]
+	response.http.headers.config = 
+	rest.advertised.host.name = null
+	rest.advertised.listener = null
+	rest.advertised.port = null
+	rest.extension.classes = []
+	ssl.cipher.suites = null
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	task.shutdown.graceful.timeout.ms = 5000
+	topic.creation.enable = true
+	topic.tracking.allow.reset = true
+	topic.tracking.enable = true
+	value.converter = class org.apache.kafka.connect.json.JsonConverter
+ (org.apache.kafka.connect.runtime.standalone.StandaloneConfig:370)
+[2024-04-06 19:03:11,037] INFO Creating Kafka admin client (org.apache.kafka.connect.runtime.WorkerConfig:283)
+[2024-04-06 19:03:11,042] INFO AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.controllers = []
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	enable.metrics.push = true
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+ (org.apache.kafka.clients.admin.AdminClientConfig:370)
+[2024-04-06 19:03:11,175] INFO These configurations '[offset.flush.interval.ms, key.converter.schemas.enable, offset.storage.file.filename, value.converter.schemas.enable, plugin.path, value.converter, key.converter]' were supplied but are not used yet. (org.apache.kafka.clients.admin.AdminClientConfig:379)
+[2024-04-06 19:03:11,176] INFO Kafka version: 3.7.0 (org.apache.kafka.common.utils.AppInfoParser:124)
+[2024-04-06 19:03:11,176] INFO Kafka commitId: 2ae524ed625438c5 (org.apache.kafka.common.utils.AppInfoParser:125)
+[2024-04-06 19:03:11,176] INFO Kafka startTimeMs: 1712422991175 (org.apache.kafka.common.utils.AppInfoParser:126)
+[2024-04-06 19:03:11,529] INFO Kafka cluster ID: AyQh0BP7Rge3vDlvzhKkOg (org.apache.kafka.connect.runtime.WorkerConfig:300)
+[2024-04-06 19:03:11,531] INFO App info kafka.admin.client for adminclient-1 unregistered (org.apache.kafka.common.utils.AppInfoParser:88)
+[2024-04-06 19:03:11,539] INFO Metrics scheduler closed (org.apache.kafka.common.metrics.Metrics:694)
+[2024-04-06 19:03:11,540] INFO Closing reporter org.apache.kafka.common.metrics.JmxReporter (org.apache.kafka.common.metrics.Metrics:698)
+[2024-04-06 19:03:11,540] INFO Metrics reporters closed (org.apache.kafka.common.metrics.Metrics:704)
+[2024-04-06 19:03:11,549] INFO PublicConfig values: 
+	access.control.allow.methods = 
+	access.control.allow.origin = 
+	admin.listeners = null
+	listeners = [http://:8083]
+	response.http.headers.config = 
+	rest.advertised.host.name = null
+	rest.advertised.listener = null
+	rest.advertised.port = null
+	rest.extension.classes = []
+	ssl.cipher.suites = null
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	topic.tracking.allow.reset = true
+	topic.tracking.enable = true
+ (org.apache.kafka.connect.runtime.rest.RestServerConfig$PublicConfig:370)
+[2024-04-06 19:03:11,571] INFO Logging initialized @4648ms to org.eclipse.jetty.util.log.Slf4jLog (org.eclipse.jetty.util.log:170)
+[2024-04-06 19:03:11,639] INFO Added connector for http://:8083 (org.apache.kafka.connect.runtime.rest.RestServer:111)
+[2024-04-06 19:03:11,640] INFO Initializing REST server (org.apache.kafka.connect.runtime.rest.RestServer:182)
+[2024-04-06 19:03:11,696] INFO jetty-9.4.53.v20231009; built: 2023-10-09T12:29:09.265Z; git: 27bde00a0b95a1d5bbee0eae7984f891d2d0f8c9; jvm 21.0.2+13-LTS-58 (org.eclipse.jetty.server.Server:375)
+[2024-04-06 19:03:11,736] INFO Started http_8083@44e0c3d{HTTP/1.1, (http/1.1)}{0.0.0.0:8083} (org.eclipse.jetty.server.AbstractConnector:333)
+[2024-04-06 19:03:11,737] INFO Started @4814ms (org.eclipse.jetty.server.Server:415)
+[2024-04-06 19:03:11,771] INFO Advertised URI: http://192.168.1.191:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:406)
+[2024-04-06 19:03:11,771] INFO REST server listening at http://192.168.1.191:8083/, advertising URL http://192.168.1.191:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:202)
+[2024-04-06 19:03:11,772] INFO Advertised URI: http://192.168.1.191:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:406)
+[2024-04-06 19:03:11,772] INFO REST admin endpoints at http://192.168.1.191:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:205)
+[2024-04-06 19:03:11,773] INFO Advertised URI: http://192.168.1.191:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:406)
+[2024-04-06 19:03:11,773] INFO Setting up All Policy for ConnectorClientConfigOverride. This will allow all client configurations to be overridden (org.apache.kafka.connect.connector.policy.AllConnectorClientConfigOverridePolicy:44)
+[2024-04-06 19:03:11,777] INFO JsonConverterConfig values: 
+	converter.type = key
+	decimal.format = BASE64
+	replace.null.with.default = true
+	schemas.cache.size = 1000
+	schemas.enable = false
+ (org.apache.kafka.connect.json.JsonConverterConfig:370)
+[2024-04-06 19:03:11,791] INFO Kafka version: 3.7.0 (org.apache.kafka.common.utils.AppInfoParser:124)
+[2024-04-06 19:03:11,792] INFO Kafka commitId: 2ae524ed625438c5 (org.apache.kafka.common.utils.AppInfoParser:125)
+[2024-04-06 19:03:11,792] INFO Kafka startTimeMs: 1712422991791 (org.apache.kafka.common.utils.AppInfoParser:126)
+[2024-04-06 19:03:11,805] INFO JsonConverterConfig values: 
+	converter.type = key
+	decimal.format = BASE64
+	replace.null.with.default = true
+	schemas.cache.size = 1000
+	schemas.enable = false
+ (org.apache.kafka.connect.json.JsonConverterConfig:370)
+[2024-04-06 19:03:11,806] INFO JsonConverterConfig values: 
+	converter.type = value
+	decimal.format = BASE64
+	replace.null.with.default = true
+	schemas.cache.size = 1000
+	schemas.enable = false
+ (org.apache.kafka.connect.json.JsonConverterConfig:370)
+[2024-04-06 19:03:11,817] INFO Kafka Connect worker initialization took 4035ms (org.apache.kafka.connect.cli.AbstractConnectCli:141)
+[2024-04-06 19:03:11,818] INFO Kafka Connect starting (org.apache.kafka.connect.runtime.Connect:51)
+[2024-04-06 19:03:11,822] INFO Herder starting (org.apache.kafka.connect.runtime.standalone.StandaloneHerder:107)
+[2024-04-06 19:03:11,822] INFO Worker starting (org.apache.kafka.connect.runtime.Worker:231)
+[2024-04-06 19:03:11,823] INFO Starting FileOffsetBackingStore with file \tmp\connect.offsets (org.apache.kafka.connect.storage.FileOffsetBackingStore:63)
+[2024-04-06 19:03:11,852] INFO Worker started (org.apache.kafka.connect.runtime.Worker:241)
+[2024-04-06 19:03:11,852] INFO Herder started (org.apache.kafka.connect.runtime.standalone.StandaloneHerder:110)
+[2024-04-06 19:03:11,853] INFO Initializing REST resources (org.apache.kafka.connect.runtime.rest.RestServer:209)
+[2024-04-06 19:03:11,905] INFO Adding admin resources to main listener (org.apache.kafka.connect.runtime.rest.RestServer:227)
+[2024-04-06 19:03:11,956] INFO DefaultSessionIdManager workerName=node0 (org.eclipse.jetty.server.session:334)
+[2024-04-06 19:03:11,957] INFO No SessionScavenger set, using defaults (org.eclipse.jetty.server.session:339)
+[2024-04-06 19:03:11,958] INFO node0 Scavenging every 600000ms (org.eclipse.jetty.server.session:132)
+[2024-04-06 19:03:12,531] INFO Started o.e.j.s.ServletContextHandler@28d97205{/,null,AVAILABLE} (org.eclipse.jetty.server.handler.ContextHandler:921)
+[2024-04-06 19:03:12,532] INFO REST resources initialized; server is started and ready to handle requests (org.apache.kafka.connect.runtime.rest.RestServer:302)
+[2024-04-06 19:03:12,532] INFO Kafka Connect started (org.apache.kafka.connect.runtime.Connect:57)
+[2024-04-06 19:54:46,286] INFO Kafka Connect stopping (org.apache.kafka.connect.runtime.Connect:67)
+[2024-04-06 19:54:46,287] INFO Stopping REST server (org.apache.kafka.connect.runtime.rest.RestServer:348)
+[2024-04-06 19:54:46,294] INFO Stopped http_8083@44e0c3d{HTTP/1.1, (http/1.1)}{0.0.0.0:8083} (org.eclipse.jetty.server.AbstractConnector:383)
+[2024-04-06 19:54:46,296] INFO node0 Stopped scavenging (org.eclipse.jetty.server.session:149)
+[2024-04-06 19:54:46,305] INFO Stopped o.e.j.s.ServletContextHandler@28d97205{/,null,STOPPED} (org.eclipse.jetty.server.handler.ContextHandler:1159)
+[2024-04-06 19:54:46,307] INFO REST server stopped (org.apache.kafka.connect.runtime.rest.RestServer:377)
+[2024-04-06 19:54:46,307] INFO Herder stopping (org.apache.kafka.connect.runtime.standalone.StandaloneHerder:115)
+[2024-04-06 19:54:46,308] INFO Worker stopping (org.apache.kafka.connect.runtime.Worker:248)
+[2024-04-06 19:54:46,309] INFO Stopped FileOffsetBackingStore (org.apache.kafka.connect.storage.FileOffsetBackingStore:71)
+[2024-04-06 19:54:46,311] INFO Metrics scheduler closed (org.apache.kafka.common.metrics.Metrics:694)
+[2024-04-06 19:54:46,313] INFO Closing reporter org.apache.kafka.common.metrics.JmxReporter (org.apache.kafka.common.metrics.Metrics:698)
+[2024-04-06 19:54:46,314] INFO Metrics reporters closed (org.apache.kafka.common.metrics.Metrics:704)
+[2024-04-06 19:54:46,316] INFO App info kafka.connect for 192.168.1.191:8083 unregistered (org.apache.kafka.common.utils.AppInfoParser:88)
+[2024-04-06 19:54:46,319] INFO Worker stopped (org.apache.kafka.connect.runtime.Worker:269)
+[2024-04-06 19:54:46,321] INFO Herder stopped (org.apache.kafka.connect.runtime.standalone.StandaloneHerder:126)
+[2024-04-06 19:54:46,322] INFO Kafka Connect stopped (org.apache.kafka.connect.runtime.Connect:72)
+[2024-04-06 19:54:55,880] INFO Kafka Connect worker initializing ... (org.apache.kafka.connect.cli.AbstractConnectCli:114)
+[2024-04-06 19:54:55,885] INFO WorkerInfo values: 
+	jvm.args = -Xms256M, -Xmx2G, -XX:+UseG1GC, -XX:MaxGCPauseMillis=20, -XX:InitiatingHeapOccupancyPercent=35, -XX:+ExplicitGCInvokesConcurrent, -XX:MaxInlineLevel=15, -Djava.awt.headless=true, -Dcom.sun.management.jmxremote, -Dcom.sun.management.jmxremote.authenticate=false, -Dcom.sun.management.jmxremote.ssl=false, -Dkafka.logs.dir=C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/logs, -Dlog4j.configuration=file:bin/../config/connect-log4j.properties
+	jvm.spec = Oracle Corporation, Java HotSpot(TM) 64-Bit Server VM, 21.0.2, 21.0.2+13-LTS-58
+	jvm.classpath = C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/activation-1.1.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/aopalliance-repackaged-2.6.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/argparse4j-0.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/audience-annotations-0.12.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/caffeine-2.9.3.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/checker-qual-3.19.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/commons-beanutils-1.9.4.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/commons-cli-1.4.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/commons-collections-3.2.2.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/commons-digester-2.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/commons-io-2.11.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/commons-lang3-3.8.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/commons-logging-1.2.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/commons-validator-1.7.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/connect-api-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/connect-basic-auth-extension-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/connect-json-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/connect-mirror-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/connect-mirror-client-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/connect-runtime-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/connect-transforms-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/error_prone_annotations-2.10.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/hk2-api-2.6.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/hk2-locator-2.6.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/hk2-utils-2.6.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jackson-annotations-2.16.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jackson-core-2.16.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jackson-databind-2.16.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jackson-dataformat-csv-2.16.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jackson-datatype-jdk8-2.16.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jackson-jaxrs-base-2.16.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jackson-jaxrs-json-provider-2.16.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jackson-module-jaxb-annotations-2.16.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jackson-module-scala_2.13-2.16.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jakarta.activation-api-1.2.2.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jakarta.annotation-api-1.3.5.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jakarta.inject-2.6.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jakarta.validation-api-2.0.2.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jakarta.ws.rs-api-2.1.6.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jakarta.xml.bind-api-2.3.3.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/javassist-3.29.2-GA.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/javax.activation-api-1.2.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/javax.annotation-api-1.3.2.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/javax.servlet-api-3.1.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/javax.ws.rs-api-2.1.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jaxb-api-2.3.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jersey-client-2.39.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jersey-common-2.39.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jersey-container-servlet-2.39.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jersey-container-servlet-core-2.39.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jersey-hk2-2.39.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jersey-server-2.39.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jetty-client-9.4.53.v20231009.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jetty-continuation-9.4.53.v20231009.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jetty-http-9.4.53.v20231009.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jetty-io-9.4.53.v20231009.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jetty-security-9.4.53.v20231009.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jetty-server-9.4.53.v20231009.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jetty-servlet-9.4.53.v20231009.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jetty-servlets-9.4.53.v20231009.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jetty-util-9.4.53.v20231009.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jetty-util-ajax-9.4.53.v20231009.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jline-3.22.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jopt-simple-5.0.4.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jose4j-0.9.4.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jsr305-3.0.2.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/kafka_2.13-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/kafka-clients-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/kafka-group-coordinator-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/kafka-log4j-appender-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/kafka-metadata-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/kafka-raft-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/kafka-server-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/kafka-server-common-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/kafka-shell-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/kafka-storage-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/kafka-storage-api-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/kafka-streams-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/kafka-streams-examples-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/kafka-streams-scala_2.13-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/kafka-streams-test-utils-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/kafka-tools-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/kafka-tools-api-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/lz4-java-1.8.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/maven-artifact-3.8.8.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/metrics-core-2.2.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/metrics-core-4.1.12.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/netty-buffer-4.1.100.Final.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/netty-codec-4.1.100.Final.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/netty-common-4.1.100.Final.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/netty-handler-4.1.100.Final.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/netty-resolver-4.1.100.Final.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/netty-transport-4.1.100.Final.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/netty-transport-classes-epoll-4.1.100.Final.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/netty-transport-native-epoll-4.1.100.Final.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/netty-transport-native-unix-common-4.1.100.Final.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/opentelemetry-proto-1.0.0-alpha.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/osgi-resource-locator-1.0.3.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/paranamer-2.8.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/pcollections-4.0.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/plexus-utils-3.3.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/protobuf-java-3.23.4.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/reflections-0.10.2.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/reload4j-1.2.25.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/rocksdbjni-7.9.2.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/scala-collection-compat_2.13-2.10.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/scala-java8-compat_2.13-1.0.2.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/scala-library-2.13.12.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/scala-logging_2.13-3.9.4.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/scala-reflect-2.13.12.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/slf4j-api-1.7.36.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/slf4j-reload4j-1.7.36.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/snappy-java-1.1.10.5.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/swagger-annotations-2.2.8.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/trogdor-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/zookeeper-3.8.3.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/zookeeper-jute-3.8.3.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/zstd-jni-1.5.5-6.jar
+	os.spec = Windows 11, amd64, 10.0
+	os.vcpus = 4
+ (org.apache.kafka.connect.runtime.WorkerInfo:71)
+[2024-04-06 19:54:55,892] INFO Scanning for plugin classes. This might take a moment ... (org.apache.kafka.connect.cli.AbstractConnectCli:120)
+[2024-04-06 19:54:55,944] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka_2.13-3.7.0\plugins\confluentinc-kafka-connect-jdbc-10.7.6 (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-06 19:54:56,234] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/plugins/confluentinc-kafka-connect-jdbc-10.7.6/} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-06 19:54:56,451] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka_2.13-3.7.0\plugins\debezium-connector-mysql (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-06 19:54:56,494] INFO Using up-to-date JsonConverter implementation (io.debezium.converters.CloudEventsConverter:121)
+[2024-04-06 19:54:56,563] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/plugins/debezium-connector-mysql/} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-06 19:54:56,572] INFO Loading plugin from: classpath (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-06 19:54:56,584] INFO Registered loader: jdk.internal.loader.ClassLoaders$AppClassLoader@2c7b84de (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-06 19:54:56,587] INFO Scanning plugins with ServiceLoaderScanner took 644 ms (org.apache.kafka.connect.runtime.isolation.PluginScanner:70)
+[2024-04-06 19:54:56,590] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka_2.13-3.7.0\plugins\confluentinc-kafka-connect-jdbc-10.7.6 (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-06 19:54:57,570] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/plugins/confluentinc-kafka-connect-jdbc-10.7.6/} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-06 19:54:57,581] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka_2.13-3.7.0\plugins\debezium-connector-mysql (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-06 19:54:58,562] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/plugins/debezium-connector-mysql/} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-06 19:54:58,565] INFO Loading plugin from: classpath (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-06 19:55:00,033] INFO Registered loader: jdk.internal.loader.ClassLoaders$AppClassLoader@2c7b84de (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-06 19:55:00,038] INFO Scanning plugins with ReflectionScanner took 3448 ms (org.apache.kafka.connect.runtime.isolation.PluginScanner:70)
+[2024-04-06 19:55:00,045] WARN One or more plugins are missing ServiceLoader manifests may not be usable with plugin.discovery=service_load: [
+file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/plugins/confluentinc-kafka-connect-jdbc-10.7.6/	io.confluent.connect.jdbc.JdbcSinkConnector	sink	10.7.6
+file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/plugins/confluentinc-kafka-connect-jdbc-10.7.6/	io.confluent.connect.jdbc.JdbcSourceConnector	source	10.7.6
+]
+Read the documentation at https://kafka.apache.org/documentation.html#connect_plugindiscovery for instructions on migrating your plugins to take advantage of the performance improvements of service_load mode. To silence this warning, set plugin.discovery=only_scan in the worker config. (org.apache.kafka.connect.runtime.isolation.Plugins:122)
+[2024-04-06 19:55:00,052] INFO Added plugin 'org.apache.kafka.connect.transforms.ReplaceField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,055] INFO Added plugin 'org.apache.kafka.connect.transforms.Filter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,056] INFO Added plugin 'org.apache.kafka.connect.mirror.MirrorSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,057] INFO Added plugin 'org.apache.kafka.connect.transforms.InsertField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,058] INFO Added plugin 'org.apache.kafka.connect.converters.DoubleConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,058] INFO Added plugin 'org.apache.kafka.connect.connector.policy.AllConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,059] INFO Added plugin 'org.apache.kafka.connect.connector.policy.PrincipalConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,060] INFO Added plugin 'org.apache.kafka.connect.transforms.DropHeaders' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,060] INFO Added plugin 'org.apache.kafka.connect.transforms.Cast$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,061] INFO Added plugin 'org.apache.kafka.connect.storage.SimpleHeaderConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,061] INFO Added plugin 'org.apache.kafka.connect.transforms.InsertHeader' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,062] INFO Added plugin 'io.debezium.converters.BinaryDataConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,063] INFO Added plugin 'org.apache.kafka.common.config.provider.DirectoryConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,063] INFO Added plugin 'io.confluent.connect.jdbc.JdbcSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,064] INFO Added plugin 'org.apache.kafka.connect.transforms.Flatten$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,070] INFO Added plugin 'org.apache.kafka.connect.mirror.MirrorCheckpointConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,072] INFO Added plugin 'org.apache.kafka.connect.transforms.HeaderFrom$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,073] INFO Added plugin 'org.apache.kafka.connect.transforms.SetSchemaMetadata$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,073] INFO Added plugin 'io.debezium.transforms.ExtractNewRecordState' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,074] INFO Added plugin 'io.debezium.converters.ByteArrayConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,076] INFO Added plugin 'io.debezium.transforms.partitions.PartitionRouting' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,079] INFO Added plugin 'org.apache.kafka.connect.transforms.predicates.TopicNameMatches' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,079] INFO Added plugin 'org.apache.kafka.connect.transforms.ReplaceField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,080] INFO Added plugin 'io.debezium.transforms.outbox.EventRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,080] INFO Added plugin 'org.apache.kafka.connect.transforms.SetSchemaMetadata$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,080] INFO Added plugin 'org.apache.kafka.connect.converters.IntegerConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,081] INFO Added plugin 'org.apache.kafka.connect.transforms.predicates.RecordIsTombstone' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,082] INFO Added plugin 'org.apache.kafka.connect.connector.policy.NoneConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,089] INFO Added plugin 'io.debezium.connector.mysql.MySqlConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,089] INFO Added plugin 'org.apache.kafka.connect.converters.ByteArrayConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,091] INFO Added plugin 'org.apache.kafka.connect.transforms.Cast$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,091] INFO Added plugin 'org.apache.kafka.connect.transforms.Flatten$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,092] INFO Added plugin 'io.confluent.connect.jdbc.JdbcSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,092] INFO Added plugin 'org.apache.kafka.connect.rest.basic.auth.extension.BasicAuthSecurityRestExtension' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,093] INFO Added plugin 'org.apache.kafka.connect.transforms.ExtractField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,094] INFO Added plugin 'org.apache.kafka.connect.transforms.TimestampConverter$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,095] INFO Added plugin 'org.apache.kafka.connect.converters.FloatConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,096] INFO Added plugin 'org.apache.kafka.connect.transforms.TimestampConverter$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,096] INFO Added plugin 'io.debezium.transforms.HeaderToValue' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,097] INFO Added plugin 'io.debezium.transforms.SchemaChangeEventFilter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,097] INFO Added plugin 'org.apache.kafka.connect.transforms.TimestampRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,098] INFO Added plugin 'io.debezium.transforms.ExtractSchemaToNewRecord' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,106] INFO Added plugin 'io.debezium.transforms.ByLogicalTableRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,107] INFO Added plugin 'org.apache.kafka.connect.transforms.RegexRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,107] INFO Added plugin 'org.apache.kafka.connect.transforms.HoistField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,108] INFO Added plugin 'org.apache.kafka.connect.transforms.ValueToKey' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,109] INFO Added plugin 'org.apache.kafka.connect.converters.LongConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,110] INFO Added plugin 'org.apache.kafka.common.config.provider.FileConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,110] INFO Added plugin 'org.apache.kafka.connect.json.JsonConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,111] INFO Added plugin 'io.debezium.transforms.TimezoneConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,111] INFO Added plugin 'org.apache.kafka.connect.transforms.HeaderFrom$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,112] INFO Added plugin 'org.apache.kafka.connect.transforms.predicates.HasHeaderKey' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,112] INFO Added plugin 'org.apache.kafka.connect.transforms.MaskField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,113] INFO Added plugin 'org.apache.kafka.common.config.provider.EnvVarConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,114] INFO Added plugin 'io.debezium.transforms.ExtractChangedRecordState' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,118] INFO Added plugin 'org.apache.kafka.connect.storage.StringConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,123] INFO Added plugin 'io.debezium.transforms.tracing.ActivateTracingSpan' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,123] INFO Added plugin 'org.apache.kafka.connect.transforms.MaskField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,124] INFO Added plugin 'io.debezium.connector.mysql.rest.DebeziumMySqlConnectRestExtension' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,124] INFO Added plugin 'org.apache.kafka.connect.transforms.ExtractField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,124] INFO Added plugin 'io.debezium.connector.mysql.transforms.ReadToInsertEvent' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,125] INFO Added plugin 'org.apache.kafka.connect.transforms.InsertField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,125] INFO Added plugin 'org.apache.kafka.connect.converters.BooleanConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,125] INFO Added plugin 'org.apache.kafka.connect.mirror.MirrorHeartbeatConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,126] INFO Added plugin 'io.debezium.converters.CloudEventsConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,127] INFO Added plugin 'org.apache.kafka.connect.transforms.HoistField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,127] INFO Added plugin 'org.apache.kafka.connect.converters.ShortConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 19:55:00,140] INFO Added alias 'RecordIsTombstone' to plugin 'org.apache.kafka.connect.transforms.predicates.RecordIsTombstone' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,141] INFO Added alias 'CloudEventsConverter' to plugin 'io.debezium.converters.CloudEventsConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,141] INFO Added alias 'String' to plugin 'org.apache.kafka.connect.storage.StringConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,141] INFO Added alias 'MySql' to plugin 'io.debezium.connector.mysql.MySqlConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,142] INFO Added alias 'EnvVar' to plugin 'org.apache.kafka.common.config.provider.EnvVarConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,143] INFO Added alias 'EnvVarConfigProvider' to plugin 'org.apache.kafka.common.config.provider.EnvVarConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,143] INFO Added alias 'MirrorCheckpointConnector' to plugin 'org.apache.kafka.connect.mirror.MirrorCheckpointConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,143] INFO Added alias 'Boolean' to plugin 'org.apache.kafka.connect.converters.BooleanConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,144] INFO Added alias 'MySqlConnector' to plugin 'io.debezium.connector.mysql.MySqlConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,144] INFO Added alias 'HeaderToValue' to plugin 'io.debezium.transforms.HeaderToValue' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,144] INFO Added alias 'PartitionRouting' to plugin 'io.debezium.transforms.partitions.PartitionRouting' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,145] INFO Added alias 'Json' to plugin 'org.apache.kafka.connect.json.JsonConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,145] INFO Added alias 'StringConverter' to plugin 'org.apache.kafka.connect.storage.StringConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,146] INFO Added alias 'IntegerConverter' to plugin 'org.apache.kafka.connect.converters.IntegerConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,146] INFO Added alias 'Float' to plugin 'org.apache.kafka.connect.converters.FloatConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,146] INFO Added alias 'JdbcSource' to plugin 'io.confluent.connect.jdbc.JdbcSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,146] INFO Added alias 'LongConverter' to plugin 'org.apache.kafka.connect.converters.LongConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,147] INFO Added alias 'DropHeaders' to plugin 'org.apache.kafka.connect.transforms.DropHeaders' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,147] INFO Added alias 'SimpleHeaderConverter' to plugin 'org.apache.kafka.connect.storage.SimpleHeaderConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,147] INFO Added alias 'ExtractSchemaToNewRecord' to plugin 'io.debezium.transforms.ExtractSchemaToNewRecord' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,148] INFO Added alias 'BinaryData' to plugin 'io.debezium.converters.BinaryDataConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,149] INFO Added alias 'DirectoryConfigProvider' to plugin 'org.apache.kafka.common.config.provider.DirectoryConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,152] INFO Added alias 'ReadToInsertEvent' to plugin 'io.debezium.connector.mysql.transforms.ReadToInsertEvent' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,153] INFO Added alias 'ShortConverter' to plugin 'org.apache.kafka.connect.converters.ShortConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,153] INFO Added alias 'CloudEvents' to plugin 'io.debezium.converters.CloudEventsConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,154] INFO Added alias 'TimezoneConverter' to plugin 'io.debezium.transforms.TimezoneConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,154] INFO Added alias 'BasicAuthSecurityRestExtension' to plugin 'org.apache.kafka.connect.rest.basic.auth.extension.BasicAuthSecurityRestExtension' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,154] INFO Added alias 'Simple' to plugin 'org.apache.kafka.connect.storage.SimpleHeaderConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,155] INFO Added alias 'AllConnectorClientConfigOverridePolicy' to plugin 'org.apache.kafka.connect.connector.policy.AllConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,155] INFO Added alias 'ExtractNewRecordState' to plugin 'io.debezium.transforms.ExtractNewRecordState' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,155] INFO Added alias 'MirrorSource' to plugin 'org.apache.kafka.connect.mirror.MirrorSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,156] INFO Added alias 'Directory' to plugin 'org.apache.kafka.common.config.provider.DirectoryConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,156] INFO Added alias 'MirrorHeartbeat' to plugin 'org.apache.kafka.connect.mirror.MirrorHeartbeatConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,156] INFO Added alias 'BooleanConverter' to plugin 'org.apache.kafka.connect.converters.BooleanConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,157] INFO Added alias 'HasHeaderKey' to plugin 'org.apache.kafka.connect.transforms.predicates.HasHeaderKey' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,157] INFO Added alias 'MirrorCheckpoint' to plugin 'org.apache.kafka.connect.mirror.MirrorCheckpointConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,157] INFO Added alias 'ExtractChangedRecordState' to plugin 'io.debezium.transforms.ExtractChangedRecordState' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,158] INFO Added alias 'None' to plugin 'org.apache.kafka.connect.connector.policy.NoneConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,158] INFO Added alias 'TimestampRouter' to plugin 'org.apache.kafka.connect.transforms.TimestampRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,159] INFO Added alias 'Principal' to plugin 'org.apache.kafka.connect.connector.policy.PrincipalConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,159] INFO Added alias 'All' to plugin 'org.apache.kafka.connect.connector.policy.AllConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,159] INFO Added alias 'JsonConverter' to plugin 'org.apache.kafka.connect.json.JsonConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,160] INFO Added alias 'DebeziumMySql' to plugin 'io.debezium.connector.mysql.rest.DebeziumMySqlConnectRestExtension' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,160] INFO Added alias 'JdbcSinkConnector' to plugin 'io.confluent.connect.jdbc.JdbcSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,160] INFO Added alias 'DebeziumMySqlConnectRestExtension' to plugin 'io.debezium.connector.mysql.rest.DebeziumMySqlConnectRestExtension' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,161] INFO Added alias 'JdbcSink' to plugin 'io.confluent.connect.jdbc.JdbcSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,161] INFO Added alias 'RegexRouter' to plugin 'org.apache.kafka.connect.transforms.RegexRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,161] INFO Added alias 'JdbcSourceConnector' to plugin 'io.confluent.connect.jdbc.JdbcSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,162] INFO Added alias 'NoneConnectorClientConfigOverridePolicy' to plugin 'org.apache.kafka.connect.connector.policy.NoneConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,162] INFO Added alias 'Short' to plugin 'org.apache.kafka.connect.converters.ShortConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,163] INFO Added alias 'ByLogicalTableRouter' to plugin 'io.debezium.transforms.ByLogicalTableRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,163] INFO Added alias 'Double' to plugin 'org.apache.kafka.connect.converters.DoubleConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,164] INFO Added alias 'FileConfigProvider' to plugin 'org.apache.kafka.common.config.provider.FileConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,164] INFO Added alias 'EventRouter' to plugin 'io.debezium.transforms.outbox.EventRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,164] INFO Added alias 'SchemaChangeEventFilter' to plugin 'io.debezium.transforms.SchemaChangeEventFilter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,165] INFO Added alias 'Long' to plugin 'org.apache.kafka.connect.converters.LongConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,167] INFO Added alias 'File' to plugin 'org.apache.kafka.common.config.provider.FileConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,167] INFO Added alias 'FloatConverter' to plugin 'org.apache.kafka.connect.converters.FloatConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,168] INFO Added alias 'ActivateTracingSpan' to plugin 'io.debezium.transforms.tracing.ActivateTracingSpan' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,168] INFO Added alias 'DoubleConverter' to plugin 'org.apache.kafka.connect.converters.DoubleConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,169] INFO Added alias 'BinaryDataConverter' to plugin 'io.debezium.converters.BinaryDataConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,169] INFO Added alias 'TopicNameMatches' to plugin 'org.apache.kafka.connect.transforms.predicates.TopicNameMatches' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,171] INFO Added alias 'MirrorHeartbeatConnector' to plugin 'org.apache.kafka.connect.mirror.MirrorHeartbeatConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,172] INFO Added alias 'InsertHeader' to plugin 'org.apache.kafka.connect.transforms.InsertHeader' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,172] INFO Added alias 'MirrorSourceConnector' to plugin 'org.apache.kafka.connect.mirror.MirrorSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,172] INFO Added alias 'PrincipalConnectorClientConfigOverridePolicy' to plugin 'org.apache.kafka.connect.connector.policy.PrincipalConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,173] INFO Added alias 'ValueToKey' to plugin 'org.apache.kafka.connect.transforms.ValueToKey' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,173] INFO Added alias 'Integer' to plugin 'org.apache.kafka.connect.converters.IntegerConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,173] INFO Added alias 'Filter' to plugin 'org.apache.kafka.connect.transforms.Filter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 19:55:00,188] INFO StandaloneConfig values: 
+	access.control.allow.methods = 
+	access.control.allow.origin = 
+	admin.listeners = null
+	auto.include.jmx.reporter = true
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	config.providers = []
+	connector.client.config.override.policy = All
+	header.converter = class org.apache.kafka.connect.storage.SimpleHeaderConverter
+	key.converter = class org.apache.kafka.connect.json.JsonConverter
+	listeners = [http://:8083]
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	offset.flush.interval.ms = 10000
+	offset.flush.timeout.ms = 5000
+	offset.storage.file.filename = /tmp/connect.offsets
+	plugin.discovery = hybrid_warn
+	plugin.path = [C:\Users\mohamed\Documents\Formation\Kafka\1-kafka_2.13-3.7.0\plugins]
+	response.http.headers.config = 
+	rest.advertised.host.name = null
+	rest.advertised.listener = null
+	rest.advertised.port = null
+	rest.extension.classes = []
+	ssl.cipher.suites = null
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	task.shutdown.graceful.timeout.ms = 5000
+	topic.creation.enable = true
+	topic.tracking.allow.reset = true
+	topic.tracking.enable = true
+	value.converter = class org.apache.kafka.connect.json.JsonConverter
+ (org.apache.kafka.connect.runtime.standalone.StandaloneConfig:370)
+[2024-04-06 19:55:00,191] INFO Creating Kafka admin client (org.apache.kafka.connect.runtime.WorkerConfig:283)
+[2024-04-06 19:55:00,195] INFO AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.controllers = []
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	enable.metrics.push = true
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+ (org.apache.kafka.clients.admin.AdminClientConfig:370)
+[2024-04-06 19:55:00,323] INFO These configurations '[offset.flush.interval.ms, key.converter.schemas.enable, offset.storage.file.filename, value.converter.schemas.enable, plugin.path, value.converter, key.converter]' were supplied but are not used yet. (org.apache.kafka.clients.admin.AdminClientConfig:379)
+[2024-04-06 19:55:00,324] INFO Kafka version: 3.7.0 (org.apache.kafka.common.utils.AppInfoParser:124)
+[2024-04-06 19:55:00,324] INFO Kafka commitId: 2ae524ed625438c5 (org.apache.kafka.common.utils.AppInfoParser:125)
+[2024-04-06 19:55:00,325] INFO Kafka startTimeMs: 1712426100324 (org.apache.kafka.common.utils.AppInfoParser:126)
+[2024-04-06 19:55:00,645] INFO Kafka cluster ID: AyQh0BP7Rge3vDlvzhKkOg (org.apache.kafka.connect.runtime.WorkerConfig:300)
+[2024-04-06 19:55:00,646] INFO App info kafka.admin.client for adminclient-1 unregistered (org.apache.kafka.common.utils.AppInfoParser:88)
+[2024-04-06 19:55:00,654] INFO Metrics scheduler closed (org.apache.kafka.common.metrics.Metrics:694)
+[2024-04-06 19:55:00,655] INFO Closing reporter org.apache.kafka.common.metrics.JmxReporter (org.apache.kafka.common.metrics.Metrics:698)
+[2024-04-06 19:55:00,655] INFO Metrics reporters closed (org.apache.kafka.common.metrics.Metrics:704)
+[2024-04-06 19:55:00,662] INFO PublicConfig values: 
+	access.control.allow.methods = 
+	access.control.allow.origin = 
+	admin.listeners = null
+	listeners = [http://:8083]
+	response.http.headers.config = 
+	rest.advertised.host.name = null
+	rest.advertised.listener = null
+	rest.advertised.port = null
+	rest.extension.classes = []
+	ssl.cipher.suites = null
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	topic.tracking.allow.reset = true
+	topic.tracking.enable = true
+ (org.apache.kafka.connect.runtime.rest.RestServerConfig$PublicConfig:370)
+[2024-04-06 19:55:00,692] INFO Logging initialized @5525ms to org.eclipse.jetty.util.log.Slf4jLog (org.eclipse.jetty.util.log:170)
+[2024-04-06 19:55:00,802] INFO Added connector for http://:8083 (org.apache.kafka.connect.runtime.rest.RestServer:111)
+[2024-04-06 19:55:00,803] INFO Initializing REST server (org.apache.kafka.connect.runtime.rest.RestServer:182)
+[2024-04-06 19:55:00,856] INFO jetty-9.4.53.v20231009; built: 2023-10-09T12:29:09.265Z; git: 27bde00a0b95a1d5bbee0eae7984f891d2d0f8c9; jvm 21.0.2+13-LTS-58 (org.eclipse.jetty.server.Server:375)
+[2024-04-06 19:55:00,888] INFO Started http_8083@1af29a19{HTTP/1.1, (http/1.1)}{0.0.0.0:8083} (org.eclipse.jetty.server.AbstractConnector:333)
+[2024-04-06 19:55:00,888] INFO Started @5721ms (org.eclipse.jetty.server.Server:415)
+[2024-04-06 19:55:00,909] INFO Advertised URI: http://192.168.1.191:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:406)
+[2024-04-06 19:55:00,910] INFO REST server listening at http://192.168.1.191:8083/, advertising URL http://192.168.1.191:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:202)
+[2024-04-06 19:55:00,910] INFO Advertised URI: http://192.168.1.191:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:406)
+[2024-04-06 19:55:00,911] INFO REST admin endpoints at http://192.168.1.191:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:205)
+[2024-04-06 19:55:00,911] INFO Advertised URI: http://192.168.1.191:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:406)
+[2024-04-06 19:55:00,912] INFO Setting up All Policy for ConnectorClientConfigOverride. This will allow all client configurations to be overridden (org.apache.kafka.connect.connector.policy.AllConnectorClientConfigOverridePolicy:44)
+[2024-04-06 19:55:00,920] INFO JsonConverterConfig values: 
+	converter.type = key
+	decimal.format = BASE64
+	replace.null.with.default = true
+	schemas.cache.size = 1000
+	schemas.enable = false
+ (org.apache.kafka.connect.json.JsonConverterConfig:370)
+[2024-04-06 19:55:00,935] INFO Kafka version: 3.7.0 (org.apache.kafka.common.utils.AppInfoParser:124)
+[2024-04-06 19:55:00,936] INFO Kafka commitId: 2ae524ed625438c5 (org.apache.kafka.common.utils.AppInfoParser:125)
+[2024-04-06 19:55:00,937] INFO Kafka startTimeMs: 1712426100935 (org.apache.kafka.common.utils.AppInfoParser:126)
+[2024-04-06 19:55:00,943] INFO JsonConverterConfig values: 
+	converter.type = key
+	decimal.format = BASE64
+	replace.null.with.default = true
+	schemas.cache.size = 1000
+	schemas.enable = false
+ (org.apache.kafka.connect.json.JsonConverterConfig:370)
+[2024-04-06 19:55:00,944] INFO JsonConverterConfig values: 
+	converter.type = value
+	decimal.format = BASE64
+	replace.null.with.default = true
+	schemas.cache.size = 1000
+	schemas.enable = false
+ (org.apache.kafka.connect.json.JsonConverterConfig:370)
+[2024-04-06 19:55:00,956] INFO Kafka Connect worker initialization took 5074ms (org.apache.kafka.connect.cli.AbstractConnectCli:141)
+[2024-04-06 19:55:00,956] INFO Kafka Connect starting (org.apache.kafka.connect.runtime.Connect:51)
+[2024-04-06 19:55:00,958] INFO Herder starting (org.apache.kafka.connect.runtime.standalone.StandaloneHerder:107)
+[2024-04-06 19:55:00,959] INFO Worker starting (org.apache.kafka.connect.runtime.Worker:231)
+[2024-04-06 19:55:00,959] INFO Starting FileOffsetBackingStore with file \tmp\connect.offsets (org.apache.kafka.connect.storage.FileOffsetBackingStore:63)
+[2024-04-06 19:55:00,993] INFO Worker started (org.apache.kafka.connect.runtime.Worker:241)
+[2024-04-06 19:55:00,994] INFO Herder started (org.apache.kafka.connect.runtime.standalone.StandaloneHerder:110)
+[2024-04-06 19:55:00,994] INFO Initializing REST resources (org.apache.kafka.connect.runtime.rest.RestServer:209)
+[2024-04-06 19:55:01,059] INFO Adding admin resources to main listener (org.apache.kafka.connect.runtime.rest.RestServer:227)
+[2024-04-06 19:55:01,117] INFO DefaultSessionIdManager workerName=node0 (org.eclipse.jetty.server.session:334)
+[2024-04-06 19:55:01,118] INFO No SessionScavenger set, using defaults (org.eclipse.jetty.server.session:339)
+[2024-04-06 19:55:01,120] INFO node0 Scavenging every 660000ms (org.eclipse.jetty.server.session:132)
+[2024-04-06 19:55:01,668] INFO Started o.e.j.s.ServletContextHandler@1f4083ac{/,null,AVAILABLE} (org.eclipse.jetty.server.handler.ContextHandler:921)
+[2024-04-06 19:55:01,669] INFO REST resources initialized; server is started and ready to handle requests (org.apache.kafka.connect.runtime.rest.RestServer:302)
+[2024-04-06 19:55:01,669] INFO Kafka Connect started (org.apache.kafka.connect.runtime.Connect:57)

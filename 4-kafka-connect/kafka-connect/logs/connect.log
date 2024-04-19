@@ -1,0 +1,1485 @@
+[2024-04-07 10:02:29,103] INFO Kafka Connect stopping (org.apache.kafka.connect.runtime.Connect:67)
+[2024-04-07 10:02:29,109] INFO Stopping REST server (org.apache.kafka.connect.runtime.rest.RestServer:348)
+[2024-04-07 10:02:29,120] INFO Stopped http_8083@1ad7f684{HTTP/1.1, (http/1.1)}{0.0.0.0:8083} (org.eclipse.jetty.server.AbstractConnector:383)
+[2024-04-07 10:02:29,128] INFO node0 Stopped scavenging (org.eclipse.jetty.server.session:149)
+[2024-04-07 10:02:29,135] INFO Stopped o.e.j.s.ServletContextHandler@7e579cda{/,null,STOPPED} (org.eclipse.jetty.server.handler.ContextHandler:1159)
+[2024-04-07 10:02:29,139] INFO REST server stopped (org.apache.kafka.connect.runtime.rest.RestServer:377)
+[2024-04-07 10:02:29,140] INFO Herder stopping (org.apache.kafka.connect.runtime.standalone.StandaloneHerder:115)
+[2024-04-07 10:02:29,144] INFO [local-file-source|task-0] Stopping task local-file-source-0 (org.apache.kafka.connect.runtime.Worker:1009)
+[2024-04-07 10:02:29,678] INFO [local-file-source|task-0] [Producer clientId=connector-producer-local-file-source-0] Closing the Kafka producer with timeoutMillis = 30000 ms. (org.apache.kafka.clients.producer.KafkaProducer:1346)
+[2024-04-07 10:02:29,703] INFO [local-file-source|task-0] Metrics scheduler closed (org.apache.kafka.common.metrics.Metrics:694)
+[2024-04-07 10:02:29,705] INFO [local-file-source|task-0] Closing reporter org.apache.kafka.common.metrics.JmxReporter (org.apache.kafka.common.metrics.Metrics:698)
+[2024-04-07 10:02:29,711] INFO [local-file-source|task-0] Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter (org.apache.kafka.common.metrics.Metrics:698)
+[2024-04-07 10:02:29,714] INFO [local-file-source|task-0] Metrics reporters closed (org.apache.kafka.common.metrics.Metrics:704)
+[2024-04-07 10:02:29,716] INFO [local-file-source|task-0] App info kafka.producer for connector-producer-local-file-source-0 unregistered (org.apache.kafka.common.utils.AppInfoParser:88)
+[2024-04-07 10:02:29,728] INFO [local-file-source|worker] Stopping connector local-file-source (org.apache.kafka.connect.runtime.Worker:420)
+[2024-04-07 10:02:29,729] INFO [local-file-source|worker] Scheduled shutdown for WorkerConnector{id=local-file-source} (org.apache.kafka.connect.runtime.WorkerConnector:267)
+[2024-04-07 10:02:29,731] INFO [local-file-source|worker] Completed shutdown for WorkerConnector{id=local-file-source} (org.apache.kafka.connect.runtime.WorkerConnector:287)
+[2024-04-07 10:02:29,732] INFO Worker stopping (org.apache.kafka.connect.runtime.Worker:248)
+[2024-04-07 10:02:29,734] INFO Stopped FileOffsetBackingStore (org.apache.kafka.connect.storage.FileOffsetBackingStore:71)
+[2024-04-07 10:02:29,736] INFO Metrics scheduler closed (org.apache.kafka.common.metrics.Metrics:694)
+[2024-04-07 10:02:29,736] INFO Closing reporter org.apache.kafka.common.metrics.JmxReporter (org.apache.kafka.common.metrics.Metrics:698)
+[2024-04-07 10:02:29,737] INFO Metrics reporters closed (org.apache.kafka.common.metrics.Metrics:704)
+[2024-04-07 10:02:29,738] INFO App info kafka.connect for 192.168.1.191:8083 unregistered (org.apache.kafka.common.utils.AppInfoParser:88)
+[2024-04-07 10:02:29,739] INFO Worker stopped (org.apache.kafka.connect.runtime.Worker:269)
+[2024-04-07 10:02:29,743] INFO Herder stopped (org.apache.kafka.connect.runtime.standalone.StandaloneHerder:126)
+[2024-04-07 10:02:29,743] INFO Kafka Connect stopped (org.apache.kafka.connect.runtime.Connect:72)
+[2024-04-07 10:03:11,453] INFO Kafka Connect worker initializing ... (org.apache.kafka.connect.cli.AbstractConnectCli:114)
+[2024-04-07 10:03:11,459] INFO WorkerInfo values: 
+	jvm.args = -Xms256M, -Xmx2G, -XX:+UseG1GC, -XX:MaxGCPauseMillis=20, -XX:InitiatingHeapOccupancyPercent=35, -XX:+ExplicitGCInvokesConcurrent, -XX:MaxInlineLevel=15, -Djava.awt.headless=true, -Dcom.sun.management.jmxremote, -Dcom.sun.management.jmxremote.authenticate=false, -Dcom.sun.management.jmxremote.ssl=false, -Dkafka.logs.dir=C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/logs, -Dlog4j.configuration=file:bin/../config/connect-log4j.properties
+	jvm.spec = Oracle Corporation, Java HotSpot(TM) 64-Bit Server VM, 21.0.2, 21.0.2+13-LTS-58
+	jvm.classpath = C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/activation-1.1.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/aopalliance-repackaged-2.6.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/argparse4j-0.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/audience-annotations-0.12.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/caffeine-2.9.3.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/checker-qual-3.19.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/commons-beanutils-1.9.4.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/commons-cli-1.4.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/commons-collections-3.2.2.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/commons-digester-2.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/commons-io-2.11.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/commons-lang3-3.8.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/commons-logging-1.2.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/commons-validator-1.7.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/connect-api-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/connect-basic-auth-extension-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/connect-json-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/connect-mirror-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/connect-mirror-client-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/connect-runtime-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/connect-transforms-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/error_prone_annotations-2.10.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/hk2-api-2.6.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/hk2-locator-2.6.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/hk2-utils-2.6.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jackson-annotations-2.16.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jackson-core-2.16.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jackson-databind-2.16.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jackson-dataformat-csv-2.16.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jackson-datatype-jdk8-2.16.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jackson-jaxrs-base-2.16.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jackson-jaxrs-json-provider-2.16.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jackson-module-jaxb-annotations-2.16.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jackson-module-scala_2.13-2.16.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jakarta.activation-api-1.2.2.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jakarta.annotation-api-1.3.5.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jakarta.inject-2.6.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jakarta.validation-api-2.0.2.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jakarta.ws.rs-api-2.1.6.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jakarta.xml.bind-api-2.3.3.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/javassist-3.29.2-GA.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/javax.activation-api-1.2.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/javax.annotation-api-1.3.2.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/javax.servlet-api-3.1.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/javax.ws.rs-api-2.1.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jaxb-api-2.3.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jersey-client-2.39.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jersey-common-2.39.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jersey-container-servlet-2.39.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jersey-container-servlet-core-2.39.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jersey-hk2-2.39.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jersey-server-2.39.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jetty-client-9.4.53.v20231009.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jetty-continuation-9.4.53.v20231009.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jetty-http-9.4.53.v20231009.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jetty-io-9.4.53.v20231009.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jetty-security-9.4.53.v20231009.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jetty-server-9.4.53.v20231009.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jetty-servlet-9.4.53.v20231009.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jetty-servlets-9.4.53.v20231009.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jetty-util-9.4.53.v20231009.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jetty-util-ajax-9.4.53.v20231009.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jline-3.22.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jopt-simple-5.0.4.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jose4j-0.9.4.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jsr305-3.0.2.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/kafka_2.13-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/kafka-clients-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/kafka-group-coordinator-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/kafka-log4j-appender-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/kafka-metadata-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/kafka-raft-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/kafka-server-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/kafka-server-common-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/kafka-shell-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/kafka-storage-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/kafka-storage-api-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/kafka-streams-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/kafka-streams-examples-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/kafka-streams-scala_2.13-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/kafka-streams-test-utils-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/kafka-tools-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/kafka-tools-api-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/lz4-java-1.8.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/maven-artifact-3.8.8.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/metrics-core-2.2.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/metrics-core-4.1.12.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/netty-buffer-4.1.100.Final.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/netty-codec-4.1.100.Final.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/netty-common-4.1.100.Final.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/netty-handler-4.1.100.Final.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/netty-resolver-4.1.100.Final.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/netty-transport-4.1.100.Final.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/netty-transport-classes-epoll-4.1.100.Final.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/netty-transport-native-epoll-4.1.100.Final.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/netty-transport-native-unix-common-4.1.100.Final.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/opentelemetry-proto-1.0.0-alpha.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/osgi-resource-locator-1.0.3.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/paranamer-2.8.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/pcollections-4.0.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/plexus-utils-3.3.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/protobuf-java-3.23.4.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/reflections-0.10.2.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/reload4j-1.2.25.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/rocksdbjni-7.9.2.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/scala-collection-compat_2.13-2.10.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/scala-java8-compat_2.13-1.0.2.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/scala-library-2.13.12.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/scala-logging_2.13-3.9.4.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/scala-reflect-2.13.12.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/slf4j-api-1.7.36.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/slf4j-reload4j-1.7.36.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/snappy-java-1.1.10.5.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/swagger-annotations-2.2.8.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/trogdor-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/zookeeper-3.8.3.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/zookeeper-jute-3.8.3.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/zstd-jni-1.5.5-6.jar
+	os.spec = Windows 11, amd64, 10.0
+	os.vcpus = 4
+ (org.apache.kafka.connect.runtime.WorkerInfo:71)
+[2024-04-07 10:03:11,464] INFO Scanning for plugin classes. This might take a moment ... (org.apache.kafka.connect.cli.AbstractConnectCli:120)
+[2024-04-07 10:03:11,531] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\activation-1.1.1.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:11,824] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/activation-1.1.1.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:11,826] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\aopalliance-repackaged-2.6.1.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:11,844] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/aopalliance-repackaged-2.6.1.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:11,845] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\argparse4j-0.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:11,884] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/argparse4j-0.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:11,885] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\audience-annotations-0.12.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:11,915] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/audience-annotations-0.12.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:11,917] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\caffeine-2.9.3.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:11,944] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/caffeine-2.9.3.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:11,945] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\checker-qual-3.19.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:11,967] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/checker-qual-3.19.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:11,968] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\commons-beanutils-1.9.4.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:11,990] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/commons-beanutils-1.9.4.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:11,994] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\commons-cli-1.4.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,011] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/commons-cli-1.4.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,012] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\commons-collections-3.2.2.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,035] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/commons-collections-3.2.2.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,036] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\commons-digester-2.1.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,058] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/commons-digester-2.1.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,062] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\commons-io-2.11.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,089] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/commons-io-2.11.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,093] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\commons-lang3-3.8.1.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,110] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/commons-lang3-3.8.1.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,113] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\commons-logging-1.2.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,126] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/commons-logging-1.2.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,128] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\commons-validator-1.7.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,144] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/commons-validator-1.7.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,145] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\connect-api-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,176] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/connect-api-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,177] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\connect-basic-auth-extension-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,191] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/connect-basic-auth-extension-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,192] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\connect-file-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,210] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/connect-file-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,211] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\connect-json-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,239] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/connect-json-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,240] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\connect-mirror-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,255] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/connect-mirror-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,256] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\connect-mirror-client-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,273] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/connect-mirror-client-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,277] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\connect-runtime-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,303] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/connect-runtime-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,304] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\connect-transforms-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,355] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/connect-transforms-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,356] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\error_prone_annotations-2.10.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,370] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/error_prone_annotations-2.10.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,371] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\hk2-api-2.6.1.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,389] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/hk2-api-2.6.1.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,390] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\hk2-locator-2.6.1.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,404] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/hk2-locator-2.6.1.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,405] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\hk2-utils-2.6.1.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,420] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/hk2-utils-2.6.1.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,422] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jackson-annotations-2.16.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,433] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jackson-annotations-2.16.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,435] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jackson-core-2.16.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,449] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jackson-core-2.16.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,450] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jackson-databind-2.16.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,477] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jackson-databind-2.16.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,478] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jackson-dataformat-csv-2.16.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,494] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jackson-dataformat-csv-2.16.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,495] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jackson-datatype-jdk8-2.16.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,520] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jackson-datatype-jdk8-2.16.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,522] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jackson-jaxrs-base-2.16.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,539] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jackson-jaxrs-base-2.16.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,542] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jackson-jaxrs-json-provider-2.16.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,562] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jackson-jaxrs-json-provider-2.16.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,563] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jackson-module-jaxb-annotations-2.16.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,577] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jackson-module-jaxb-annotations-2.16.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,578] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jackson-module-scala_2.13-2.16.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,589] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jackson-module-scala_2.13-2.16.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,589] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jakarta.activation-api-1.2.2.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,601] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jakarta.activation-api-1.2.2.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,603] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jakarta.annotation-api-1.3.5.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,617] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jakarta.annotation-api-1.3.5.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,620] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jakarta.inject-2.6.1.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,637] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jakarta.inject-2.6.1.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,639] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jakarta.validation-api-2.0.2.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,649] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jakarta.validation-api-2.0.2.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,650] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jakarta.ws.rs-api-2.1.6.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,660] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jakarta.ws.rs-api-2.1.6.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,661] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jakarta.xml.bind-api-2.3.3.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,668] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jakarta.xml.bind-api-2.3.3.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,670] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\javassist-3.29.2-GA.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,679] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/javassist-3.29.2-GA.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,681] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\javax.activation-api-1.2.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,687] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/javax.activation-api-1.2.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,688] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\javax.annotation-api-1.3.2.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,698] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/javax.annotation-api-1.3.2.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,700] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\javax.servlet-api-3.1.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,717] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/javax.servlet-api-3.1.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,718] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\javax.ws.rs-api-2.1.1.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,730] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/javax.ws.rs-api-2.1.1.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,735] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jaxb-api-2.3.1.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,751] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jaxb-api-2.3.1.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,754] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jersey-client-2.39.1.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,767] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jersey-client-2.39.1.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,773] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jersey-common-2.39.1.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,796] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jersey-common-2.39.1.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,802] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jersey-container-servlet-2.39.1.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,811] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jersey-container-servlet-2.39.1.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,812] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jersey-container-servlet-core-2.39.1.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,823] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jersey-container-servlet-core-2.39.1.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,826] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jersey-hk2-2.39.1.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,836] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jersey-hk2-2.39.1.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,838] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jersey-server-2.39.1.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,855] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jersey-server-2.39.1.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,859] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jetty-client-9.4.53.v20231009.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,873] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jetty-client-9.4.53.v20231009.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,878] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jetty-continuation-9.4.53.v20231009.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,903] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jetty-continuation-9.4.53.v20231009.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,905] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jetty-http-9.4.53.v20231009.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,922] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jetty-http-9.4.53.v20231009.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,927] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jetty-io-9.4.53.v20231009.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,946] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jetty-io-9.4.53.v20231009.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,946] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jetty-security-9.4.53.v20231009.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,953] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jetty-security-9.4.53.v20231009.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,954] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jetty-server-9.4.53.v20231009.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,968] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jetty-server-9.4.53.v20231009.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,970] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jetty-servlet-9.4.53.v20231009.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:12,993] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jetty-servlet-9.4.53.v20231009.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:12,995] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jetty-servlets-9.4.53.v20231009.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,012] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jetty-servlets-9.4.53.v20231009.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,019] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jetty-util-9.4.53.v20231009.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,032] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jetty-util-9.4.53.v20231009.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,035] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jetty-util-ajax-9.4.53.v20231009.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,061] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jetty-util-ajax-9.4.53.v20231009.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,063] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jline-3.22.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,078] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jline-3.22.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,079] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jopt-simple-5.0.4.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,101] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jopt-simple-5.0.4.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,105] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jose4j-0.9.4.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,138] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jose4j-0.9.4.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,139] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jsr305-3.0.2.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,154] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jsr305-3.0.2.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,155] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\kafka-clients-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,171] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/kafka-clients-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,173] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\kafka-group-coordinator-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,184] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/kafka-group-coordinator-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,186] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\kafka-log4j-appender-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,200] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/kafka-log4j-appender-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,202] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\kafka-metadata-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,222] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/kafka-metadata-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,229] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\kafka-raft-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,243] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/kafka-raft-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,245] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\kafka-server-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,258] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/kafka-server-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,260] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\kafka-server-common-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,270] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/kafka-server-common-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,271] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\kafka-shell-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,282] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/kafka-shell-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,283] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\kafka-storage-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,292] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/kafka-storage-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,293] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\kafka-storage-api-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,299] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/kafka-storage-api-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,301] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\kafka-streams-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,311] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/kafka-streams-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,312] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\kafka-streams-examples-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,321] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/kafka-streams-examples-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,321] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\kafka-streams-scala_2.13-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,326] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/kafka-streams-scala_2.13-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,327] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\kafka-streams-test-utils-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,332] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/kafka-streams-test-utils-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,334] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\kafka-tools-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,339] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/kafka-tools-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,342] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\kafka-tools-api-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,354] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/kafka-tools-api-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,355] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\kafka_2.13-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,363] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/kafka_2.13-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,363] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\lz4-java-1.8.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,369] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/lz4-java-1.8.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,371] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\maven-artifact-3.8.8.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,377] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/maven-artifact-3.8.8.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,378] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\metrics-core-2.2.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,384] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/metrics-core-2.2.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,386] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\metrics-core-4.1.12.1.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,392] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/metrics-core-4.1.12.1.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,393] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\netty-buffer-4.1.100.Final.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,403] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/netty-buffer-4.1.100.Final.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,404] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\netty-codec-4.1.100.Final.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,416] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/netty-codec-4.1.100.Final.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,417] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\netty-common-4.1.100.Final.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,423] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/netty-common-4.1.100.Final.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,426] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\netty-handler-4.1.100.Final.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,437] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/netty-handler-4.1.100.Final.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,438] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\netty-resolver-4.1.100.Final.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,453] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/netty-resolver-4.1.100.Final.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,456] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\netty-transport-4.1.100.Final.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,468] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/netty-transport-4.1.100.Final.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,472] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\netty-transport-classes-epoll-4.1.100.Final.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,494] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/netty-transport-classes-epoll-4.1.100.Final.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,501] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\netty-transport-native-epoll-4.1.100.Final.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,529] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/netty-transport-native-epoll-4.1.100.Final.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,534] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\netty-transport-native-unix-common-4.1.100.Final.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,552] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/netty-transport-native-unix-common-4.1.100.Final.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,554] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\opentelemetry-proto-1.0.0-alpha.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,564] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/opentelemetry-proto-1.0.0-alpha.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,572] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\osgi-resource-locator-1.0.3.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,588] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/osgi-resource-locator-1.0.3.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,594] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\paranamer-2.8.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,610] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/paranamer-2.8.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,612] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\pcollections-4.0.1.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,636] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/pcollections-4.0.1.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,638] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\plexus-utils-3.3.1.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,653] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/plexus-utils-3.3.1.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,655] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\protobuf-java-3.23.4.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,676] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/protobuf-java-3.23.4.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,679] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\reflections-0.10.2.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,700] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/reflections-0.10.2.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,702] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\reload4j-1.2.25.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,720] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/reload4j-1.2.25.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,722] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\rocksdbjni-7.9.2.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,734] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/rocksdbjni-7.9.2.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,737] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\scala-collection-compat_2.13-2.10.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,750] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/scala-collection-compat_2.13-2.10.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,755] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\scala-java8-compat_2.13-1.0.2.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,770] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/scala-java8-compat_2.13-1.0.2.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,771] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\scala-library-2.13.12.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,787] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/scala-library-2.13.12.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,789] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\scala-logging_2.13-3.9.4.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,802] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/scala-logging_2.13-3.9.4.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,805] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\scala-reflect-2.13.12.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,818] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/scala-reflect-2.13.12.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,819] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\slf4j-api-1.7.36.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,829] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/slf4j-api-1.7.36.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,831] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\slf4j-reload4j-1.7.36.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,838] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/slf4j-reload4j-1.7.36.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,838] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\snappy-java-1.1.10.5.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,844] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/snappy-java-1.1.10.5.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,847] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\swagger-annotations-2.2.8.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,861] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/swagger-annotations-2.2.8.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,862] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\trogdor-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,871] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/trogdor-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,872] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\zookeeper-3.8.3.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,877] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/zookeeper-3.8.3.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,878] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\zookeeper-jute-3.8.3.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,888] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/zookeeper-jute-3.8.3.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,888] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\zstd-jni-1.5.5-6.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,896] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/zstd-jni-1.5.5-6.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,900] INFO Loading plugin from: classpath (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:13,907] INFO Registered loader: jdk.internal.loader.ClassLoaders$AppClassLoader@2c7b84de (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:13,910] INFO Scanning plugins with ServiceLoaderScanner took 2380 ms (org.apache.kafka.connect.runtime.isolation.PluginScanner:70)
+[2024-04-07 10:03:13,918] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\activation-1.1.1.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:14,072] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/activation-1.1.1.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:14,073] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\aopalliance-repackaged-2.6.1.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:14,082] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/aopalliance-repackaged-2.6.1.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:14,082] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\argparse4j-0.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:14,139] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/argparse4j-0.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:14,140] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\audience-annotations-0.12.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:14,155] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/audience-annotations-0.12.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:14,157] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\caffeine-2.9.3.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:14,345] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/caffeine-2.9.3.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:14,346] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\checker-qual-3.19.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:14,371] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/checker-qual-3.19.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:14,387] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\commons-beanutils-1.9.4.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:14,464] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/commons-beanutils-1.9.4.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:14,467] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\commons-cli-1.4.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:14,480] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/commons-cli-1.4.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:14,482] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\commons-collections-3.2.2.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:14,613] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/commons-collections-3.2.2.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:14,614] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\commons-digester-2.1.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:14,638] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/commons-digester-2.1.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:14,639] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\commons-io-2.11.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:14,730] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/commons-io-2.11.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:14,732] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\commons-lang3-3.8.1.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:14,799] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/commons-lang3-3.8.1.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:14,801] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\commons-logging-1.2.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:14,817] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/commons-logging-1.2.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:14,819] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\commons-validator-1.7.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:14,852] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/commons-validator-1.7.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:14,853] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\connect-api-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:14,876] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/connect-api-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:14,878] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\connect-basic-auth-extension-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:14,888] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/connect-basic-auth-extension-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:14,889] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\connect-file-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:14,904] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/connect-file-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:14,951] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\connect-json-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:15,017] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/connect-json-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:15,019] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\connect-mirror-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:15,055] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/connect-mirror-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:15,055] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\connect-mirror-client-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:15,066] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/connect-mirror-client-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:15,067] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\connect-runtime-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:15,176] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/connect-runtime-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:15,176] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\connect-transforms-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:15,189] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/connect-transforms-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:15,192] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\error_prone_annotations-2.10.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:15,198] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/error_prone_annotations-2.10.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:15,200] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\hk2-api-2.6.1.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:15,236] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/hk2-api-2.6.1.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:15,237] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\hk2-locator-2.6.1.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:15,260] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/hk2-locator-2.6.1.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:15,261] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\hk2-utils-2.6.1.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:15,277] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/hk2-utils-2.6.1.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:15,279] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jackson-annotations-2.16.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:15,300] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jackson-annotations-2.16.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:15,301] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jackson-core-2.16.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:15,371] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jackson-core-2.16.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:15,372] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jackson-databind-2.16.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:15,497] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jackson-databind-2.16.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:15,497] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jackson-dataformat-csv-2.16.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:15,506] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jackson-dataformat-csv-2.16.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:15,507] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jackson-datatype-jdk8-2.16.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:15,517] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jackson-datatype-jdk8-2.16.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:15,518] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jackson-jaxrs-base-2.16.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:15,525] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jackson-jaxrs-base-2.16.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:15,526] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jackson-jaxrs-json-provider-2.16.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:15,532] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jackson-jaxrs-json-provider-2.16.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:15,533] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jackson-module-jaxb-annotations-2.16.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:15,538] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jackson-module-jaxb-annotations-2.16.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:15,540] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jackson-module-scala_2.13-2.16.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:15,612] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jackson-module-scala_2.13-2.16.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:15,614] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jakarta.activation-api-1.2.2.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:15,619] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jakarta.activation-api-1.2.2.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:15,620] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jakarta.annotation-api-1.3.5.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:15,623] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jakarta.annotation-api-1.3.5.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:15,624] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jakarta.inject-2.6.1.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:15,627] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jakarta.inject-2.6.1.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:15,629] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jakarta.validation-api-2.0.2.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:15,644] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jakarta.validation-api-2.0.2.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:15,646] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jakarta.ws.rs-api-2.1.6.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:15,662] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jakarta.ws.rs-api-2.1.6.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:15,668] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jakarta.xml.bind-api-2.3.3.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:15,688] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jakarta.xml.bind-api-2.3.3.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:15,689] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\javassist-3.29.2-GA.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:15,765] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/javassist-3.29.2-GA.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:15,766] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\javax.activation-api-1.2.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:15,771] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/javax.activation-api-1.2.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:15,773] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\javax.annotation-api-1.3.2.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:15,779] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/javax.annotation-api-1.3.2.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:15,783] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\javax.servlet-api-3.1.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:15,796] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/javax.servlet-api-3.1.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:15,799] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\javax.ws.rs-api-2.1.1.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:15,817] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/javax.ws.rs-api-2.1.1.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:15,819] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jaxb-api-2.3.1.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:15,834] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jaxb-api-2.3.1.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:15,837] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jersey-client-2.39.1.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:15,885] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jersey-client-2.39.1.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:15,885] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jersey-common-2.39.1.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:15,983] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jersey-common-2.39.1.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:15,983] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jersey-container-servlet-2.39.1.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:15,987] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jersey-container-servlet-2.39.1.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:15,988] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jersey-container-servlet-core-2.39.1.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:16,013] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jersey-container-servlet-core-2.39.1.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:16,014] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jersey-hk2-2.39.1.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:16,021] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jersey-hk2-2.39.1.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:16,022] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jersey-server-2.39.1.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:16,093] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jersey-server-2.39.1.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:16,094] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jetty-client-9.4.53.v20231009.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:16,133] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jetty-client-9.4.53.v20231009.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:16,134] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jetty-continuation-9.4.53.v20231009.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:16,137] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jetty-continuation-9.4.53.v20231009.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:16,138] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jetty-http-9.4.53.v20231009.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:16,155] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jetty-http-9.4.53.v20231009.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:16,156] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jetty-io-9.4.53.v20231009.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:16,173] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jetty-io-9.4.53.v20231009.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:16,175] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jetty-security-9.4.53.v20231009.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:16,204] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jetty-security-9.4.53.v20231009.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:16,204] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jetty-server-9.4.53.v20231009.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:16,265] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jetty-server-9.4.53.v20231009.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:16,266] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jetty-servlet-9.4.53.v20231009.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:16,283] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jetty-servlet-9.4.53.v20231009.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:16,284] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jetty-servlets-9.4.53.v20231009.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:16,290] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jetty-servlets-9.4.53.v20231009.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:16,292] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jetty-util-9.4.53.v20231009.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:16,333] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jetty-util-9.4.53.v20231009.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:16,333] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jetty-util-ajax-9.4.53.v20231009.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:16,338] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jetty-util-ajax-9.4.53.v20231009.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:16,338] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jline-3.22.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:16,398] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jline-3.22.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:16,399] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jopt-simple-5.0.4.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:16,404] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jopt-simple-5.0.4.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:16,405] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jose4j-0.9.4.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:16,423] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jose4j-0.9.4.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:16,425] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\jsr305-3.0.2.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:16,431] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/jsr305-3.0.2.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:16,431] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\kafka-clients-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:16,742] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/kafka-clients-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:16,742] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\kafka-group-coordinator-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:16,773] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/kafka-group-coordinator-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:16,776] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\kafka-log4j-appender-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:16,783] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/kafka-log4j-appender-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:16,784] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\kafka-metadata-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:16,832] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/kafka-metadata-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:16,833] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\kafka-raft-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:16,848] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/kafka-raft-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:16,849] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\kafka-server-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:16,852] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/kafka-server-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:16,852] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\kafka-server-common-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:16,876] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/kafka-server-common-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:16,879] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\kafka-shell-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:16,887] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/kafka-shell-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:16,888] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\kafka-storage-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:16,920] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/kafka-storage-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:16,920] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\kafka-storage-api-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:16,922] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/kafka-storage-api-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:16,923] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\kafka-streams-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:17,033] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/kafka-streams-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:17,034] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\kafka-streams-examples-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:17,046] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/kafka-streams-examples-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:17,047] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\kafka-streams-scala_2.13-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:17,061] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/kafka-streams-scala_2.13-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:17,063] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\kafka-streams-test-utils-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:17,070] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/kafka-streams-test-utils-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:17,071] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\kafka-tools-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:17,091] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/kafka-tools-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:17,093] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\kafka-tools-api-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:17,095] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/kafka-tools-api-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:17,095] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\kafka_2.13-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:17,313] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/kafka_2.13-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:17,314] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\lz4-java-1.8.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:17,322] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/lz4-java-1.8.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:17,323] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\maven-artifact-3.8.8.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:17,334] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/maven-artifact-3.8.8.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:17,336] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\metrics-core-2.2.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:17,349] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/metrics-core-2.2.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:17,351] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\metrics-core-4.1.12.1.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:17,360] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/metrics-core-4.1.12.1.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:17,361] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\netty-buffer-4.1.100.Final.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:17,386] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/netty-buffer-4.1.100.Final.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:17,387] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\netty-codec-4.1.100.Final.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:17,408] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/netty-codec-4.1.100.Final.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:17,408] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\netty-common-4.1.100.Final.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:17,447] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/netty-common-4.1.100.Final.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:17,449] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\netty-handler-4.1.100.Final.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:17,489] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/netty-handler-4.1.100.Final.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:17,489] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\netty-resolver-4.1.100.Final.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:17,494] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/netty-resolver-4.1.100.Final.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:17,497] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\netty-transport-4.1.100.Final.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:17,545] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/netty-transport-4.1.100.Final.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:17,546] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\netty-transport-classes-epoll-4.1.100.Final.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:17,569] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/netty-transport-classes-epoll-4.1.100.Final.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:17,570] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\netty-transport-native-epoll-4.1.100.Final.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:17,572] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/netty-transport-native-epoll-4.1.100.Final.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:17,573] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\netty-transport-native-unix-common-4.1.100.Final.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:17,579] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/netty-transport-native-unix-common-4.1.100.Final.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:17,581] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\opentelemetry-proto-1.0.0-alpha.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:17,637] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/opentelemetry-proto-1.0.0-alpha.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:17,638] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\osgi-resource-locator-1.0.3.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:17,652] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/osgi-resource-locator-1.0.3.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:17,652] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\paranamer-2.8.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:17,656] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/paranamer-2.8.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:17,658] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\pcollections-4.0.1.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:17,664] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/pcollections-4.0.1.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:17,665] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\plexus-utils-3.3.1.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:17,678] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/plexus-utils-3.3.1.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:17,679] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\protobuf-java-3.23.4.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:17,775] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/protobuf-java-3.23.4.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:17,776] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\reflections-0.10.2.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:17,786] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/reflections-0.10.2.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:17,787] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\reload4j-1.2.25.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:17,822] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/reload4j-1.2.25.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:17,823] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\rocksdbjni-7.9.2.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:17,854] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/rocksdbjni-7.9.2.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:17,855] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\scala-collection-compat_2.13-2.10.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:17,860] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/scala-collection-compat_2.13-2.10.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:17,867] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\scala-java8-compat_2.13-1.0.2.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:17,935] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/scala-java8-compat_2.13-1.0.2.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:17,936] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\scala-library-2.13.12.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:18,203] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/scala-library-2.13.12.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:18,204] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\scala-logging_2.13-3.9.4.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:18,208] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/scala-logging_2.13-3.9.4.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:18,209] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\scala-reflect-2.13.12.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:18,438] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/scala-reflect-2.13.12.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:18,438] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\slf4j-api-1.7.36.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:18,442] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/slf4j-api-1.7.36.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:18,443] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\slf4j-reload4j-1.7.36.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:18,445] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/slf4j-reload4j-1.7.36.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:18,446] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\snappy-java-1.1.10.5.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:18,453] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/snappy-java-1.1.10.5.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:18,454] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\swagger-annotations-2.2.8.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:18,458] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/swagger-annotations-2.2.8.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:18,459] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\trogdor-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:18,482] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/trogdor-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:18,483] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\zookeeper-3.8.3.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:18,557] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/zookeeper-3.8.3.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:18,557] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\zookeeper-jute-3.8.3.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:18,569] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/zookeeper-jute-3.8.3.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:18,570] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs\zstd-jni-1.5.5-6.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:18,579] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka/libs/zstd-jni-1.5.5-6.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:18,580] INFO Loading plugin from: classpath (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-07 10:03:19,668] INFO Registered loader: jdk.internal.loader.ClassLoaders$AppClassLoader@2c7b84de (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-07 10:03:19,669] INFO Scanning plugins with ReflectionScanner took 5750 ms (org.apache.kafka.connect.runtime.isolation.PluginScanner:70)
+[2024-04-07 10:03:19,672] WARN All plugins have ServiceLoader manifests, consider reconfiguring plugin.discovery=service_load (org.apache.kafka.connect.runtime.isolation.Plugins:105)
+[2024-04-07 10:03:19,674] INFO Added plugin 'org.apache.kafka.connect.transforms.ReplaceField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-07 10:03:19,677] INFO Added plugin 'org.apache.kafka.connect.transforms.Filter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-07 10:03:19,677] INFO Added plugin 'org.apache.kafka.connect.mirror.MirrorSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-07 10:03:19,678] INFO Added plugin 'org.apache.kafka.connect.transforms.InsertField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-07 10:03:19,678] INFO Added plugin 'org.apache.kafka.connect.converters.DoubleConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-07 10:03:19,680] INFO Added plugin 'org.apache.kafka.connect.connector.policy.AllConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-07 10:03:19,681] INFO Added plugin 'org.apache.kafka.connect.connector.policy.PrincipalConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-07 10:03:19,682] INFO Added plugin 'org.apache.kafka.connect.transforms.DropHeaders' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-07 10:03:19,683] INFO Added plugin 'org.apache.kafka.connect.transforms.Cast$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-07 10:03:19,683] INFO Added plugin 'org.apache.kafka.connect.storage.SimpleHeaderConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-07 10:03:19,684] INFO Added plugin 'org.apache.kafka.connect.transforms.InsertHeader' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-07 10:03:19,684] INFO Added plugin 'org.apache.kafka.common.config.provider.DirectoryConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-07 10:03:19,685] INFO Added plugin 'org.apache.kafka.connect.transforms.Flatten$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-07 10:03:19,685] INFO Added plugin 'org.apache.kafka.connect.mirror.MirrorCheckpointConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-07 10:03:19,685] INFO Added plugin 'org.apache.kafka.connect.transforms.HeaderFrom$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-07 10:03:19,686] INFO Added plugin 'org.apache.kafka.connect.transforms.SetSchemaMetadata$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-07 10:03:19,686] INFO Added plugin 'org.apache.kafka.connect.transforms.predicates.TopicNameMatches' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-07 10:03:19,686] INFO Added plugin 'org.apache.kafka.connect.transforms.ReplaceField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-07 10:03:19,686] INFO Added plugin 'org.apache.kafka.connect.transforms.SetSchemaMetadata$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-07 10:03:19,687] INFO Added plugin 'org.apache.kafka.connect.converters.IntegerConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-07 10:03:19,688] INFO Added plugin 'org.apache.kafka.connect.transforms.predicates.RecordIsTombstone' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-07 10:03:19,689] INFO Added plugin 'org.apache.kafka.connect.connector.policy.NoneConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-07 10:03:19,689] INFO Added plugin 'org.apache.kafka.connect.converters.ByteArrayConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-07 10:03:19,689] INFO Added plugin 'org.apache.kafka.connect.transforms.Cast$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-07 10:03:19,690] INFO Added plugin 'org.apache.kafka.connect.transforms.Flatten$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-07 10:03:19,690] INFO Added plugin 'org.apache.kafka.connect.rest.basic.auth.extension.BasicAuthSecurityRestExtension' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-07 10:03:19,691] INFO Added plugin 'org.apache.kafka.connect.transforms.ExtractField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-07 10:03:19,691] INFO Added plugin 'org.apache.kafka.connect.transforms.TimestampConverter$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-07 10:03:19,695] INFO Added plugin 'org.apache.kafka.connect.converters.FloatConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-07 10:03:19,696] INFO Added plugin 'org.apache.kafka.connect.transforms.TimestampConverter$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-07 10:03:19,696] INFO Added plugin 'org.apache.kafka.connect.transforms.TimestampRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-07 10:03:19,697] INFO Added plugin 'org.apache.kafka.connect.transforms.RegexRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-07 10:03:19,697] INFO Added plugin 'org.apache.kafka.connect.transforms.HoistField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-07 10:03:19,697] INFO Added plugin 'org.apache.kafka.connect.transforms.ValueToKey' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-07 10:03:19,698] INFO Added plugin 'org.apache.kafka.connect.converters.LongConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-07 10:03:19,698] INFO Added plugin 'org.apache.kafka.common.config.provider.FileConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-07 10:03:19,698] INFO Added plugin 'org.apache.kafka.connect.json.JsonConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-07 10:03:19,699] INFO Added plugin 'org.apache.kafka.connect.transforms.HeaderFrom$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-07 10:03:19,699] INFO Added plugin 'org.apache.kafka.connect.transforms.predicates.HasHeaderKey' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-07 10:03:19,700] INFO Added plugin 'org.apache.kafka.connect.transforms.MaskField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-07 10:03:19,700] INFO Added plugin 'org.apache.kafka.connect.file.FileStreamSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-07 10:03:19,701] INFO Added plugin 'org.apache.kafka.common.config.provider.EnvVarConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-07 10:03:19,701] INFO Added plugin 'org.apache.kafka.connect.storage.StringConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-07 10:03:19,702] INFO Added plugin 'org.apache.kafka.connect.transforms.MaskField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-07 10:03:19,702] INFO Added plugin 'org.apache.kafka.connect.transforms.ExtractField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-07 10:03:19,702] INFO Added plugin 'org.apache.kafka.connect.transforms.InsertField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-07 10:03:19,702] INFO Added plugin 'org.apache.kafka.connect.file.FileStreamSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-07 10:03:19,702] INFO Added plugin 'org.apache.kafka.connect.converters.BooleanConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-07 10:03:19,703] INFO Added plugin 'org.apache.kafka.connect.mirror.MirrorHeartbeatConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-07 10:03:19,703] INFO Added plugin 'org.apache.kafka.connect.transforms.HoistField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-07 10:03:19,704] INFO Added plugin 'org.apache.kafka.connect.converters.ShortConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-07 10:03:19,707] INFO Added alias 'RecordIsTombstone' to plugin 'org.apache.kafka.connect.transforms.predicates.RecordIsTombstone' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-07 10:03:19,707] INFO Added alias 'String' to plugin 'org.apache.kafka.connect.storage.StringConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-07 10:03:19,707] INFO Added alias 'FileStreamSource' to plugin 'org.apache.kafka.connect.file.FileStreamSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-07 10:03:19,708] INFO Added alias 'EnvVar' to plugin 'org.apache.kafka.common.config.provider.EnvVarConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-07 10:03:19,708] INFO Added alias 'EnvVarConfigProvider' to plugin 'org.apache.kafka.common.config.provider.EnvVarConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-07 10:03:19,709] INFO Added alias 'MirrorCheckpointConnector' to plugin 'org.apache.kafka.connect.mirror.MirrorCheckpointConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-07 10:03:19,709] INFO Added alias 'Boolean' to plugin 'org.apache.kafka.connect.converters.BooleanConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-07 10:03:19,709] INFO Added alias 'Json' to plugin 'org.apache.kafka.connect.json.JsonConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-07 10:03:19,711] INFO Added alias 'StringConverter' to plugin 'org.apache.kafka.connect.storage.StringConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-07 10:03:19,711] INFO Added alias 'IntegerConverter' to plugin 'org.apache.kafka.connect.converters.IntegerConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-07 10:03:19,712] INFO Added alias 'Float' to plugin 'org.apache.kafka.connect.converters.FloatConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-07 10:03:19,712] INFO Added alias 'LongConverter' to plugin 'org.apache.kafka.connect.converters.LongConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-07 10:03:19,713] INFO Added alias 'DropHeaders' to plugin 'org.apache.kafka.connect.transforms.DropHeaders' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-07 10:03:19,715] INFO Added alias 'SimpleHeaderConverter' to plugin 'org.apache.kafka.connect.storage.SimpleHeaderConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-07 10:03:19,716] INFO Added alias 'FileStreamSinkConnector' to plugin 'org.apache.kafka.connect.file.FileStreamSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-07 10:03:19,716] INFO Added alias 'DirectoryConfigProvider' to plugin 'org.apache.kafka.common.config.provider.DirectoryConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-07 10:03:19,717] INFO Added alias 'ShortConverter' to plugin 'org.apache.kafka.connect.converters.ShortConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-07 10:03:19,717] INFO Added alias 'BasicAuthSecurityRestExtension' to plugin 'org.apache.kafka.connect.rest.basic.auth.extension.BasicAuthSecurityRestExtension' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-07 10:03:19,717] INFO Added alias 'Simple' to plugin 'org.apache.kafka.connect.storage.SimpleHeaderConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-07 10:03:19,718] INFO Added alias 'AllConnectorClientConfigOverridePolicy' to plugin 'org.apache.kafka.connect.connector.policy.AllConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-07 10:03:19,718] INFO Added alias 'MirrorSource' to plugin 'org.apache.kafka.connect.mirror.MirrorSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-07 10:03:19,718] INFO Added alias 'Directory' to plugin 'org.apache.kafka.common.config.provider.DirectoryConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-07 10:03:19,720] INFO Added alias 'MirrorHeartbeat' to plugin 'org.apache.kafka.connect.mirror.MirrorHeartbeatConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-07 10:03:19,720] INFO Added alias 'FileStreamSourceConnector' to plugin 'org.apache.kafka.connect.file.FileStreamSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-07 10:03:19,720] INFO Added alias 'BooleanConverter' to plugin 'org.apache.kafka.connect.converters.BooleanConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-07 10:03:19,721] INFO Added alias 'HasHeaderKey' to plugin 'org.apache.kafka.connect.transforms.predicates.HasHeaderKey' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-07 10:03:19,721] INFO Added alias 'MirrorCheckpoint' to plugin 'org.apache.kafka.connect.mirror.MirrorCheckpointConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-07 10:03:19,721] INFO Added alias 'None' to plugin 'org.apache.kafka.connect.connector.policy.NoneConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-07 10:03:19,721] INFO Added alias 'TimestampRouter' to plugin 'org.apache.kafka.connect.transforms.TimestampRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-07 10:03:19,722] INFO Added alias 'Principal' to plugin 'org.apache.kafka.connect.connector.policy.PrincipalConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-07 10:03:19,722] INFO Added alias 'All' to plugin 'org.apache.kafka.connect.connector.policy.AllConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-07 10:03:19,722] INFO Added alias 'JsonConverter' to plugin 'org.apache.kafka.connect.json.JsonConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-07 10:03:19,722] INFO Added alias 'RegexRouter' to plugin 'org.apache.kafka.connect.transforms.RegexRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-07 10:03:19,723] INFO Added alias 'ByteArray' to plugin 'org.apache.kafka.connect.converters.ByteArrayConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-07 10:03:19,723] INFO Added alias 'NoneConnectorClientConfigOverridePolicy' to plugin 'org.apache.kafka.connect.connector.policy.NoneConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-07 10:03:19,723] INFO Added alias 'Short' to plugin 'org.apache.kafka.connect.converters.ShortConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-07 10:03:19,724] INFO Added alias 'Double' to plugin 'org.apache.kafka.connect.converters.DoubleConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-07 10:03:19,725] INFO Added alias 'FileConfigProvider' to plugin 'org.apache.kafka.common.config.provider.FileConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-07 10:03:19,725] INFO Added alias 'Long' to plugin 'org.apache.kafka.connect.converters.LongConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-07 10:03:19,725] INFO Added alias 'File' to plugin 'org.apache.kafka.common.config.provider.FileConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-07 10:03:19,725] INFO Added alias 'FloatConverter' to plugin 'org.apache.kafka.connect.converters.FloatConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-07 10:03:19,726] INFO Added alias 'ByteArrayConverter' to plugin 'org.apache.kafka.connect.converters.ByteArrayConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-07 10:03:19,726] INFO Added alias 'FileStreamSink' to plugin 'org.apache.kafka.connect.file.FileStreamSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-07 10:03:19,727] INFO Added alias 'DoubleConverter' to plugin 'org.apache.kafka.connect.converters.DoubleConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-07 10:03:19,727] INFO Added alias 'TopicNameMatches' to plugin 'org.apache.kafka.connect.transforms.predicates.TopicNameMatches' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-07 10:03:19,727] INFO Added alias 'MirrorHeartbeatConnector' to plugin 'org.apache.kafka.connect.mirror.MirrorHeartbeatConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-07 10:03:19,728] INFO Added alias 'InsertHeader' to plugin 'org.apache.kafka.connect.transforms.InsertHeader' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-07 10:03:19,728] INFO Added alias 'MirrorSourceConnector' to plugin 'org.apache.kafka.connect.mirror.MirrorSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-07 10:03:19,728] INFO Added alias 'PrincipalConnectorClientConfigOverridePolicy' to plugin 'org.apache.kafka.connect.connector.policy.PrincipalConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-07 10:03:19,728] INFO Added alias 'ValueToKey' to plugin 'org.apache.kafka.connect.transforms.ValueToKey' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-07 10:03:19,729] INFO Added alias 'Integer' to plugin 'org.apache.kafka.connect.converters.IntegerConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-07 10:03:19,730] INFO Added alias 'Filter' to plugin 'org.apache.kafka.connect.transforms.Filter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-07 10:03:19,742] INFO StandaloneConfig values: 
+	access.control.allow.methods = 
+	access.control.allow.origin = 
+	admin.listeners = null
+	auto.include.jmx.reporter = true
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	config.providers = []
+	connector.client.config.override.policy = All
+	header.converter = class org.apache.kafka.connect.storage.SimpleHeaderConverter
+	key.converter = class org.apache.kafka.connect.storage.StringConverter
+	listeners = [http://:8083]
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	offset.flush.interval.ms = 10000
+	offset.flush.timeout.ms = 5000
+	offset.storage.file.filename = C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\config\connect\offset-storage.offsets
+	plugin.discovery = hybrid_warn
+	plugin.path = [C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\libs]
+	response.http.headers.config = 
+	rest.advertised.host.name = null
+	rest.advertised.listener = null
+	rest.advertised.port = null
+	rest.extension.classes = []
+	ssl.cipher.suites = null
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	task.shutdown.graceful.timeout.ms = 5000
+	topic.creation.enable = true
+	topic.tracking.allow.reset = true
+	topic.tracking.enable = true
+	value.converter = class org.apache.kafka.connect.storage.StringConverter
+ (org.apache.kafka.connect.runtime.standalone.StandaloneConfig:370)
+[2024-04-07 10:03:19,746] INFO Creating Kafka admin client (org.apache.kafka.connect.runtime.WorkerConfig:283)
+[2024-04-07 10:03:19,751] INFO AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.controllers = []
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	enable.metrics.push = true
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+ (org.apache.kafka.clients.admin.AdminClientConfig:370)
+[2024-04-07 10:03:19,882] INFO These configurations '[offset.flush.interval.ms, offset.storage.file.filename, plugin.path, value.converter, key.converter]' were supplied but are not used yet. (org.apache.kafka.clients.admin.AdminClientConfig:379)
+[2024-04-07 10:03:19,883] INFO Kafka version: 3.7.0 (org.apache.kafka.common.utils.AppInfoParser:124)
+[2024-04-07 10:03:19,883] INFO Kafka commitId: 2ae524ed625438c5 (org.apache.kafka.common.utils.AppInfoParser:125)
+[2024-04-07 10:03:19,884] INFO Kafka startTimeMs: 1712476999882 (org.apache.kafka.common.utils.AppInfoParser:126)
+[2024-04-07 10:03:20,232] INFO Kafka cluster ID: AyQh0BP7Rge3vDlvzhKkOg (org.apache.kafka.connect.runtime.WorkerConfig:300)
+[2024-04-07 10:03:20,234] INFO App info kafka.admin.client for adminclient-1 unregistered (org.apache.kafka.common.utils.AppInfoParser:88)
+[2024-04-07 10:03:20,241] INFO Metrics scheduler closed (org.apache.kafka.common.metrics.Metrics:694)
+[2024-04-07 10:03:20,241] INFO Closing reporter org.apache.kafka.common.metrics.JmxReporter (org.apache.kafka.common.metrics.Metrics:698)
+[2024-04-07 10:03:20,242] INFO Metrics reporters closed (org.apache.kafka.common.metrics.Metrics:704)
+[2024-04-07 10:03:20,247] INFO PublicConfig values: 
+	access.control.allow.methods = 
+	access.control.allow.origin = 
+	admin.listeners = null
+	listeners = [http://:8083]
+	response.http.headers.config = 
+	rest.advertised.host.name = null
+	rest.advertised.listener = null
+	rest.advertised.port = null
+	rest.extension.classes = []
+	ssl.cipher.suites = null
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	topic.tracking.allow.reset = true
+	topic.tracking.enable = true
+ (org.apache.kafka.connect.runtime.rest.RestServerConfig$PublicConfig:370)
+[2024-04-07 10:03:20,261] INFO Logging initialized @9490ms to org.eclipse.jetty.util.log.Slf4jLog (org.eclipse.jetty.util.log:170)
+[2024-04-07 10:03:20,315] INFO Added connector for http://:8083 (org.apache.kafka.connect.runtime.rest.RestServer:111)
+[2024-04-07 10:03:20,316] INFO Initializing REST server (org.apache.kafka.connect.runtime.rest.RestServer:182)
+[2024-04-07 10:03:20,365] INFO jetty-9.4.53.v20231009; built: 2023-10-09T12:29:09.265Z; git: 27bde00a0b95a1d5bbee0eae7984f891d2d0f8c9; jvm 21.0.2+13-LTS-58 (org.eclipse.jetty.server.Server:375)
+[2024-04-07 10:03:20,407] INFO Started http_8083@1ad7f684{HTTP/1.1, (http/1.1)}{0.0.0.0:8083} (org.eclipse.jetty.server.AbstractConnector:333)
+[2024-04-07 10:03:20,410] INFO Started @9639ms (org.eclipse.jetty.server.Server:415)
+[2024-04-07 10:03:20,443] INFO Advertised URI: http://192.168.1.191:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:406)
+[2024-04-07 10:03:20,445] INFO REST server listening at http://192.168.1.191:8083/, advertising URL http://192.168.1.191:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:202)
+[2024-04-07 10:03:20,446] INFO Advertised URI: http://192.168.1.191:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:406)
+[2024-04-07 10:03:20,447] INFO REST admin endpoints at http://192.168.1.191:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:205)
+[2024-04-07 10:03:20,448] INFO Advertised URI: http://192.168.1.191:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:406)
+[2024-04-07 10:03:20,448] INFO Setting up All Policy for ConnectorClientConfigOverride. This will allow all client configurations to be overridden (org.apache.kafka.connect.connector.policy.AllConnectorClientConfigOverridePolicy:44)
+[2024-04-07 10:03:20,450] INFO JsonConverterConfig values: 
+	converter.type = key
+	decimal.format = BASE64
+	replace.null.with.default = true
+	schemas.cache.size = 1000
+	schemas.enable = false
+ (org.apache.kafka.connect.json.JsonConverterConfig:370)
+[2024-04-07 10:03:20,468] INFO Kafka version: 3.7.0 (org.apache.kafka.common.utils.AppInfoParser:124)
+[2024-04-07 10:03:20,468] INFO Kafka commitId: 2ae524ed625438c5 (org.apache.kafka.common.utils.AppInfoParser:125)
+[2024-04-07 10:03:20,469] INFO Kafka startTimeMs: 1712477000468 (org.apache.kafka.common.utils.AppInfoParser:126)
+[2024-04-07 10:03:20,480] INFO JsonConverterConfig values: 
+	converter.type = key
+	decimal.format = BASE64
+	replace.null.with.default = true
+	schemas.cache.size = 1000
+	schemas.enable = false
+ (org.apache.kafka.connect.json.JsonConverterConfig:370)
+[2024-04-07 10:03:20,482] INFO JsonConverterConfig values: 
+	converter.type = value
+	decimal.format = BASE64
+	replace.null.with.default = true
+	schemas.cache.size = 1000
+	schemas.enable = false
+ (org.apache.kafka.connect.json.JsonConverterConfig:370)
+[2024-04-07 10:03:20,490] INFO Kafka Connect worker initialization took 9033ms (org.apache.kafka.connect.cli.AbstractConnectCli:141)
+[2024-04-07 10:03:20,494] INFO Kafka Connect starting (org.apache.kafka.connect.runtime.Connect:51)
+[2024-04-07 10:03:20,499] INFO Herder starting (org.apache.kafka.connect.runtime.standalone.StandaloneHerder:107)
+[2024-04-07 10:03:20,499] INFO Worker starting (org.apache.kafka.connect.runtime.Worker:231)
+[2024-04-07 10:03:20,501] INFO Starting FileOffsetBackingStore with file C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\config\connect\offset-storage.offsets (org.apache.kafka.connect.storage.FileOffsetBackingStore:63)
+[2024-04-07 10:03:20,536] INFO Worker started (org.apache.kafka.connect.runtime.Worker:241)
+[2024-04-07 10:03:20,536] INFO Herder started (org.apache.kafka.connect.runtime.standalone.StandaloneHerder:110)
+[2024-04-07 10:03:20,536] INFO Initializing REST resources (org.apache.kafka.connect.runtime.rest.RestServer:209)
+[2024-04-07 10:03:20,585] INFO Adding admin resources to main listener (org.apache.kafka.connect.runtime.rest.RestServer:227)
+[2024-04-07 10:03:20,633] INFO DefaultSessionIdManager workerName=node0 (org.eclipse.jetty.server.session:334)
+[2024-04-07 10:03:20,634] INFO No SessionScavenger set, using defaults (org.eclipse.jetty.server.session:339)
+[2024-04-07 10:03:20,635] INFO node0 Scavenging every 600000ms (org.eclipse.jetty.server.session:132)
+[2024-04-07 10:03:21,145] INFO Started o.e.j.s.ServletContextHandler@43b7cc23{/,null,AVAILABLE} (org.eclipse.jetty.server.handler.ContextHandler:921)
+[2024-04-07 10:03:21,146] INFO REST resources initialized; server is started and ready to handle requests (org.apache.kafka.connect.runtime.rest.RestServer:302)
+[2024-04-07 10:03:21,146] INFO Kafka Connect started (org.apache.kafka.connect.runtime.Connect:57)
+[2024-04-07 10:03:21,169] INFO AbstractConfig values: 
+ (org.apache.kafka.common.config.AbstractConfig:370)
+[2024-04-07 10:03:21,189] INFO [local-file-source|worker] Creating connector local-file-source of type FileStreamSource (org.apache.kafka.connect.runtime.Worker:309)
+[2024-04-07 10:03:21,193] INFO [local-file-source|worker] SourceConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = FileStreamSource
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	exactly.once.support = requested
+	header.converter = null
+	key.converter = null
+	name = local-file-source
+	offsets.storage.topic = null
+	predicates = []
+	tasks.max = 1
+	topic.creation.groups = []
+	transaction.boundary = poll
+	transaction.boundary.interval.ms = null
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.SourceConnectorConfig:370)
+[2024-04-07 10:03:21,198] INFO [local-file-source|worker] EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = FileStreamSource
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	exactly.once.support = requested
+	header.converter = null
+	key.converter = null
+	name = local-file-source
+	offsets.storage.topic = null
+	predicates = []
+	tasks.max = 1
+	topic.creation.groups = []
+	transaction.boundary = poll
+	transaction.boundary.interval.ms = null
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:370)
+[2024-04-07 10:03:21,205] INFO [local-file-source|worker] Instantiated connector local-file-source with version 3.7.0 of type class org.apache.kafka.connect.file.FileStreamSourceConnector (org.apache.kafka.connect.runtime.Worker:331)
+[2024-04-07 10:03:21,209] INFO [local-file-source|worker] Finished creating connector local-file-source (org.apache.kafka.connect.runtime.Worker:352)
+[2024-04-07 10:03:21,215] INFO [local-file-source|worker] AbstractConfig values: 
+	batch.size = 2000
+	file = C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\config\connect\test-source.txt
+	topic = test-autre
+ (org.apache.kafka.common.config.AbstractConfig:370)
+[2024-04-07 10:03:21,216] INFO [local-file-source|worker] Starting file source connector reading from C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\config\connect\test-source.txt (org.apache.kafka.connect.file.FileStreamSourceConnector:69)
+[2024-04-07 10:03:21,219] INFO SourceConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = FileStreamSource
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	exactly.once.support = requested
+	header.converter = null
+	key.converter = null
+	name = local-file-source
+	offsets.storage.topic = null
+	predicates = []
+	tasks.max = 1
+	topic.creation.groups = []
+	transaction.boundary = poll
+	transaction.boundary.interval.ms = null
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.SourceConnectorConfig:370)
+[2024-04-07 10:03:21,221] INFO EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = FileStreamSource
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	exactly.once.support = requested
+	header.converter = null
+	key.converter = null
+	name = local-file-source
+	offsets.storage.topic = null
+	predicates = []
+	tasks.max = 1
+	topic.creation.groups = []
+	transaction.boundary = poll
+	transaction.boundary.interval.ms = null
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:370)
+[2024-04-07 10:03:21,231] INFO [local-file-source|task-0] Creating task local-file-source-0 (org.apache.kafka.connect.runtime.Worker:612)
+[2024-04-07 10:03:21,233] INFO [local-file-source|task-0] ConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = FileStreamSource
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = local-file-source
+	predicates = []
+	tasks.max = 1
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.ConnectorConfig:370)
+[2024-04-07 10:03:21,235] INFO [local-file-source|task-0] EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = FileStreamSource
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = local-file-source
+	predicates = []
+	tasks.max = 1
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:370)
+[2024-04-07 10:03:21,237] INFO [local-file-source|task-0] TaskConfig values: 
+	task.class = class org.apache.kafka.connect.file.FileStreamSourceTask
+ (org.apache.kafka.connect.runtime.TaskConfig:370)
+[2024-04-07 10:03:21,238] INFO [local-file-source|task-0] Instantiated task local-file-source-0 with version 3.7.0 of type org.apache.kafka.connect.file.FileStreamSourceTask (org.apache.kafka.connect.runtime.Worker:626)
+[2024-04-07 10:03:21,240] INFO [local-file-source|task-0] StringConverterConfig values: 
+	converter.encoding = UTF-8
+	converter.type = key
+ (org.apache.kafka.connect.storage.StringConverterConfig:370)
+[2024-04-07 10:03:21,246] INFO [local-file-source|task-0] Set up the key converter class org.apache.kafka.connect.storage.StringConverter for task local-file-source-0 using the worker config (org.apache.kafka.connect.runtime.Worker:639)
+[2024-04-07 10:03:21,247] INFO [local-file-source|task-0] StringConverterConfig values: 
+	converter.encoding = UTF-8
+	converter.type = value
+ (org.apache.kafka.connect.storage.StringConverterConfig:370)
+[2024-04-07 10:03:21,247] INFO [local-file-source|task-0] Set up the value converter class org.apache.kafka.connect.storage.StringConverter for task local-file-source-0 using the worker config (org.apache.kafka.connect.runtime.Worker:645)
+[2024-04-07 10:03:21,248] INFO [local-file-source|task-0] Set up the header converter class org.apache.kafka.connect.storage.SimpleHeaderConverter for task local-file-source-0 using the worker config (org.apache.kafka.connect.runtime.Worker:652)
+[2024-04-07 10:03:21,252] INFO [local-file-source|task-0] SourceConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = FileStreamSource
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	exactly.once.support = requested
+	header.converter = null
+	key.converter = null
+	name = local-file-source
+	offsets.storage.topic = null
+	predicates = []
+	tasks.max = 1
+	topic.creation.groups = []
+	transaction.boundary = poll
+	transaction.boundary.interval.ms = null
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.SourceConnectorConfig:370)
+[2024-04-07 10:03:21,254] INFO [local-file-source|task-0] EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = FileStreamSource
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	exactly.once.support = requested
+	header.converter = null
+	key.converter = null
+	name = local-file-source
+	offsets.storage.topic = null
+	predicates = []
+	tasks.max = 1
+	topic.creation.groups = []
+	transaction.boundary = poll
+	transaction.boundary.interval.ms = null
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:370)
+[2024-04-07 10:03:21,257] INFO [local-file-source|task-0] Initializing: org.apache.kafka.connect.runtime.TransformationChain{} (org.apache.kafka.connect.runtime.Worker:1842)
+[2024-04-07 10:03:21,268] INFO [local-file-source|task-0] ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = connector-producer-local-file-source-0
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 2147483647
+	enable.idempotence = false
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 0
+	max.block.ms = 9223372036854775807
+	max.in.flight.requests.per.connection = 1
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+ (org.apache.kafka.clients.producer.ProducerConfig:370)
+[2024-04-07 10:03:21,306] INFO [local-file-source|task-0] initializing Kafka metrics collector (org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector:297)
+[2024-04-07 10:03:21,369] INFO [local-file-source|task-0] These configurations '[metrics.context.connect.kafka.cluster.id]' were supplied but are not used yet. (org.apache.kafka.clients.producer.ProducerConfig:379)
+[2024-04-07 10:03:21,369] INFO [local-file-source|task-0] Kafka version: 3.7.0 (org.apache.kafka.common.utils.AppInfoParser:124)
+[2024-04-07 10:03:21,369] INFO [local-file-source|task-0] Kafka commitId: 2ae524ed625438c5 (org.apache.kafka.common.utils.AppInfoParser:125)
+[2024-04-07 10:03:21,370] INFO [local-file-source|task-0] Kafka startTimeMs: 1712477001369 (org.apache.kafka.common.utils.AppInfoParser:126)
+[2024-04-07 10:03:21,389] INFO Created connector local-file-source (org.apache.kafka.connect.cli.ConnectStandalone:87)
+[2024-04-07 10:03:21,397] INFO [local-file-source|task-0] [Producer clientId=connector-producer-local-file-source-0] Cluster ID: AyQh0BP7Rge3vDlvzhKkOg (org.apache.kafka.clients.Metadata:349)
+[2024-04-07 10:03:21,397] INFO AbstractConfig values: 
+ (org.apache.kafka.common.config.AbstractConfig:370)
+[2024-04-07 10:03:21,404] INFO [local-file-sink|worker] Creating connector local-file-sink of type FileStreamSink (org.apache.kafka.connect.runtime.Worker:309)
+[2024-04-07 10:03:21,405] INFO [local-file-sink|worker] SinkConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = FileStreamSink
+	errors.deadletterqueue.context.headers.enable = false
+	errors.deadletterqueue.topic.name = 
+	errors.deadletterqueue.topic.replication.factor = 3
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = local-file-sink
+	predicates = []
+	tasks.max = 1
+	topics = [test-autre]
+	topics.regex = 
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.SinkConnectorConfig:370)
+[2024-04-07 10:03:21,415] INFO [local-file-source|task-0] AbstractConfig values: 
+	batch.size = 2000
+	file = C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\config\connect\test-source.txt
+	topic = test-autre
+ (org.apache.kafka.common.config.AbstractConfig:370)
+[2024-04-07 10:03:21,415] INFO [local-file-sink|worker] EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = FileStreamSink
+	errors.deadletterqueue.context.headers.enable = false
+	errors.deadletterqueue.topic.name = 
+	errors.deadletterqueue.topic.replication.factor = 3
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = local-file-sink
+	predicates = []
+	tasks.max = 1
+	topics = [test-autre]
+	topics.regex = 
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:370)
+[2024-04-07 10:03:21,417] INFO [local-file-source|task-0] WorkerSourceTask{id=local-file-source-0} Source task finished initialization and start (org.apache.kafka.connect.runtime.AbstractWorkerSourceTask:281)
+[2024-04-07 10:03:21,418] INFO [local-file-sink|worker] Instantiated connector local-file-sink with version 3.7.0 of type class org.apache.kafka.connect.file.FileStreamSinkConnector (org.apache.kafka.connect.runtime.Worker:331)
+[2024-04-07 10:03:21,419] INFO [local-file-sink|worker] Finished creating connector local-file-sink (org.apache.kafka.connect.runtime.Worker:352)
+[2024-04-07 10:03:21,422] INFO [local-file-sink|worker] AbstractConfig values: 
+	file = C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\config\connect\test-dest.txt
+ (org.apache.kafka.common.config.AbstractConfig:370)
+[2024-04-07 10:03:21,423] INFO [local-file-sink|worker] Starting file sink connector writing to C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\config\connect\test-dest.txt (org.apache.kafka.connect.file.FileStreamSinkConnector:57)
+[2024-04-07 10:03:21,425] INFO SinkConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = FileStreamSink
+	errors.deadletterqueue.context.headers.enable = false
+	errors.deadletterqueue.topic.name = 
+	errors.deadletterqueue.topic.replication.factor = 3
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = local-file-sink
+	predicates = []
+	tasks.max = 1
+	topics = [test-autre]
+	topics.regex = 
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.SinkConnectorConfig:370)
+[2024-04-07 10:03:21,427] INFO EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = FileStreamSink
+	errors.deadletterqueue.context.headers.enable = false
+	errors.deadletterqueue.topic.name = 
+	errors.deadletterqueue.topic.replication.factor = 3
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = local-file-sink
+	predicates = []
+	tasks.max = 1
+	topics = [test-autre]
+	topics.regex = 
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:370)
+[2024-04-07 10:03:21,431] INFO [local-file-sink|task-0] Creating task local-file-sink-0 (org.apache.kafka.connect.runtime.Worker:612)
+[2024-04-07 10:03:21,433] INFO [local-file-sink|task-0] ConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = FileStreamSink
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = local-file-sink
+	predicates = []
+	tasks.max = 1
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.ConnectorConfig:370)
+[2024-04-07 10:03:21,437] INFO [local-file-sink|task-0] EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = FileStreamSink
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = local-file-sink
+	predicates = []
+	tasks.max = 1
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:370)
+[2024-04-07 10:03:21,439] INFO [local-file-sink|task-0] TaskConfig values: 
+	task.class = class org.apache.kafka.connect.file.FileStreamSinkTask
+ (org.apache.kafka.connect.runtime.TaskConfig:370)
+[2024-04-07 10:03:21,440] INFO [local-file-sink|task-0] Instantiated task local-file-sink-0 with version 3.7.0 of type org.apache.kafka.connect.file.FileStreamSinkTask (org.apache.kafka.connect.runtime.Worker:626)
+[2024-04-07 10:03:21,440] INFO [local-file-sink|task-0] StringConverterConfig values: 
+	converter.encoding = UTF-8
+	converter.type = key
+ (org.apache.kafka.connect.storage.StringConverterConfig:370)
+[2024-04-07 10:03:21,445] INFO [local-file-sink|task-0] Set up the key converter class org.apache.kafka.connect.storage.StringConverter for task local-file-sink-0 using the worker config (org.apache.kafka.connect.runtime.Worker:639)
+[2024-04-07 10:03:21,446] INFO [local-file-sink|task-0] StringConverterConfig values: 
+	converter.encoding = UTF-8
+	converter.type = value
+ (org.apache.kafka.connect.storage.StringConverterConfig:370)
+[2024-04-07 10:03:21,447] INFO [local-file-sink|task-0] Set up the value converter class org.apache.kafka.connect.storage.StringConverter for task local-file-sink-0 using the worker config (org.apache.kafka.connect.runtime.Worker:645)
+[2024-04-07 10:03:21,448] INFO [local-file-sink|task-0] Set up the header converter class org.apache.kafka.connect.storage.SimpleHeaderConverter for task local-file-sink-0 using the worker config (org.apache.kafka.connect.runtime.Worker:652)
+[2024-04-07 10:03:21,450] INFO [local-file-sink|task-0] Initializing: org.apache.kafka.connect.runtime.TransformationChain{} (org.apache.kafka.connect.runtime.Worker:1799)
+[2024-04-07 10:03:21,451] INFO [local-file-sink|task-0] SinkConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = FileStreamSink
+	errors.deadletterqueue.context.headers.enable = false
+	errors.deadletterqueue.topic.name = 
+	errors.deadletterqueue.topic.replication.factor = 3
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = local-file-sink
+	predicates = []
+	tasks.max = 1
+	topics = [test-autre]
+	topics.regex = 
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.SinkConnectorConfig:370)
+[2024-04-07 10:03:21,452] INFO [local-file-sink|task-0] EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = FileStreamSink
+	errors.deadletterqueue.context.headers.enable = false
+	errors.deadletterqueue.topic.name = 
+	errors.deadletterqueue.topic.replication.factor = 3
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = local-file-sink
+	predicates = []
+	tasks.max = 1
+	topics = [test-autre]
+	topics.regex = 
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:370)
+[2024-04-07 10:03:21,457] INFO [local-file-sink|task-0] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = connector-consumer-local-file-sink-0
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = connect-local-file-sink
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+ (org.apache.kafka.clients.consumer.ConsumerConfig:370)
+[2024-04-07 10:03:21,477] INFO [local-file-sink|task-0] initializing Kafka metrics collector (org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector:297)
+[2024-04-07 10:03:21,543] INFO [local-file-sink|task-0] These configurations '[metrics.context.connect.kafka.cluster.id]' were supplied but are not used yet. (org.apache.kafka.clients.consumer.ConsumerConfig:379)
+[2024-04-07 10:03:21,544] INFO [local-file-sink|task-0] Kafka version: 3.7.0 (org.apache.kafka.common.utils.AppInfoParser:124)
+[2024-04-07 10:03:21,544] INFO [local-file-sink|task-0] Kafka commitId: 2ae524ed625438c5 (org.apache.kafka.common.utils.AppInfoParser:125)
+[2024-04-07 10:03:21,545] INFO [local-file-sink|task-0] Kafka startTimeMs: 1712477001544 (org.apache.kafka.common.utils.AppInfoParser:126)
+[2024-04-07 10:03:21,552] INFO Created connector local-file-sink (org.apache.kafka.connect.cli.ConnectStandalone:87)
+[2024-04-07 10:03:21,555] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Subscribed to topic(s): test-autre (org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer:475)
+[2024-04-07 10:03:21,557] INFO [local-file-sink|task-0] AbstractConfig values: 
+	file = C:\Users\mohamed\Documents\Formation\Kafka\1-kafka\config\connect\test-dest.txt
+ (org.apache.kafka.common.config.AbstractConfig:370)
+[2024-04-07 10:03:21,559] INFO [local-file-sink|task-0] WorkerSinkTask{id=local-file-sink-0} Sink task finished initialization and start (org.apache.kafka.connect.runtime.WorkerSinkTask:330)
+[2024-04-07 10:03:21,561] INFO [local-file-sink|task-0] WorkerSinkTask{id=local-file-sink-0} Executing sink task (org.apache.kafka.connect.runtime.WorkerSinkTask:214)
+[2024-04-07 10:03:21,579] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Cluster ID: AyQh0BP7Rge3vDlvzhKkOg (org.apache.kafka.clients.Metadata:349)
+[2024-04-07 10:03:21,581] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Discovered group coordinator host.docker.internal:9092 (id: 2147483647 rack: null) (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:936)
+[2024-04-07 10:03:21,585] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] (Re-)joining group (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:604)
+[2024-04-07 10:03:21,615] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Request joining group due to: need to re-join with the given member-id: connector-consumer-local-file-sink-0-edfe3f26-76d3-45f9-9c15-f0b6247949ae (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1102)
+[2024-04-07 10:03:21,618] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] (Re-)joining group (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:604)
+[2024-04-07 10:03:21,623] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Successfully joined group with generation Generation{generationId=3, memberId='connector-consumer-local-file-sink-0-edfe3f26-76d3-45f9-9c15-f0b6247949ae', protocol='range'} (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:665)
+[2024-04-07 10:03:21,635] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Finished assignment for group at generation 3: {connector-consumer-local-file-sink-0-edfe3f26-76d3-45f9-9c15-f0b6247949ae=Assignment(partitions=[test-autre-0])} (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:659)
+[2024-04-07 10:03:21,646] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Successfully synced group in generation Generation{generationId=3, memberId='connector-consumer-local-file-sink-0-edfe3f26-76d3-45f9-9c15-f0b6247949ae', protocol='range'} (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:842)
+[2024-04-07 10:03:21,650] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Notifying assignor about the new Assignment(partitions=[test-autre-0]) (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:319)
+[2024-04-07 10:03:21,654] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Adding newly assigned partitions: test-autre-0 (org.apache.kafka.clients.consumer.internals.ConsumerRebalanceListenerInvoker:56)
+[2024-04-07 10:03:21,668] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Found no committed offset for partition test-autre-0 (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1502)
+[2024-04-07 10:03:21,684] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Resetting offset for partition test-autre-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[host.docker.internal:9092 (id: 0 rack: null)], epoch=0}}. (org.apache.kafka.clients.consumer.internals.SubscriptionState:396)
+[2024-04-07 10:03:31,395] INFO [local-file-source|task-0|offsets] WorkerSourceTask{id=local-file-source-0} Committing offsets for 1 acknowledged messages (org.apache.kafka.connect.runtime.WorkerSourceTask:233)
+[2024-04-07 10:03:51,426] INFO [local-file-source|task-0|offsets] WorkerSourceTask{id=local-file-source-0} Committing offsets for 1 acknowledged messages (org.apache.kafka.connect.runtime.WorkerSourceTask:233)
+[2024-04-07 10:04:01,435] INFO [local-file-source|task-0|offsets] WorkerSourceTask{id=local-file-source-0} Committing offsets for 1 acknowledged messages (org.apache.kafka.connect.runtime.WorkerSourceTask:233)
+[2024-04-07 10:04:31,449] INFO [local-file-source|task-0|offsets] WorkerSourceTask{id=local-file-source-0} Committing offsets for 1 acknowledged messages (org.apache.kafka.connect.runtime.WorkerSourceTask:233)
+[2024-04-07 10:04:41,463] INFO [local-file-source|task-0|offsets] WorkerSourceTask{id=local-file-source-0} Committing offsets for 1 acknowledged messages (org.apache.kafka.connect.runtime.WorkerSourceTask:233)
+[2024-04-07 10:05:11,501] INFO [local-file-source|task-0|offsets] WorkerSourceTask{id=local-file-source-0} Committing offsets for 1 acknowledged messages (org.apache.kafka.connect.runtime.WorkerSourceTask:233)
+[2024-04-07 10:12:21,477] INFO [local-file-source|task-0] [Producer clientId=connector-producer-local-file-source-0] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2024-04-07 10:12:21,753] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2024-04-07 10:21:47,141] INFO Kafka Connect stopping (org.apache.kafka.connect.runtime.Connect:67)
+[2024-04-07 10:21:47,142] INFO Stopping REST server (org.apache.kafka.connect.runtime.rest.RestServer:348)
+[2024-04-07 10:21:47,146] INFO Stopped http_8083@1ad7f684{HTTP/1.1, (http/1.1)}{0.0.0.0:8083} (org.eclipse.jetty.server.AbstractConnector:383)
+[2024-04-07 10:21:47,146] INFO node0 Stopped scavenging (org.eclipse.jetty.server.session:149)
+[2024-04-07 10:21:47,164] INFO Stopped o.e.j.s.ServletContextHandler@43b7cc23{/,null,STOPPED} (org.eclipse.jetty.server.handler.ContextHandler:1159)
+[2024-04-07 10:21:47,164] INFO REST server stopped (org.apache.kafka.connect.runtime.rest.RestServer:377)
+[2024-04-07 10:21:47,165] INFO Herder stopping (org.apache.kafka.connect.runtime.standalone.StandaloneHerder:115)
+[2024-04-07 10:21:47,166] INFO [local-file-source|task-0] Stopping task local-file-source-0 (org.apache.kafka.connect.runtime.Worker:1009)
+[2024-04-07 10:21:47,186] INFO [local-file-source|task-0] [Producer clientId=connector-producer-local-file-source-0] Closing the Kafka producer with timeoutMillis = 30000 ms. (org.apache.kafka.clients.producer.KafkaProducer:1346)
+[2024-04-07 10:21:47,193] INFO [local-file-source|task-0] Metrics scheduler closed (org.apache.kafka.common.metrics.Metrics:694)
+[2024-04-07 10:21:47,195] INFO [local-file-source|task-0] Closing reporter org.apache.kafka.common.metrics.JmxReporter (org.apache.kafka.common.metrics.Metrics:698)
+[2024-04-07 10:21:47,195] INFO [local-file-source|task-0] Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter (org.apache.kafka.common.metrics.Metrics:698)
+[2024-04-07 10:21:47,196] INFO [local-file-source|task-0] Metrics reporters closed (org.apache.kafka.common.metrics.Metrics:704)
+[2024-04-07 10:21:47,197] INFO [local-file-source|task-0] App info kafka.producer for connector-producer-local-file-source-0 unregistered (org.apache.kafka.common.utils.AppInfoParser:88)
+[2024-04-07 10:21:47,205] INFO [local-file-source|worker] Stopping connector local-file-source (org.apache.kafka.connect.runtime.Worker:420)
+[2024-04-07 10:21:47,205] INFO [local-file-source|worker] Scheduled shutdown for WorkerConnector{id=local-file-source} (org.apache.kafka.connect.runtime.WorkerConnector:267)
+[2024-04-07 10:21:47,206] INFO [local-file-source|worker] Completed shutdown for WorkerConnector{id=local-file-source} (org.apache.kafka.connect.runtime.WorkerConnector:287)
+[2024-04-07 10:21:47,208] INFO [local-file-sink|task-0] Stopping task local-file-sink-0 (org.apache.kafka.connect.runtime.Worker:1009)
+[2024-04-07 10:21:47,212] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Revoke previously assigned partitions test-autre-0 (org.apache.kafka.clients.consumer.internals.ConsumerRebalanceListenerInvoker:78)
+[2024-04-07 10:21:47,214] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Member connector-consumer-local-file-sink-0-edfe3f26-76d3-45f9-9c15-f0b6247949ae sending LeaveGroup request to coordinator host.docker.internal:9092 (id: 2147483647 rack: null) due to the consumer is being closed (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1163)
+[2024-04-07 10:21:47,215] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Resetting generation and member id due to: consumer pro-actively leaving the group (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1055)
+[2024-04-07 10:21:47,215] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Request joining group due to: consumer pro-actively leaving the group (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1102)
+[2024-04-07 10:21:47,424] INFO [local-file-sink|task-0] Metrics scheduler closed (org.apache.kafka.common.metrics.Metrics:694)
+[2024-04-07 10:21:47,424] INFO [local-file-sink|task-0] Closing reporter org.apache.kafka.common.metrics.JmxReporter (org.apache.kafka.common.metrics.Metrics:698)
+[2024-04-07 10:21:47,425] INFO [local-file-sink|task-0] Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter (org.apache.kafka.common.metrics.Metrics:698)
+[2024-04-07 10:21:47,425] INFO [local-file-sink|task-0] Metrics reporters closed (org.apache.kafka.common.metrics.Metrics:704)
+[2024-04-07 10:21:47,435] INFO [local-file-sink|task-0] App info kafka.consumer for connector-consumer-local-file-sink-0 unregistered (org.apache.kafka.common.utils.AppInfoParser:88)
+[2024-04-07 10:21:47,444] INFO [local-file-sink|worker] Stopping connector local-file-sink (org.apache.kafka.connect.runtime.Worker:420)
+[2024-04-07 10:21:47,445] INFO [local-file-sink|worker] Scheduled shutdown for WorkerConnector{id=local-file-sink} (org.apache.kafka.connect.runtime.WorkerConnector:267)
+[2024-04-07 10:21:47,446] INFO [local-file-sink|worker] Completed shutdown for WorkerConnector{id=local-file-sink} (org.apache.kafka.connect.runtime.WorkerConnector:287)
+[2024-04-07 10:21:47,447] INFO Worker stopping (org.apache.kafka.connect.runtime.Worker:248)
+[2024-04-07 10:21:47,452] INFO Stopped FileOffsetBackingStore (org.apache.kafka.connect.storage.FileOffsetBackingStore:71)
+[2024-04-07 10:21:47,454] INFO Metrics scheduler closed (org.apache.kafka.common.metrics.Metrics:694)
+[2024-04-07 10:21:47,455] INFO Closing reporter org.apache.kafka.common.metrics.JmxReporter (org.apache.kafka.common.metrics.Metrics:698)
+[2024-04-07 10:21:47,456] INFO Metrics reporters closed (org.apache.kafka.common.metrics.Metrics:704)
+[2024-04-07 10:21:47,457] INFO App info kafka.connect for 192.168.1.191:8083 unregistered (org.apache.kafka.common.utils.AppInfoParser:88)
+[2024-04-07 10:21:47,457] INFO Worker stopped (org.apache.kafka.connect.runtime.Worker:269)
+[2024-04-07 10:21:47,461] INFO Herder stopped (org.apache.kafka.connect.runtime.standalone.StandaloneHerder:126)
+[2024-04-07 10:21:47,462] INFO Kafka Connect stopped (org.apache.kafka.connect.runtime.Connect:72)

@@ -1,0 +1,25 @@
+# 1 - Installation avec Docker : 
+
+## Utiliser le docker-compose.
+## Lien vers la documentation : https://docs.confluent.io/platform/current/platform-quickstart.html
+
+## docker-compose exec ksqldb-cli ksql http://ksqldb-server:8088
+ On doit voir ksql ....
+
+
+
+
+# 2 - Installation avec Confluent : (https://www.confluent.io/installation/)  
+
+ - curl -O https://packages.confluent.io/archive/7.6/confluent-7.6.1.tar.gz
+ - tar xzf confluent-7.6.1.tar.gz
+ - export CONFLUENT_HOME=confluent-7.6.1
+ - export PATH=$PATH:$CONFLUENT_HOME/bin
+ - confluent --help
+ - confluent local services start
+ - nano ~/.bashrc
+ - export PATH=$PATH:$CONFLUENT_HOME/bin
+ - source ~/.bashrc
+
+
+

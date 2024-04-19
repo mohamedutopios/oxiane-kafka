@@ -1,0 +1,19 @@
+{
+    "name": "jdbc-sink",
+    "config": {
+      "connector.class": "io.confluent.connect.jdbc.JdbcSinkConnector",
+      "tasks.max": "1",
+      "topics": "mysql-dbdemo-table1", 
+      "connection.url": "jdbc:mysql://localhost:3307/dbdemo",
+      "connection.user": "root",
+      "connection.password": "admin",
+      "auto.create": "true",
+      "auto.evolve": "true",
+      "insert.mode": "upsert",
+      "pk.mode": "record_key",
+      "pk.fields": "id", 
+      "delete.enabled": "false",
+      "table.name.format": "table1"
+    }
+  }
+  

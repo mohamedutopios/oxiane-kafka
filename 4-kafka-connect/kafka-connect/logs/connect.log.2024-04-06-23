@@ -1,0 +1,809 @@
+[2024-04-06 23:16:53,582] INFO [jdbc-sink|task-0] [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2024-04-06 23:16:53,599] INFO [jdbc-sink|task-0] [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] Cancelled in-flight FETCH request with correlation id 2112 due to node 0 being disconnected (elapsed time since creation: 8938927ms, elapsed time since send: 8938927ms, request timeout: 30000ms) (org.apache.kafka.clients.NetworkClient:353)
+[2024-04-06 23:16:53,601] INFO [jdbc-sink|task-0] [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2024-04-06 23:16:54,258] INFO [jdbc-sink|task-0] [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] Node 2147483647 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2024-04-06 23:16:54,259] INFO [jdbc-sink|task-0] [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] Group coordinator host.docker.internal:9092 (id: 2147483647 rack: null) is unavailable or invalid due to cause: coordinator unavailable. isDisconnected: true. Rediscovery will be attempted. (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:999)
+[2024-04-06 23:16:54,259] INFO [jdbc-sink|task-0] [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] Error sending fetch request (sessionId=1700180790, epoch=1788) to node 0: (org.apache.kafka.clients.FetchSessionHandler:615)
+org.apache.kafka.common.errors.DisconnectException
+[2024-04-06 23:16:55,380] INFO [jdbc-sink|task-0] [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] Discovered group coordinator host.docker.internal:9092 (id: 2147483647 rack: null) (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:936)
+[2024-04-06 23:16:55,415] INFO [jdbc-sink|task-0] [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] Discovered group coordinator host.docker.internal:9092 (id: 2147483647 rack: null) (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:936)
+[2024-04-06 23:16:55,419] INFO [jdbc-sink|task-0] [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] Attempt to heartbeat with Generation{generationId=1, memberId='connector-consumer-jdbc-sink-0-eeb17f4d-94ae-4e1e-99ea-651abe03cc12', protocol='range'} and group instance id Optional.empty failed due to UNKNOWN_MEMBER_ID, resetting generation (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1256)
+[2024-04-06 23:16:55,419] INFO [jdbc-sink|task-0] [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] Resetting generation and member id due to: encountered UNKNOWN_MEMBER_ID from HEARTBEAT response (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1055)
+[2024-04-06 23:16:55,420] INFO [jdbc-sink|task-0] [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] Request joining group due to: encountered UNKNOWN_MEMBER_ID from HEARTBEAT response (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1102)
+[2024-04-06 23:16:55,421] INFO [jdbc-sink|task-0] [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] Giving away all assigned partitions as lost since generation/memberID has been reset,indicating that consumer is in old state or no longer part of the group (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:773)
+[2024-04-06 23:16:55,421] INFO [jdbc-sink|task-0] [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] Lost previously assigned partitions mysql-dbdemo-table1-0 (org.apache.kafka.clients.consumer.internals.ConsumerRebalanceListenerInvoker:104)
+[2024-04-06 23:16:55,423] INFO [jdbc-sink|task-0] [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] (Re-)joining group (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:604)
+[2024-04-06 23:16:55,427] INFO [jdbc-sink|task-0] [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] Request joining group due to: need to re-join with the given member-id: connector-consumer-jdbc-sink-0-45e12e80-f48e-4fdf-b287-77613c4e19b9 (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1102)
+[2024-04-06 23:16:55,428] INFO [jdbc-sink|task-0] [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] (Re-)joining group (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:604)
+[2024-04-06 23:16:55,432] INFO [jdbc-sink|task-0] [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] Successfully joined group with generation Generation{generationId=3, memberId='connector-consumer-jdbc-sink-0-45e12e80-f48e-4fdf-b287-77613c4e19b9', protocol='range'} (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:665)
+[2024-04-06 23:16:55,434] INFO [jdbc-sink|task-0] [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] Finished assignment for group at generation 3: {connector-consumer-jdbc-sink-0-45e12e80-f48e-4fdf-b287-77613c4e19b9=Assignment(partitions=[mysql-dbdemo-table1-0])} (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:659)
+[2024-04-06 23:16:55,472] INFO [jdbc-sink|task-0] [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] Successfully synced group in generation Generation{generationId=3, memberId='connector-consumer-jdbc-sink-0-45e12e80-f48e-4fdf-b287-77613c4e19b9', protocol='range'} (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:842)
+[2024-04-06 23:16:55,473] INFO [jdbc-sink|task-0] [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] Notifying assignor about the new Assignment(partitions=[mysql-dbdemo-table1-0]) (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:319)
+[2024-04-06 23:16:55,474] INFO [jdbc-sink|task-0] [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] Adding newly assigned partitions: mysql-dbdemo-table1-0 (org.apache.kafka.clients.consumer.internals.ConsumerRebalanceListenerInvoker:56)
+[2024-04-06 23:16:55,476] INFO [jdbc-sink|task-0] [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] Found no committed offset for partition mysql-dbdemo-table1-0 (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1502)
+[2024-04-06 23:16:55,940] INFO [jdbc-sink|task-0] [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] Resetting offset for partition mysql-dbdemo-table1-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[host.docker.internal:9092 (id: 0 rack: null)], epoch=0}}. (org.apache.kafka.clients.consumer.internals.SubscriptionState:396)
+[2024-04-06 23:22:28,931] ERROR Uncaught exception in REST call to /connectors/jdbc-sink/config (org.apache.kafka.connect.runtime.rest.errors.ConnectExceptionMapper:64)
+com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `java.lang.String` from Object value (token `JsonToken.START_OBJECT`)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 40] (through reference chain: java.util.LinkedHashMap["config"])
+	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1767)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1541)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1446)
+	at com.fasterxml.jackson.databind.DeserializationContext.extractScalarFromObject(DeserializationContext.java:958)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer._parseString(StdDeserializer.java:1424)
+	at com.fasterxml.jackson.databind.deser.std.StringDeserializer.deserialize(StringDeserializer.java:48)
+	at com.fasterxml.jackson.databind.deser.std.StringDeserializer.deserialize(StringDeserializer.java:11)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer._readAndBindStringKeyMap(MapDeserializer.java:623)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:449)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:32)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342)
+	at com.fasterxml.jackson.databind.ObjectReader._bind(ObjectReader.java:2099)
+	at com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:1249)
+	at com.fasterxml.jackson.jaxrs.base.ProviderBase.readFrom(ProviderBase.java:801)
+	at org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$TerminalReaderInterceptor.invokeReadFrom(ReaderInterceptorExecutor.java:233)
+	at org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$TerminalReaderInterceptor.aroundReadFrom(ReaderInterceptorExecutor.java:212)
+	at org.glassfish.jersey.message.internal.ReaderInterceptorExecutor.proceed(ReaderInterceptorExecutor.java:132)
+	at org.glassfish.jersey.server.internal.MappableExceptionWrapperInterceptor.aroundReadFrom(MappableExceptionWrapperInterceptor.java:49)
+	at org.glassfish.jersey.message.internal.ReaderInterceptorExecutor.proceed(ReaderInterceptorExecutor.java:132)
+	at org.glassfish.jersey.message.internal.MessageBodyFactory.readFrom(MessageBodyFactory.java:1072)
+	at org.glassfish.jersey.message.internal.InboundMessageContext.readEntity(InboundMessageContext.java:919)
+	at org.glassfish.jersey.server.ContainerRequest.readEntity(ContainerRequest.java:290)
+	at org.glassfish.jersey.server.internal.inject.EntityParamValueParamProvider$EntityValueSupplier.apply(EntityParamValueParamProvider.java:73)
+	at org.glassfish.jersey.server.internal.inject.EntityParamValueParamProvider$EntityValueSupplier.apply(EntityParamValueParamProvider.java:56)
+	at org.glassfish.jersey.server.spi.internal.ParamValueFactoryWithSource.apply(ParamValueFactoryWithSource.java:50)
+	at org.glassfish.jersey.server.spi.internal.ParameterValueHelper.getParameterValues(ParameterValueHelper.java:68)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$AbstractMethodParamInvoker.getParamValues(JavaResourceMethodDispatcherProvider.java:109)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:176)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:81)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:478)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:400)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:81)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:256)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:235)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:684)
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:394)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:358)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:311)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:554)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1440)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:505)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:181)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+[2024-04-06 23:22:28,942] INFO [0:0:0:0:0:0:0:1] - - [06/avr./2024:21:22:28 +0000] "PUT /connectors/jdbc-sink/config HTTP/1.1" 500 299 "-" "curl/8.6.0" 20 (org.apache.kafka.connect.runtime.rest.RestServer:62)
+[2024-04-06 23:23:03,106] ERROR Uncaught exception in REST call to /connectors (org.apache.kafka.connect.runtime.rest.errors.ConnectExceptionMapper:64)
+javax.ws.rs.NotAllowedException: HTTP 405 Method Not Allowed
+	at org.glassfish.jersey.server.internal.routing.MethodSelectingRouter.getMethodRouter(MethodSelectingRouter.java:408)
+	at org.glassfish.jersey.server.internal.routing.MethodSelectingRouter.access$000(MethodSelectingRouter.java:73)
+	at org.glassfish.jersey.server.internal.routing.MethodSelectingRouter$4.apply(MethodSelectingRouter.java:673)
+	at org.glassfish.jersey.server.internal.routing.MethodSelectingRouter.apply(MethodSelectingRouter.java:304)
+	at org.glassfish.jersey.server.internal.routing.RoutingStage._apply(RoutingStage.java:86)
+	at org.glassfish.jersey.server.internal.routing.RoutingStage._apply(RoutingStage.java:89)
+	at org.glassfish.jersey.server.internal.routing.RoutingStage._apply(RoutingStage.java:89)
+	at org.glassfish.jersey.server.internal.routing.RoutingStage._apply(RoutingStage.java:89)
+	at org.glassfish.jersey.server.internal.routing.RoutingStage.apply(RoutingStage.java:69)
+	at org.glassfish.jersey.server.internal.routing.RoutingStage.apply(RoutingStage.java:38)
+	at org.glassfish.jersey.process.internal.Stages.process(Stages.java:173)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:248)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:235)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:684)
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:394)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:358)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:311)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:554)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1440)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:505)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:181)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:137)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+[2024-04-06 23:23:03,122] INFO [0:0:0:0:0:0:0:1] - - [06/avr./2024:21:23:03 +0000] "PUT /connectors HTTP/1.1" 405 58 "-" "curl/8.6.0" 20 (org.apache.kafka.connect.runtime.rest.RestServer:62)
+[2024-04-06 23:23:58,939] ERROR Uncaught exception in REST call to /connectors/mysql-connector/config (org.apache.kafka.connect.runtime.rest.errors.ConnectExceptionMapper:64)
+com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `java.lang.String` from Object value (token `JsonToken.START_OBJECT`)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 46] (through reference chain: java.util.LinkedHashMap["config"])
+	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1767)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1541)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1446)
+	at com.fasterxml.jackson.databind.DeserializationContext.extractScalarFromObject(DeserializationContext.java:958)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer._parseString(StdDeserializer.java:1424)
+	at com.fasterxml.jackson.databind.deser.std.StringDeserializer.deserialize(StringDeserializer.java:48)
+	at com.fasterxml.jackson.databind.deser.std.StringDeserializer.deserialize(StringDeserializer.java:11)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer._readAndBindStringKeyMap(MapDeserializer.java:623)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:449)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:32)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342)
+	at com.fasterxml.jackson.databind.ObjectReader._bind(ObjectReader.java:2099)
+	at com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:1249)
+	at com.fasterxml.jackson.jaxrs.base.ProviderBase.readFrom(ProviderBase.java:801)
+	at org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$TerminalReaderInterceptor.invokeReadFrom(ReaderInterceptorExecutor.java:233)
+	at org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$TerminalReaderInterceptor.aroundReadFrom(ReaderInterceptorExecutor.java:212)
+	at org.glassfish.jersey.message.internal.ReaderInterceptorExecutor.proceed(ReaderInterceptorExecutor.java:132)
+	at org.glassfish.jersey.server.internal.MappableExceptionWrapperInterceptor.aroundReadFrom(MappableExceptionWrapperInterceptor.java:49)
+	at org.glassfish.jersey.message.internal.ReaderInterceptorExecutor.proceed(ReaderInterceptorExecutor.java:132)
+	at org.glassfish.jersey.message.internal.MessageBodyFactory.readFrom(MessageBodyFactory.java:1072)
+	at org.glassfish.jersey.message.internal.InboundMessageContext.readEntity(InboundMessageContext.java:919)
+	at org.glassfish.jersey.server.ContainerRequest.readEntity(ContainerRequest.java:290)
+	at org.glassfish.jersey.server.internal.inject.EntityParamValueParamProvider$EntityValueSupplier.apply(EntityParamValueParamProvider.java:73)
+	at org.glassfish.jersey.server.internal.inject.EntityParamValueParamProvider$EntityValueSupplier.apply(EntityParamValueParamProvider.java:56)
+	at org.glassfish.jersey.server.spi.internal.ParamValueFactoryWithSource.apply(ParamValueFactoryWithSource.java:50)
+	at org.glassfish.jersey.server.spi.internal.ParameterValueHelper.getParameterValues(ParameterValueHelper.java:68)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$AbstractMethodParamInvoker.getParamValues(JavaResourceMethodDispatcherProvider.java:109)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:176)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:81)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:478)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:400)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:81)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:256)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:235)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:684)
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:394)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:358)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:311)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:554)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1440)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:505)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:181)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:137)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+[2024-04-06 23:23:58,939] INFO [0:0:0:0:0:0:0:1] - - [06/avr./2024:21:23:58 +0000] "PUT /connectors/mysql-connector/config HTTP/1.1" 500 299 "-" "curl/8.6.0" 0 (org.apache.kafka.connect.runtime.rest.RestServer:62)
+[2024-04-06 23:25:54,917] ERROR Uncaught exception in REST call to /connectors/mysql-connector/config (org.apache.kafka.connect.runtime.rest.errors.ConnectExceptionMapper:64)
+com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `java.lang.String` from Object value (token `JsonToken.START_OBJECT`)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 46] (through reference chain: java.util.LinkedHashMap["config"])
+	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1767)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1541)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1446)
+	at com.fasterxml.jackson.databind.DeserializationContext.extractScalarFromObject(DeserializationContext.java:958)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer._parseString(StdDeserializer.java:1424)
+	at com.fasterxml.jackson.databind.deser.std.StringDeserializer.deserialize(StringDeserializer.java:48)
+	at com.fasterxml.jackson.databind.deser.std.StringDeserializer.deserialize(StringDeserializer.java:11)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer._readAndBindStringKeyMap(MapDeserializer.java:623)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:449)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:32)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342)
+	at com.fasterxml.jackson.databind.ObjectReader._bind(ObjectReader.java:2099)
+	at com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:1249)
+	at com.fasterxml.jackson.jaxrs.base.ProviderBase.readFrom(ProviderBase.java:801)
+	at org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$TerminalReaderInterceptor.invokeReadFrom(ReaderInterceptorExecutor.java:233)
+	at org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$TerminalReaderInterceptor.aroundReadFrom(ReaderInterceptorExecutor.java:212)
+	at org.glassfish.jersey.message.internal.ReaderInterceptorExecutor.proceed(ReaderInterceptorExecutor.java:132)
+	at org.glassfish.jersey.server.internal.MappableExceptionWrapperInterceptor.aroundReadFrom(MappableExceptionWrapperInterceptor.java:49)
+	at org.glassfish.jersey.message.internal.ReaderInterceptorExecutor.proceed(ReaderInterceptorExecutor.java:132)
+	at org.glassfish.jersey.message.internal.MessageBodyFactory.readFrom(MessageBodyFactory.java:1072)
+	at org.glassfish.jersey.message.internal.InboundMessageContext.readEntity(InboundMessageContext.java:919)
+	at org.glassfish.jersey.server.ContainerRequest.readEntity(ContainerRequest.java:290)
+	at org.glassfish.jersey.server.internal.inject.EntityParamValueParamProvider$EntityValueSupplier.apply(EntityParamValueParamProvider.java:73)
+	at org.glassfish.jersey.server.internal.inject.EntityParamValueParamProvider$EntityValueSupplier.apply(EntityParamValueParamProvider.java:56)
+	at org.glassfish.jersey.server.spi.internal.ParamValueFactoryWithSource.apply(ParamValueFactoryWithSource.java:50)
+	at org.glassfish.jersey.server.spi.internal.ParameterValueHelper.getParameterValues(ParameterValueHelper.java:68)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$AbstractMethodParamInvoker.getParamValues(JavaResourceMethodDispatcherProvider.java:109)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:176)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:81)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:478)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:400)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:81)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:256)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:235)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:684)
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:394)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:358)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:311)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:554)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1440)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:505)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:181)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+[2024-04-06 23:25:54,927] INFO [0:0:0:0:0:0:0:1] - - [06/avr./2024:21:25:54 +0000] "PUT /connectors/mysql-connector/config HTTP/1.1" 500 299 "-" "curl/8.6.0" 13 (org.apache.kafka.connect.runtime.rest.RestServer:62)
+[2024-04-06 23:27:54,671] ERROR Uncaught exception in REST call to /connectors/mysql-connector/config (org.apache.kafka.connect.runtime.rest.errors.ConnectExceptionMapper:64)
+com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `java.lang.String` from Object value (token `JsonToken.START_OBJECT`)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 46] (through reference chain: java.util.LinkedHashMap["config"])
+	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1767)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1541)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1446)
+	at com.fasterxml.jackson.databind.DeserializationContext.extractScalarFromObject(DeserializationContext.java:958)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer._parseString(StdDeserializer.java:1424)
+	at com.fasterxml.jackson.databind.deser.std.StringDeserializer.deserialize(StringDeserializer.java:48)
+	at com.fasterxml.jackson.databind.deser.std.StringDeserializer.deserialize(StringDeserializer.java:11)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer._readAndBindStringKeyMap(MapDeserializer.java:623)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:449)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:32)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342)
+	at com.fasterxml.jackson.databind.ObjectReader._bind(ObjectReader.java:2099)
+	at com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:1249)
+	at com.fasterxml.jackson.jaxrs.base.ProviderBase.readFrom(ProviderBase.java:801)
+	at org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$TerminalReaderInterceptor.invokeReadFrom(ReaderInterceptorExecutor.java:233)
+	at org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$TerminalReaderInterceptor.aroundReadFrom(ReaderInterceptorExecutor.java:212)
+	at org.glassfish.jersey.message.internal.ReaderInterceptorExecutor.proceed(ReaderInterceptorExecutor.java:132)
+	at org.glassfish.jersey.server.internal.MappableExceptionWrapperInterceptor.aroundReadFrom(MappableExceptionWrapperInterceptor.java:49)
+	at org.glassfish.jersey.message.internal.ReaderInterceptorExecutor.proceed(ReaderInterceptorExecutor.java:132)
+	at org.glassfish.jersey.message.internal.MessageBodyFactory.readFrom(MessageBodyFactory.java:1072)
+	at org.glassfish.jersey.message.internal.InboundMessageContext.readEntity(InboundMessageContext.java:919)
+	at org.glassfish.jersey.server.ContainerRequest.readEntity(ContainerRequest.java:290)
+	at org.glassfish.jersey.server.internal.inject.EntityParamValueParamProvider$EntityValueSupplier.apply(EntityParamValueParamProvider.java:73)
+	at org.glassfish.jersey.server.internal.inject.EntityParamValueParamProvider$EntityValueSupplier.apply(EntityParamValueParamProvider.java:56)
+	at org.glassfish.jersey.server.spi.internal.ParamValueFactoryWithSource.apply(ParamValueFactoryWithSource.java:50)
+	at org.glassfish.jersey.server.spi.internal.ParameterValueHelper.getParameterValues(ParameterValueHelper.java:68)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$AbstractMethodParamInvoker.getParamValues(JavaResourceMethodDispatcherProvider.java:109)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:176)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:81)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:478)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:400)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:81)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:256)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:235)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:684)
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:394)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:358)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:311)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:554)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1440)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:505)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:181)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+[2024-04-06 23:27:54,678] INFO [0:0:0:0:0:0:0:1] - - [06/avr./2024:21:27:54 +0000] "PUT /connectors/mysql-connector/config HTTP/1.1" 500 299 "-" "curl/8.6.0" 9 (org.apache.kafka.connect.runtime.rest.RestServer:62)
+[2024-04-06 23:28:12,121] INFO Kafka Connect stopping (org.apache.kafka.connect.runtime.Connect:67)
+[2024-04-06 23:28:12,126] INFO Stopping REST server (org.apache.kafka.connect.runtime.rest.RestServer:348)
+[2024-04-06 23:28:12,136] INFO Stopped http_8083@ec1b776{HTTP/1.1, (http/1.1)}{0.0.0.0:8083} (org.eclipse.jetty.server.AbstractConnector:383)
+[2024-04-06 23:28:12,138] INFO node0 Stopped scavenging (org.eclipse.jetty.server.session:149)
+[2024-04-06 23:28:12,151] INFO Stopped o.e.j.s.ServletContextHandler@638e8194{/,null,STOPPED} (org.eclipse.jetty.server.handler.ContextHandler:1159)
+[2024-04-06 23:28:12,153] INFO REST server stopped (org.apache.kafka.connect.runtime.rest.RestServer:377)
+[2024-04-06 23:28:12,155] INFO Herder stopping (org.apache.kafka.connect.runtime.standalone.StandaloneHerder:115)
+[2024-04-06 23:28:12,156] INFO [jdbc-sink|task-0] Stopping task jdbc-sink-0 (org.apache.kafka.connect.runtime.Worker:1009)
+[2024-04-06 23:28:12,157] INFO [jdbc-sink|task-0] Stopping task (io.confluent.connect.jdbc.sink.JdbcSinkTask:176)
+[2024-04-06 23:28:12,160] INFO [jdbc-sink|task-0] [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] Revoke previously assigned partitions mysql-dbdemo-table1-0 (org.apache.kafka.clients.consumer.internals.ConsumerRebalanceListenerInvoker:78)
+[2024-04-06 23:28:12,160] INFO [jdbc-sink|task-0] [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] Member connector-consumer-jdbc-sink-0-45e12e80-f48e-4fdf-b287-77613c4e19b9 sending LeaveGroup request to coordinator host.docker.internal:9092 (id: 2147483647 rack: null) due to the consumer is being closed (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1163)
+[2024-04-06 23:28:12,161] INFO [jdbc-sink|task-0] [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] Resetting generation and member id due to: consumer pro-actively leaving the group (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1055)
+[2024-04-06 23:28:12,162] INFO [jdbc-sink|task-0] [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] Request joining group due to: consumer pro-actively leaving the group (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1102)
+[2024-04-06 23:28:12,578] INFO [jdbc-sink|task-0] Metrics scheduler closed (org.apache.kafka.common.metrics.Metrics:694)
+[2024-04-06 23:28:12,578] INFO [jdbc-sink|task-0] Closing reporter org.apache.kafka.common.metrics.JmxReporter (org.apache.kafka.common.metrics.Metrics:698)
+[2024-04-06 23:28:12,579] INFO [jdbc-sink|task-0] Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter (org.apache.kafka.common.metrics.Metrics:698)
+[2024-04-06 23:28:12,581] INFO [jdbc-sink|task-0] Metrics reporters closed (org.apache.kafka.common.metrics.Metrics:704)
+[2024-04-06 23:28:12,603] INFO [jdbc-sink|task-0] App info kafka.consumer for connector-consumer-jdbc-sink-0 unregistered (org.apache.kafka.common.utils.AppInfoParser:88)
+[2024-04-06 23:28:12,612] INFO [jdbc-sink|worker] Stopping connector jdbc-sink (org.apache.kafka.connect.runtime.Worker:420)
+[2024-04-06 23:28:12,613] INFO [jdbc-sink|worker] Scheduled shutdown for WorkerConnector{id=jdbc-sink} (org.apache.kafka.connect.runtime.WorkerConnector:267)
+[2024-04-06 23:28:12,615] INFO [jdbc-sink|worker] Completed shutdown for WorkerConnector{id=jdbc-sink} (org.apache.kafka.connect.runtime.WorkerConnector:287)
+[2024-04-06 23:28:12,616] INFO Worker stopping (org.apache.kafka.connect.runtime.Worker:248)
+[2024-04-06 23:28:12,617] INFO Stopped FileOffsetBackingStore (org.apache.kafka.connect.storage.FileOffsetBackingStore:71)
+[2024-04-06 23:28:12,618] INFO Metrics scheduler closed (org.apache.kafka.common.metrics.Metrics:694)
+[2024-04-06 23:28:12,618] INFO Closing reporter org.apache.kafka.common.metrics.JmxReporter (org.apache.kafka.common.metrics.Metrics:698)
+[2024-04-06 23:28:12,618] INFO Metrics reporters closed (org.apache.kafka.common.metrics.Metrics:704)
+[2024-04-06 23:28:12,620] INFO App info kafka.connect for 192.168.1.191:8083 unregistered (org.apache.kafka.common.utils.AppInfoParser:88)
+[2024-04-06 23:28:12,620] INFO Worker stopped (org.apache.kafka.connect.runtime.Worker:269)
+[2024-04-06 23:28:12,623] INFO Herder stopped (org.apache.kafka.connect.runtime.standalone.StandaloneHerder:126)
+[2024-04-06 23:28:12,623] INFO Kafka Connect stopped (org.apache.kafka.connect.runtime.Connect:72)
+[2024-04-06 23:28:27,276] INFO Kafka Connect worker initializing ... (org.apache.kafka.connect.cli.AbstractConnectCli:114)
+[2024-04-06 23:28:27,282] INFO WorkerInfo values: 
+	jvm.args = -Xms256M, -Xmx2G, -XX:+UseG1GC, -XX:MaxGCPauseMillis=20, -XX:InitiatingHeapOccupancyPercent=35, -XX:+ExplicitGCInvokesConcurrent, -XX:MaxInlineLevel=15, -Djava.awt.headless=true, -Dcom.sun.management.jmxremote, -Dcom.sun.management.jmxremote.authenticate=false, -Dcom.sun.management.jmxremote.ssl=false, -Dkafka.logs.dir=C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/logs, -Dlog4j.configuration=file:bin/../config/connect-log4j.properties
+	jvm.spec = Oracle Corporation, Java HotSpot(TM) 64-Bit Server VM, 21.0.2, 21.0.2+13-LTS-58
+	jvm.classpath = C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/activation-1.1.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/aopalliance-repackaged-2.6.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/argparse4j-0.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/audience-annotations-0.12.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/caffeine-2.9.3.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/checker-qual-3.19.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/commons-beanutils-1.9.4.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/commons-cli-1.4.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/commons-collections-3.2.2.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/commons-digester-2.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/commons-io-2.11.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/commons-lang3-3.8.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/commons-logging-1.2.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/commons-validator-1.7.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/connect-api-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/connect-basic-auth-extension-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/connect-json-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/connect-mirror-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/connect-mirror-client-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/connect-runtime-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/connect-transforms-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/error_prone_annotations-2.10.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/hk2-api-2.6.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/hk2-locator-2.6.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/hk2-utils-2.6.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jackson-annotations-2.16.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jackson-core-2.16.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jackson-databind-2.16.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jackson-dataformat-csv-2.16.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jackson-datatype-jdk8-2.16.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jackson-jaxrs-base-2.16.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jackson-jaxrs-json-provider-2.16.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jackson-module-jaxb-annotations-2.16.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jackson-module-scala_2.13-2.16.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jakarta.activation-api-1.2.2.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jakarta.annotation-api-1.3.5.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jakarta.inject-2.6.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jakarta.validation-api-2.0.2.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jakarta.ws.rs-api-2.1.6.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jakarta.xml.bind-api-2.3.3.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/javassist-3.29.2-GA.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/javax.activation-api-1.2.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/javax.annotation-api-1.3.2.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/javax.servlet-api-3.1.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/javax.ws.rs-api-2.1.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jaxb-api-2.3.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jersey-client-2.39.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jersey-common-2.39.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jersey-container-servlet-2.39.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jersey-container-servlet-core-2.39.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jersey-hk2-2.39.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jersey-server-2.39.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jetty-client-9.4.53.v20231009.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jetty-continuation-9.4.53.v20231009.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jetty-http-9.4.53.v20231009.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jetty-io-9.4.53.v20231009.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jetty-security-9.4.53.v20231009.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jetty-server-9.4.53.v20231009.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jetty-servlet-9.4.53.v20231009.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jetty-servlets-9.4.53.v20231009.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jetty-util-9.4.53.v20231009.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jetty-util-ajax-9.4.53.v20231009.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jline-3.22.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jopt-simple-5.0.4.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jose4j-0.9.4.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/jsr305-3.0.2.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/kafka_2.13-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/kafka-clients-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/kafka-group-coordinator-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/kafka-log4j-appender-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/kafka-metadata-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/kafka-raft-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/kafka-server-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/kafka-server-common-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/kafka-shell-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/kafka-storage-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/kafka-storage-api-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/kafka-streams-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/kafka-streams-examples-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/kafka-streams-scala_2.13-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/kafka-streams-test-utils-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/kafka-tools-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/kafka-tools-api-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/lz4-java-1.8.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/maven-artifact-3.8.8.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/metrics-core-2.2.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/metrics-core-4.1.12.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/netty-buffer-4.1.100.Final.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/netty-codec-4.1.100.Final.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/netty-common-4.1.100.Final.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/netty-handler-4.1.100.Final.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/netty-resolver-4.1.100.Final.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/netty-transport-4.1.100.Final.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/netty-transport-classes-epoll-4.1.100.Final.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/netty-transport-native-epoll-4.1.100.Final.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/netty-transport-native-unix-common-4.1.100.Final.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/opentelemetry-proto-1.0.0-alpha.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/osgi-resource-locator-1.0.3.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/paranamer-2.8.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/pcollections-4.0.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/plexus-utils-3.3.1.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/protobuf-java-3.23.4.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/reflections-0.10.2.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/reload4j-1.2.25.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/rocksdbjni-7.9.2.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/scala-collection-compat_2.13-2.10.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/scala-java8-compat_2.13-1.0.2.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/scala-library-2.13.12.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/scala-logging_2.13-3.9.4.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/scala-reflect-2.13.12.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/slf4j-api-1.7.36.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/slf4j-reload4j-1.7.36.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/snappy-java-1.1.10.5.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/swagger-annotations-2.2.8.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/trogdor-3.7.0.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/zookeeper-3.8.3.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/zookeeper-jute-3.8.3.jar;C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/libs/zstd-jni-1.5.5-6.jar
+	os.spec = Windows 11, amd64, 10.0
+	os.vcpus = 4
+ (org.apache.kafka.connect.runtime.WorkerInfo:71)
+[2024-04-06 23:28:27,291] INFO Scanning for plugin classes. This might take a moment ... (org.apache.kafka.connect.cli.AbstractConnectCli:120)
+[2024-04-06 23:28:27,342] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka_2.13-3.7.0\plugins\confluentinc-kafka-connect-jdbc-10.7.6 (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-06 23:28:27,628] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/plugins/confluentinc-kafka-connect-jdbc-10.7.6/} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-06 23:28:27,826] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka_2.13-3.7.0\plugins\debezium-connector-mysql (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-06 23:28:27,877] INFO Using up-to-date JsonConverter implementation (io.debezium.converters.CloudEventsConverter:121)
+[2024-04-06 23:28:27,942] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/plugins/debezium-connector-mysql/} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-06 23:28:27,949] INFO Loading plugin from: classpath (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-06 23:28:27,964] INFO Registered loader: jdk.internal.loader.ClassLoaders$AppClassLoader@2c7b84de (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-06 23:28:27,965] INFO Scanning plugins with ServiceLoaderScanner took 624 ms (org.apache.kafka.connect.runtime.isolation.PluginScanner:70)
+[2024-04-06 23:28:27,967] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka_2.13-3.7.0\plugins\confluentinc-kafka-connect-jdbc-10.7.6 (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-06 23:28:28,850] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/plugins/confluentinc-kafka-connect-jdbc-10.7.6/} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-06 23:28:28,866] INFO Loading plugin from: C:\Users\mohamed\Documents\Formation\Kafka\1-kafka_2.13-3.7.0\plugins\debezium-connector-mysql (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-06 23:28:29,593] INFO Registered loader: PluginClassLoader{pluginLocation=file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/plugins/debezium-connector-mysql/} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-06 23:28:29,594] INFO Loading plugin from: classpath (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-06 23:28:30,890] INFO Registered loader: jdk.internal.loader.ClassLoaders$AppClassLoader@2c7b84de (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-06 23:28:30,891] INFO Scanning plugins with ReflectionScanner took 2924 ms (org.apache.kafka.connect.runtime.isolation.PluginScanner:70)
+[2024-04-06 23:28:30,895] WARN One or more plugins are missing ServiceLoader manifests may not be usable with plugin.discovery=service_load: [
+file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/plugins/confluentinc-kafka-connect-jdbc-10.7.6/	io.confluent.connect.jdbc.JdbcSinkConnector	sink	10.7.6
+file:/C:/Users/mohamed/Documents/Formation/Kafka/1-kafka_2.13-3.7.0/plugins/confluentinc-kafka-connect-jdbc-10.7.6/	io.confluent.connect.jdbc.JdbcSourceConnector	source	10.7.6
+]
+Read the documentation at https://kafka.apache.org/documentation.html#connect_plugindiscovery for instructions on migrating your plugins to take advantage of the performance improvements of service_load mode. To silence this warning, set plugin.discovery=only_scan in the worker config. (org.apache.kafka.connect.runtime.isolation.Plugins:122)
+[2024-04-06 23:28:30,898] INFO Added plugin 'org.apache.kafka.connect.transforms.ReplaceField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,903] INFO Added plugin 'org.apache.kafka.connect.transforms.Filter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,903] INFO Added plugin 'org.apache.kafka.connect.mirror.MirrorSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,904] INFO Added plugin 'org.apache.kafka.connect.transforms.InsertField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,904] INFO Added plugin 'org.apache.kafka.connect.converters.DoubleConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,905] INFO Added plugin 'org.apache.kafka.connect.connector.policy.AllConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,905] INFO Added plugin 'org.apache.kafka.connect.connector.policy.PrincipalConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,909] INFO Added plugin 'org.apache.kafka.connect.transforms.DropHeaders' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,910] INFO Added plugin 'org.apache.kafka.connect.transforms.Cast$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,910] INFO Added plugin 'org.apache.kafka.connect.storage.SimpleHeaderConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,911] INFO Added plugin 'org.apache.kafka.connect.transforms.InsertHeader' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,911] INFO Added plugin 'io.debezium.converters.BinaryDataConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,912] INFO Added plugin 'org.apache.kafka.common.config.provider.DirectoryConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,912] INFO Added plugin 'io.confluent.connect.jdbc.JdbcSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,915] INFO Added plugin 'org.apache.kafka.connect.transforms.Flatten$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,916] INFO Added plugin 'org.apache.kafka.connect.mirror.MirrorCheckpointConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,917] INFO Added plugin 'org.apache.kafka.connect.transforms.HeaderFrom$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,917] INFO Added plugin 'org.apache.kafka.connect.transforms.SetSchemaMetadata$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,922] INFO Added plugin 'io.debezium.transforms.ExtractNewRecordState' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,923] INFO Added plugin 'io.debezium.converters.ByteArrayConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,924] INFO Added plugin 'io.debezium.transforms.partitions.PartitionRouting' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,925] INFO Added plugin 'org.apache.kafka.connect.transforms.predicates.TopicNameMatches' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,925] INFO Added plugin 'org.apache.kafka.connect.transforms.ReplaceField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,927] INFO Added plugin 'io.debezium.transforms.outbox.EventRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,929] INFO Added plugin 'org.apache.kafka.connect.transforms.SetSchemaMetadata$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,930] INFO Added plugin 'org.apache.kafka.connect.converters.IntegerConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,930] INFO Added plugin 'org.apache.kafka.connect.transforms.predicates.RecordIsTombstone' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,930] INFO Added plugin 'org.apache.kafka.connect.connector.policy.NoneConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,931] INFO Added plugin 'io.debezium.connector.mysql.MySqlConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,931] INFO Added plugin 'org.apache.kafka.connect.converters.ByteArrayConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,931] INFO Added plugin 'org.apache.kafka.connect.transforms.Cast$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,931] INFO Added plugin 'org.apache.kafka.connect.transforms.Flatten$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,932] INFO Added plugin 'io.confluent.connect.jdbc.JdbcSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,932] INFO Added plugin 'org.apache.kafka.connect.rest.basic.auth.extension.BasicAuthSecurityRestExtension' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,932] INFO Added plugin 'org.apache.kafka.connect.transforms.ExtractField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,933] INFO Added plugin 'org.apache.kafka.connect.transforms.TimestampConverter$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,933] INFO Added plugin 'org.apache.kafka.connect.converters.FloatConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,933] INFO Added plugin 'org.apache.kafka.connect.transforms.TimestampConverter$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,934] INFO Added plugin 'io.debezium.transforms.HeaderToValue' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,934] INFO Added plugin 'io.debezium.transforms.SchemaChangeEventFilter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,935] INFO Added plugin 'org.apache.kafka.connect.transforms.TimestampRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,939] INFO Added plugin 'io.debezium.transforms.ExtractSchemaToNewRecord' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,939] INFO Added plugin 'io.debezium.transforms.ByLogicalTableRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,940] INFO Added plugin 'org.apache.kafka.connect.transforms.RegexRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,940] INFO Added plugin 'org.apache.kafka.connect.transforms.HoistField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,941] INFO Added plugin 'org.apache.kafka.connect.transforms.ValueToKey' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,942] INFO Added plugin 'org.apache.kafka.connect.converters.LongConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,943] INFO Added plugin 'org.apache.kafka.common.config.provider.FileConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,944] INFO Added plugin 'org.apache.kafka.connect.json.JsonConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,945] INFO Added plugin 'io.debezium.transforms.TimezoneConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,945] INFO Added plugin 'org.apache.kafka.connect.transforms.HeaderFrom$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,946] INFO Added plugin 'org.apache.kafka.connect.transforms.predicates.HasHeaderKey' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,946] INFO Added plugin 'org.apache.kafka.connect.transforms.MaskField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,946] INFO Added plugin 'org.apache.kafka.common.config.provider.EnvVarConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,947] INFO Added plugin 'io.debezium.transforms.ExtractChangedRecordState' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,947] INFO Added plugin 'org.apache.kafka.connect.storage.StringConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,947] INFO Added plugin 'io.debezium.transforms.tracing.ActivateTracingSpan' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,948] INFO Added plugin 'org.apache.kafka.connect.transforms.MaskField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,948] INFO Added plugin 'io.debezium.connector.mysql.rest.DebeziumMySqlConnectRestExtension' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,948] INFO Added plugin 'org.apache.kafka.connect.transforms.ExtractField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,949] INFO Added plugin 'io.debezium.connector.mysql.transforms.ReadToInsertEvent' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,950] INFO Added plugin 'org.apache.kafka.connect.transforms.InsertField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,950] INFO Added plugin 'org.apache.kafka.connect.converters.BooleanConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,950] INFO Added plugin 'org.apache.kafka.connect.mirror.MirrorHeartbeatConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,951] INFO Added plugin 'io.debezium.converters.CloudEventsConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,953] INFO Added plugin 'org.apache.kafka.connect.transforms.HoistField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,954] INFO Added plugin 'org.apache.kafka.connect.converters.ShortConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-06 23:28:30,959] INFO Added alias 'RecordIsTombstone' to plugin 'org.apache.kafka.connect.transforms.predicates.RecordIsTombstone' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,961] INFO Added alias 'CloudEventsConverter' to plugin 'io.debezium.converters.CloudEventsConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,961] INFO Added alias 'String' to plugin 'org.apache.kafka.connect.storage.StringConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,962] INFO Added alias 'MySql' to plugin 'io.debezium.connector.mysql.MySqlConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,962] INFO Added alias 'EnvVar' to plugin 'org.apache.kafka.common.config.provider.EnvVarConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,962] INFO Added alias 'EnvVarConfigProvider' to plugin 'org.apache.kafka.common.config.provider.EnvVarConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,963] INFO Added alias 'MirrorCheckpointConnector' to plugin 'org.apache.kafka.connect.mirror.MirrorCheckpointConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,963] INFO Added alias 'Boolean' to plugin 'org.apache.kafka.connect.converters.BooleanConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,963] INFO Added alias 'MySqlConnector' to plugin 'io.debezium.connector.mysql.MySqlConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,964] INFO Added alias 'HeaderToValue' to plugin 'io.debezium.transforms.HeaderToValue' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,964] INFO Added alias 'PartitionRouting' to plugin 'io.debezium.transforms.partitions.PartitionRouting' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,964] INFO Added alias 'Json' to plugin 'org.apache.kafka.connect.json.JsonConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,965] INFO Added alias 'StringConverter' to plugin 'org.apache.kafka.connect.storage.StringConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,965] INFO Added alias 'IntegerConverter' to plugin 'org.apache.kafka.connect.converters.IntegerConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,966] INFO Added alias 'Float' to plugin 'org.apache.kafka.connect.converters.FloatConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,966] INFO Added alias 'JdbcSource' to plugin 'io.confluent.connect.jdbc.JdbcSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,967] INFO Added alias 'LongConverter' to plugin 'org.apache.kafka.connect.converters.LongConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,967] INFO Added alias 'DropHeaders' to plugin 'org.apache.kafka.connect.transforms.DropHeaders' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,968] INFO Added alias 'SimpleHeaderConverter' to plugin 'org.apache.kafka.connect.storage.SimpleHeaderConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,971] INFO Added alias 'ExtractSchemaToNewRecord' to plugin 'io.debezium.transforms.ExtractSchemaToNewRecord' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,972] INFO Added alias 'BinaryData' to plugin 'io.debezium.converters.BinaryDataConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,973] INFO Added alias 'DirectoryConfigProvider' to plugin 'org.apache.kafka.common.config.provider.DirectoryConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,974] INFO Added alias 'ReadToInsertEvent' to plugin 'io.debezium.connector.mysql.transforms.ReadToInsertEvent' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,975] INFO Added alias 'ShortConverter' to plugin 'org.apache.kafka.connect.converters.ShortConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,975] INFO Added alias 'CloudEvents' to plugin 'io.debezium.converters.CloudEventsConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,977] INFO Added alias 'TimezoneConverter' to plugin 'io.debezium.transforms.TimezoneConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,977] INFO Added alias 'BasicAuthSecurityRestExtension' to plugin 'org.apache.kafka.connect.rest.basic.auth.extension.BasicAuthSecurityRestExtension' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,977] INFO Added alias 'Simple' to plugin 'org.apache.kafka.connect.storage.SimpleHeaderConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,978] INFO Added alias 'AllConnectorClientConfigOverridePolicy' to plugin 'org.apache.kafka.connect.connector.policy.AllConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,978] INFO Added alias 'ExtractNewRecordState' to plugin 'io.debezium.transforms.ExtractNewRecordState' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,978] INFO Added alias 'MirrorSource' to plugin 'org.apache.kafka.connect.mirror.MirrorSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,979] INFO Added alias 'Directory' to plugin 'org.apache.kafka.common.config.provider.DirectoryConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,979] INFO Added alias 'MirrorHeartbeat' to plugin 'org.apache.kafka.connect.mirror.MirrorHeartbeatConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,979] INFO Added alias 'BooleanConverter' to plugin 'org.apache.kafka.connect.converters.BooleanConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,980] INFO Added alias 'HasHeaderKey' to plugin 'org.apache.kafka.connect.transforms.predicates.HasHeaderKey' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,980] INFO Added alias 'MirrorCheckpoint' to plugin 'org.apache.kafka.connect.mirror.MirrorCheckpointConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,980] INFO Added alias 'ExtractChangedRecordState' to plugin 'io.debezium.transforms.ExtractChangedRecordState' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,981] INFO Added alias 'None' to plugin 'org.apache.kafka.connect.connector.policy.NoneConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,981] INFO Added alias 'TimestampRouter' to plugin 'org.apache.kafka.connect.transforms.TimestampRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,982] INFO Added alias 'Principal' to plugin 'org.apache.kafka.connect.connector.policy.PrincipalConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,982] INFO Added alias 'All' to plugin 'org.apache.kafka.connect.connector.policy.AllConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,983] INFO Added alias 'JsonConverter' to plugin 'org.apache.kafka.connect.json.JsonConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,983] INFO Added alias 'DebeziumMySql' to plugin 'io.debezium.connector.mysql.rest.DebeziumMySqlConnectRestExtension' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,983] INFO Added alias 'JdbcSinkConnector' to plugin 'io.confluent.connect.jdbc.JdbcSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,983] INFO Added alias 'DebeziumMySqlConnectRestExtension' to plugin 'io.debezium.connector.mysql.rest.DebeziumMySqlConnectRestExtension' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,984] INFO Added alias 'JdbcSink' to plugin 'io.confluent.connect.jdbc.JdbcSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,984] INFO Added alias 'RegexRouter' to plugin 'org.apache.kafka.connect.transforms.RegexRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,985] INFO Added alias 'JdbcSourceConnector' to plugin 'io.confluent.connect.jdbc.JdbcSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,985] INFO Added alias 'NoneConnectorClientConfigOverridePolicy' to plugin 'org.apache.kafka.connect.connector.policy.NoneConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,986] INFO Added alias 'Short' to plugin 'org.apache.kafka.connect.converters.ShortConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,987] INFO Added alias 'ByLogicalTableRouter' to plugin 'io.debezium.transforms.ByLogicalTableRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,988] INFO Added alias 'Double' to plugin 'org.apache.kafka.connect.converters.DoubleConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,988] INFO Added alias 'FileConfigProvider' to plugin 'org.apache.kafka.common.config.provider.FileConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,988] INFO Added alias 'EventRouter' to plugin 'io.debezium.transforms.outbox.EventRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,988] INFO Added alias 'SchemaChangeEventFilter' to plugin 'io.debezium.transforms.SchemaChangeEventFilter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,989] INFO Added alias 'Long' to plugin 'org.apache.kafka.connect.converters.LongConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,989] INFO Added alias 'File' to plugin 'org.apache.kafka.common.config.provider.FileConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,989] INFO Added alias 'FloatConverter' to plugin 'org.apache.kafka.connect.converters.FloatConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,989] INFO Added alias 'ActivateTracingSpan' to plugin 'io.debezium.transforms.tracing.ActivateTracingSpan' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,990] INFO Added alias 'DoubleConverter' to plugin 'org.apache.kafka.connect.converters.DoubleConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,990] INFO Added alias 'BinaryDataConverter' to plugin 'io.debezium.converters.BinaryDataConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,990] INFO Added alias 'TopicNameMatches' to plugin 'org.apache.kafka.connect.transforms.predicates.TopicNameMatches' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,991] INFO Added alias 'MirrorHeartbeatConnector' to plugin 'org.apache.kafka.connect.mirror.MirrorHeartbeatConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,991] INFO Added alias 'InsertHeader' to plugin 'org.apache.kafka.connect.transforms.InsertHeader' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,992] INFO Added alias 'MirrorSourceConnector' to plugin 'org.apache.kafka.connect.mirror.MirrorSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,992] INFO Added alias 'PrincipalConnectorClientConfigOverridePolicy' to plugin 'org.apache.kafka.connect.connector.policy.PrincipalConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,992] INFO Added alias 'ValueToKey' to plugin 'org.apache.kafka.connect.transforms.ValueToKey' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,993] INFO Added alias 'Integer' to plugin 'org.apache.kafka.connect.converters.IntegerConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:30,993] INFO Added alias 'Filter' to plugin 'org.apache.kafka.connect.transforms.Filter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-06 23:28:31,003] INFO StandaloneConfig values: 
+	access.control.allow.methods = 
+	access.control.allow.origin = 
+	admin.listeners = null
+	auto.include.jmx.reporter = true
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	config.providers = []
+	connector.client.config.override.policy = All
+	header.converter = class org.apache.kafka.connect.storage.SimpleHeaderConverter
+	key.converter = class org.apache.kafka.connect.json.JsonConverter
+	listeners = [http://:8083]
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	offset.flush.interval.ms = 10000
+	offset.flush.timeout.ms = 5000
+	offset.storage.file.filename = /tmp/connect.offsets
+	plugin.discovery = hybrid_warn
+	plugin.path = [C:\Users\mohamed\Documents\Formation\Kafka\1-kafka_2.13-3.7.0\plugins]
+	response.http.headers.config = 
+	rest.advertised.host.name = null
+	rest.advertised.listener = null
+	rest.advertised.port = null
+	rest.extension.classes = []
+	ssl.cipher.suites = null
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	task.shutdown.graceful.timeout.ms = 5000
+	topic.creation.enable = true
+	topic.tracking.allow.reset = true
+	topic.tracking.enable = true
+	value.converter = class org.apache.kafka.connect.json.JsonConverter
+ (org.apache.kafka.connect.runtime.standalone.StandaloneConfig:370)
+[2024-04-06 23:28:31,007] INFO Creating Kafka admin client (org.apache.kafka.connect.runtime.WorkerConfig:283)
+[2024-04-06 23:28:31,011] INFO AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.controllers = []
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	enable.metrics.push = true
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+ (org.apache.kafka.clients.admin.AdminClientConfig:370)
+[2024-04-06 23:28:31,133] INFO These configurations '[offset.flush.interval.ms, key.converter.schemas.enable, offset.storage.file.filename, value.converter.schemas.enable, plugin.path, value.converter, key.converter]' were supplied but are not used yet. (org.apache.kafka.clients.admin.AdminClientConfig:379)
+[2024-04-06 23:28:31,134] INFO Kafka version: 3.7.0 (org.apache.kafka.common.utils.AppInfoParser:124)
+[2024-04-06 23:28:31,134] INFO Kafka commitId: 2ae524ed625438c5 (org.apache.kafka.common.utils.AppInfoParser:125)
+[2024-04-06 23:28:31,134] INFO Kafka startTimeMs: 1712438911133 (org.apache.kafka.common.utils.AppInfoParser:126)
+[2024-04-06 23:28:31,504] INFO Kafka cluster ID: AyQh0BP7Rge3vDlvzhKkOg (org.apache.kafka.connect.runtime.WorkerConfig:300)
+[2024-04-06 23:28:31,505] INFO App info kafka.admin.client for adminclient-1 unregistered (org.apache.kafka.common.utils.AppInfoParser:88)
+[2024-04-06 23:28:31,514] INFO Metrics scheduler closed (org.apache.kafka.common.metrics.Metrics:694)
+[2024-04-06 23:28:31,516] INFO Closing reporter org.apache.kafka.common.metrics.JmxReporter (org.apache.kafka.common.metrics.Metrics:698)
+[2024-04-06 23:28:31,517] INFO Metrics reporters closed (org.apache.kafka.common.metrics.Metrics:704)
+[2024-04-06 23:28:31,526] INFO PublicConfig values: 
+	access.control.allow.methods = 
+	access.control.allow.origin = 
+	admin.listeners = null
+	listeners = [http://:8083]
+	response.http.headers.config = 
+	rest.advertised.host.name = null
+	rest.advertised.listener = null
+	rest.advertised.port = null
+	rest.extension.classes = []
+	ssl.cipher.suites = null
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	topic.tracking.allow.reset = true
+	topic.tracking.enable = true
+ (org.apache.kafka.connect.runtime.rest.RestServerConfig$PublicConfig:370)
+[2024-04-06 23:28:31,549] INFO Logging initialized @4979ms to org.eclipse.jetty.util.log.Slf4jLog (org.eclipse.jetty.util.log:170)
+[2024-04-06 23:28:31,627] INFO Added connector for http://:8083 (org.apache.kafka.connect.runtime.rest.RestServer:111)
+[2024-04-06 23:28:31,629] INFO Initializing REST server (org.apache.kafka.connect.runtime.rest.RestServer:182)
+[2024-04-06 23:28:31,678] INFO jetty-9.4.53.v20231009; built: 2023-10-09T12:29:09.265Z; git: 27bde00a0b95a1d5bbee0eae7984f891d2d0f8c9; jvm 21.0.2+13-LTS-58 (org.eclipse.jetty.server.Server:375)
+[2024-04-06 23:28:31,707] INFO Started http_8083@2d093067{HTTP/1.1, (http/1.1)}{0.0.0.0:8083} (org.eclipse.jetty.server.AbstractConnector:333)
+[2024-04-06 23:28:31,708] INFO Started @5138ms (org.eclipse.jetty.server.Server:415)
+[2024-04-06 23:28:31,731] INFO Advertised URI: http://192.168.1.191:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:406)
+[2024-04-06 23:28:31,732] INFO REST server listening at http://192.168.1.191:8083/, advertising URL http://192.168.1.191:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:202)
+[2024-04-06 23:28:31,732] INFO Advertised URI: http://192.168.1.191:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:406)
+[2024-04-06 23:28:31,733] INFO REST admin endpoints at http://192.168.1.191:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:205)
+[2024-04-06 23:28:31,733] INFO Advertised URI: http://192.168.1.191:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:406)
+[2024-04-06 23:28:31,734] INFO Setting up All Policy for ConnectorClientConfigOverride. This will allow all client configurations to be overridden (org.apache.kafka.connect.connector.policy.AllConnectorClientConfigOverridePolicy:44)
+[2024-04-06 23:28:31,738] INFO JsonConverterConfig values: 
+	converter.type = key
+	decimal.format = BASE64
+	replace.null.with.default = true
+	schemas.cache.size = 1000
+	schemas.enable = false
+ (org.apache.kafka.connect.json.JsonConverterConfig:370)
+[2024-04-06 23:28:31,757] INFO Kafka version: 3.7.0 (org.apache.kafka.common.utils.AppInfoParser:124)
+[2024-04-06 23:28:31,757] INFO Kafka commitId: 2ae524ed625438c5 (org.apache.kafka.common.utils.AppInfoParser:125)
+[2024-04-06 23:28:31,758] INFO Kafka startTimeMs: 1712438911756 (org.apache.kafka.common.utils.AppInfoParser:126)
+[2024-04-06 23:28:31,764] INFO JsonConverterConfig values: 
+	converter.type = key
+	decimal.format = BASE64
+	replace.null.with.default = true
+	schemas.cache.size = 1000
+	schemas.enable = false
+ (org.apache.kafka.connect.json.JsonConverterConfig:370)
+[2024-04-06 23:28:31,765] INFO JsonConverterConfig values: 
+	converter.type = value
+	decimal.format = BASE64
+	replace.null.with.default = true
+	schemas.cache.size = 1000
+	schemas.enable = false
+ (org.apache.kafka.connect.json.JsonConverterConfig:370)
+[2024-04-06 23:28:31,776] INFO Kafka Connect worker initialization took 4498ms (org.apache.kafka.connect.cli.AbstractConnectCli:141)
+[2024-04-06 23:28:31,777] INFO Kafka Connect starting (org.apache.kafka.connect.runtime.Connect:51)
+[2024-04-06 23:28:31,779] INFO Herder starting (org.apache.kafka.connect.runtime.standalone.StandaloneHerder:107)
+[2024-04-06 23:28:31,779] INFO Worker starting (org.apache.kafka.connect.runtime.Worker:231)
+[2024-04-06 23:28:31,781] INFO Starting FileOffsetBackingStore with file \tmp\connect.offsets (org.apache.kafka.connect.storage.FileOffsetBackingStore:63)
+[2024-04-06 23:28:31,817] INFO Worker started (org.apache.kafka.connect.runtime.Worker:241)
+[2024-04-06 23:28:31,823] INFO Herder started (org.apache.kafka.connect.runtime.standalone.StandaloneHerder:110)
+[2024-04-06 23:28:31,824] INFO Initializing REST resources (org.apache.kafka.connect.runtime.rest.RestServer:209)
+[2024-04-06 23:28:31,900] INFO Adding admin resources to main listener (org.apache.kafka.connect.runtime.rest.RestServer:227)
+[2024-04-06 23:28:31,950] INFO DefaultSessionIdManager workerName=node0 (org.eclipse.jetty.server.session:334)
+[2024-04-06 23:28:31,951] INFO No SessionScavenger set, using defaults (org.eclipse.jetty.server.session:339)
+[2024-04-06 23:28:31,952] INFO node0 Scavenging every 660000ms (org.eclipse.jetty.server.session:132)
+[2024-04-06 23:28:32,535] INFO Started o.e.j.s.ServletContextHandler@45689582{/,null,AVAILABLE} (org.eclipse.jetty.server.handler.ContextHandler:921)
+[2024-04-06 23:28:32,536] INFO REST resources initialized; server is started and ready to handle requests (org.apache.kafka.connect.runtime.rest.RestServer:302)
+[2024-04-06 23:28:32,536] INFO Kafka Connect started (org.apache.kafka.connect.runtime.Connect:57)
